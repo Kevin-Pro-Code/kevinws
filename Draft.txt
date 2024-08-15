@@ -1,0 +1,341 @@
+Kevin's Portfolio
+Projects
+C++ Converter/Calculator
+MQL5/Python Bot
+Trading Robot Website
+Android Music Player
+Android Web Browser
+
+
+TOP WEBSITE
+
+-Language
+*Color Theme, Lock, Change Language
+-Home
+*History of life: where was born, where lived, etc...
+*Phrase (Interesting facts about programming as pseudo-news)
+*Plans to do on future detailed
+*More details about what i learned on each part of any coding lang
+*Language learning trajectory
+*Logo Retangular
+*Search Suggestion: Programming language, C++, Projects...
+*Search Bar
+*Brief introduction to Kevin's world
+-Portfolio
+*C++ Converter/Calculator
+*MQL5/Python Bot
+*Trading Robot Website
+*Android Music Player
+*Android Web Browser
+-About
+*History of programming
+-Service
+*MQL5 / Python forex and crypto bots
+-Extras
+*Testimonials
+*Galleries
+*Articles
+-Co-op
+*
+-Language: Portuguese, English, Russian, 
+-Contact
+
+Inicio, Portfolio, Sobre, Serviço, Extra, Linguagem, Co-Op, Contato
+
+FOOTER
+
+- GET EMAILED ABOUT UPDATES = GET THE LATEST UPDATES
+*Text box
+
+-SEND US YOUR FEEDBACK AND OPINION
+
+
+LinkedIn, GitHub, E-mail, YouTube, WhatsApp, Telegram, Instagram, Facebook (?), X (?)
+ 
+
+Powered by Devilish Trading and Spirit Browser 
+
+
+
+ 
+
+COMPANIES TO CHECK WEBSITE
+
+VIVO
+CLARO
+TIM
+OI
+RAZER
+STEELSERIES
+ASUS
+ACER
+HP
+SANDISK
+TESLA
+COMMA AI
+
+
+PRIVACY POLICY / LEGAL TERMS / TERMS OF USE
+
+LANGUAGE FLAGS
+US, UK, IRELAND, AUSTRALIA, NEW ZEALAND, CANADA
+
+
+TEXTO HOME
+
+
+
+
+Tenho a perspectiva de que qualquer projeto que se desenvolve, deve-se aplicar princípios, e tudo que se faz gera um aprendizado. É através desse tipo de ética que me moldo assim me adequando à posturas e comportamentos de companheiros e à empresa. Estou sempre aberto a aprender a sintaxe de linguagens de programação, desenvolver parametro léxicos e semânticos e também metodologias de programação por si.
+
+
+
+
+"O primeiro passo é estabelecer que algo é possível; então a probabilidade ocorrerá." Elon Musk
+
+
+TEXTO ---
+
+
+
+
+Greetings!
+
+My name is Kevin, and i was born in Switzerland on 1994 and i moved to Brazil after 1 year and a half, son of Brazilian mother and Portuguese father, i have relatives spreaded all around Europe and Brazil, as following, i have interest in computer programming and i also emphasize my general interests in languages. After my English got better i have had sometime learning French and Swedish, because i found it beautiful, but Russian appeard to be a more powerful language in some aspects so i chose it. I was formed as a Technician in Radiology and worked into my father's shop for years, then i decided to migrate to IT field. This website is mainly about projects in the area of information technology (programming), more specifically in: C, C++, Java, Web and Android. It is with pleasure that I show you my projects and intentions, I am also interested in trading robots and languages as hobby, which are things that are also part of the IT area. In my history with programming, I began to understand it in interspersed periods and saw concepts such as variables and conditions in Ruby from RPG Maker XP. Soon after, I started programming some bots for the Tibia game called Elf Bot, in which I dealt with general programming in the Lua language. Years later I took a course in the C language, and that was when some more serious studies began, when I read a book of 250 pages in a short time and I got 10/10 on a C test. Soon after that I started dealing with other content such as C++ and created my first project in C++ with more than 6 thousand lines of code, which worked in the IDE console. This project brought me joy, because I understood that discipline and organization are needed to build a project. That's when I took a HTML course and after that I got involved with CSS and JavaScript (This website was made using HTML5, CSS3, JavaScript and React). And it was Java and MYSQL that made things more exciting and it was also surprising to deal with a purely object-oriented language. After that, I started a passion for Web Browsers, such as the one i did in the Java framework, called JavaFX. So, realizing that the onset of the mobile era dealt with Java, I decided to get to know Kotlin, and it became one of my main focus on programming. I have the perspective that any project that is developed must apply principles, and everything that is done results in lessons learned. It is through this type of notion that I shape myself, thus adapting to the posture and behaviors of colleagues and the company. I am always open to learning the syntax of programming languages, understanding lexical and semantic parameters and also existing programming methodologies. I will name a few areas where I want to develop skills or gain knowledge about and that will upgrade my capacities into my future programming. Let's start with Assembly: this programming language is on the opposite pole of more abstracted languages because it is a low level language, it is closely related to machine language and the usage of a low level language is not only about movements we do through robotics, such as microprocessors, it is about basic and little things that is indispensable for an operational system such as it's drivers. It also can be part of how an IDE compiles a language through the low level code it is written. Other thing i wanna have contact with and improve is bending toward computer science foundations, because it gives to the programmer the apparatus for a better programming structure. Also programming challenges such as ''LeetCode'' is always useful to be practicing, for me into some languages as: Java or C++, but the extra complexity about where a language can reach through its libraries and functions is not about to be explored too deeply without having something to do with it (without a program that is practical and useful). There's an importance in improving the NoSQL area and gaining knowledge about how a DB operates with certain programming languages, as it is the average SQL. I also plan to involve myself with programming of close environments that simulate self-driven cars, usually in Python and C++, such as CARLA.
+
+
+EX
+
+----
+
+
+.overall-bottom-container {
+  display: grid;
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "email-text"
+    "email-container"
+    "email-send"
+    "comment-text"
+    "comment-container"
+    "comment-send"
+    "bear-container"; /* Single column layout for narrow screens */
+  min-width: 300px; /* Minimum width for the container */
+}
+
+/* Minimum width for elements to ensure they don't shrink too much */
+.email-text, .comment-text, .email-container, .comment-container, .email-send, .comment-send {
+  min-width: 300px; 
+  width: 100%;
+  margin: 0 auto; /* Center in the grid cell */
+}
+
+.email-text, .comment-text {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  text-align: center; /* Center the text */
+}
+
+.comment-container, .email-container {
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  resize: none;
+}
+
+.comment-send, .email-send {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: Calibri, sans-serif;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.bear-container {
+  overflow: hidden; /* Hide content overflowing the container */
+  text-align: center;
+}
+
+.bear {
+  width: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .overall-bottom-container {
+    grid-template-columns: 1fr 1fr; /* Two-column layout for wider screens */
+    grid-template-areas:
+      "email-text comment-text"
+      "email-container comment-container"
+      "email-send comment-send"
+      "bear-container bear-container"; /* Bear container spans both columns in wider screens */
+  }
+
+  .email-text {
+    grid-area: email-text; /* Position within the grid */
+  }
+
+  .comment-text {
+    grid-area: comment-text; /* Position within the grid */
+  }
+
+  .email-container {
+    grid-area: email-container; /* Position within the grid */
+  }
+
+  .comment-container {
+    grid-area: comment-container; /* Position within the grid */
+  }
+
+  .email-send {
+    grid-area: email-send; /* Position within the grid */
+  }
+
+  .comment-send {
+    grid-area: comment-send; /* Position within the grid */
+  }
+
+  .bear-container {
+    grid-area: bear-container; /* Position within the grid */
+  }
+}
+
+
+
+
+
+SECOND =============================================================================
+
+
+
+
+
+
+.comment-container {
+
+  width: 575px;
+  height: 240px;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  transform: translateY(18.5%) translateX(7%); /* Move container to the left */
+  margin-left: 0; /* Reset the left margin */
+  margin-right: auto; /* Ensure the right margin is 0 */
+  display: flex;
+  justify-content: flex-end; /* Align to the right horizontally */
+  align-items: flex-end; /* Align to the bottom vertically */
+  font-family: Calibri, sans-serif;
+  resize: none;
+  
+
+
+}
+
+
+.comment-container:hover {
+  border: 3px solid rgba(182, 178, 178, 0.863);
+
+  }
+  
+  .comment-text {
+
+    border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 25px;
+    transform: translateY(65%) translateX(3%);
+    font-weight: bold;
+
+    position: absolute;
+    padding-top: -2px;
+    padding-right: 800px;
+    right: 0; 
+    transform: none;
+    font-family: Calibri, sans-serif;
+  
+    
+
+  }
+
+
+
+  .comment-send {
+    border: 2px solid black;
+    transform: translateY(355%) translateX(575%);
+    z-index: 1;
+    border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+
+
+  
+  }
+
+
+
+  .email-send {
+    border: 2px solid black;
+    transform: translateY(345%) translateX(1700%);
+    z-index: 1;
+    border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+  
+  }
+
+
+    .email-text {
+
+      position: absolute;
+      padding-top: 240px;
+      padding-right: 230px;
+      right: 0; 
+      transform: none;
+      font-family: Calibri, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+
+      
+  }
+
+
+.email-container {
+    
+    width: 510px; /* Adjust width as needed */
+    height: 70px; /* Fixed height for the search bar */
+    font-size: 20px; /* Smaller font size for text */    
+    border: 3px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    display: block; /* Ensures block display */
+    margin-top: 25px;
+    transform: translateY(410%) translateX(59%);
+    margin-left: 355px; /* Move the search bar to the right */
+    margin-right: 550px; /* Ensure the right margin is 0 */
+    
+    justify-content: flex-end; /* Center the search bar horizontally */
+    align-items: flex-end; /* Center the search bar vertically */
+    position: relative;
+    z-index: 1;
+   
+    
+   }
+   
+
+.email-container::placeholder {
+    color: rgba(3, 2, 2, 0.507); /* Hide the default placeholder text */
+    font-family: Calibri, sans-serif;
+}
+
+
+
+    .email-container:hover {
+      border: 2px solid rgba(182, 178, 178, 0.863);
+      }
+      
