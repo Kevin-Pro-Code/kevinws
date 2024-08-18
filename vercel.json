@@ -6,11 +6,11 @@
       "use": "@vercel/static"
     },
     {
-      "src": "styles/*",
+      "src": "kevinws.css",  
       "use": "@vercel/static"
     },
     {
-      "src": "scripts/*",
+      "src": "kevinws.js",   
       "use": "@vercel/static"
     }
   ],
@@ -18,7 +18,6 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-      
     }
   ]
 }
