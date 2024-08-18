@@ -10,7 +10,15 @@
       "use": "@vercel/static"
     },
     {
+      "src": "kevinws2.css",  
+      "use": "@vercel/static"
+    },
+    {
       "src": "kevinws.js",   
+      "use": "@vercel/static"
+    },
+    {
+      "src": "kevinws2.js",   
       "use": "@vercel/static"
     }
   ],
