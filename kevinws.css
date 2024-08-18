@@ -1,0 +1,1008 @@
+
+body {
+
+  /*
+background-color: rgb(214, 214, 214);
+*/
+
+  margin: 0;
+  background: linear-gradient(to bottom, white, gray, white);
+  display: block;
+}
+
+
+
+  @media (max-width: 1279px) {
+    body {
+        zoom: 1.0; 
+        
+    }
+   
+    .footer {
+
+      zoom: 0.2; 
+    }
+
+    .footer-left, .footer-left2, .footer-center {
+
+ 
+      font-size: 12px;
+
+    }
+    
+} 
+
+/*
+
+@media (min-width: 1279px) {
+  .home-description {
+
+    zoom: 2.5;
+    
+  }
+ 
+}
+  
+*/
+
+
+p {
+  color: black;
+
+}
+
+.main {
+
+  margin: 0;
+
+}
+
+
+ /* Styles for smartphones 
+ @media (max-width: 700px) {
+  .counter {
+      position: absolute;
+     
+      transform: translateY(380%) translateX(375%);
+  }
+}
+*/
+
+
+.kevinbox {
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  padding: 15px 20px;
+  border: 4px solid black;
+  border-top: none;
+  background-color: white;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+
+  
+}
+
+
+.name-container,
+.top-search-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%; /* Equal width for both containers */
+  max-width: 500px; /* Adjust as needed */
+  margin: 5px 25px; /* Move outward by 20px */
+  
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items within name */
+  padding-right: 20px; /* Adds some space to the right */
+  padding-left: 1px; /* Prevents the image from touching the left edge */
+  margin-right: 25px;
+  box-sizing: border-box;
+  width: 100%; /* Ensures it takes the full width within the max-width constraint */
+  
+}
+
+.name img {
+  max-width: 100%;
+  height: auto;
+ 
+}
+
+.top-search-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 50%; /* Equal width for both containers */
+  max-width: 550px; /* Adjust as needed */
+
+  margin-left: 0; /* Center the container */
+  
+}
+
+.button-row, .button-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-right: 12px;
+}
+
+.sbutton, .sbutton2 {
+  height: 32px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-family: Calibri;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  margin: 1px;
+  padding: 10px 10px;
+  padding-bottom: 23px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  margin-left: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.search-bar {
+  width: 500px;
+  height: 70px;
+  font-size: 25px;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(0%);
+  margin-bottom: 10px;
+}
+
+.magnifier-icon {
+  right: 10px;
+  top: 50%; 
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  transform: translateY(38%) translateX(-200%);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.counter-text, .counter-text2 {
+  font-size: 30px;
+  font-family: Calibri;
+}
+
+.counter-text2 {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .kevinbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-container, .top-search-buttons {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+   
+    height: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sbutton, .sbutton2 {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+}
+
+
+
+
+
+/*
+
+.overall-top-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "sbutton"
+    "sbutton2"
+    "search-container"
+    "magnifier-icon"
+    "counter"
+    "counter-text"
+    "counter-text2";
+  max-width: 1200px;
+  margin: 0 auto;  
+  padding-bottom: 50px;
+
+}
+
+*/
+
+
+
+
+
+
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-family: Helvetica;
+  font-weight: bold;
+
+}
+
+.home-description {
+  background-color: black;
+  border: 4px solid blue;
+  padding: 15px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: left;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  position: relative;
+  /* Ensure it stays within the flow of the document */
+  word-spacing: 3px;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.home-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+  font-family: Calibri, sans-serif;
+
+}
+
+.home-content {
+  color: white;
+  padding-left: 10px;
+
+}
+
+.ola-text {
+  color: white;
+  font-size: 55px;
+  text-align: left;
+  font-family: Calibri;
+
+}
+
+
+.expand-toabout {
+  font-weight: bold;
+  font-size: 40px; /* Increase font size */
+  margin-left: auto; /* Align button to the right */
+  margin-top: 20px;
+ 
+  display: block; /* Ensures it behaves like a block element */
+  border: none; /* Remove default border */
+  background-color: white; /* Example background color */
+  color: black; /* Example text color */
+  padding: 10px 20px; /* Optional padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 15px; /* Optional rounded corners */
+  
+}
+
+
+.portfolio-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.portfolio-description {
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Adjust distance from video */
+  z-index: 0;
+  /* Ensure the description is above the video */
+  position: relative;
+  /* Ensure it stays within the flow of the document */
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.portfolio-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.portfolio-content {
+
+  padding-left: 10px;
+
+}
+
+.about-content {
+  color: white;
+  padding-left: 10px;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+
+.about-description {
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: left;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Adjust distance from video */
+  z-index: 0;
+  /* Ensure the description is above the video */
+  position: relative;
+  /* Ensure it stays within the flow of the document */
+  word-spacing: 3px;
+  line-height: 2;
+}
+
+.about-description p {
+  margin: 0;
+  color: white;
+  /* Set text color to white */
+}
+
+
+.title {
+  color: black;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  font-family: Helvetica;
+  /*
+font-family: Consolas, sans-serif;
+*/
+}
+
+
+video {
+  width: 70%;
+  height: auto;
+  border-radius: 40px;
+  /* Adjust the value as needed */
+  margin-bottom: 20px;
+  /* Space between videos */
+}
+
+
+
+
+.overall-bottom-container {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "comment-text"
+    "comment-container"
+    "comment-send"
+    "email-text"
+    "email-container"
+    "email-sub";
+  max-width: 1200px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the container */
+  padding-bottom: 50px;
+  padding-left: 55px;
+  overflow: hidden;
+
+}
+
+.title-mail-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-aligner {
+
+
+
+}
+
+
+.bottom-aligner2 {
+
+
+  
+}
+
+.comment-text {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  /* Ensure text is centered */
+  margin-bottom: 2px;
+  /* Add some space below */
+  
+}
+
+
+.email-text {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  /* Ensure text is centered */
+  margin-bottom: 5px;
+  /* Add some space below */
+}
+
+.comment-container,
+.email-container,
+.cmail-container {
+  width: 100%;
+  /* Ensure full width within grid cell */
+  max-width: 550px;
+  /* Same max width for consistency */
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1px;
+  margin: 0 auto;
+  /* Center within the grid cell */
+  font-family: Calibri, sans-serif;
+  text-indent: 10px;
+  
+
+}
+
+.comment-container {
+  height: 250px;
+  /* Specific height for the comment container */
+  resize: none;
+  /* No resizing allowed for textarea */
+  padding-top: 6px;
+  margin-bottom: 5px;
+}
+
+.email-container {
+  max-width: 700px;
+  width: 500px;
+  height: 75px;
+  margin-top: 0px;
+  /* Adjust this value to move down */
+  transform: translateY(0%);
+  /* Adjust for positioning */
+}
+
+.cmail-container {
+  height: 70px;
+  /* Height for the comment mail feedback container */
+  margin: 10px auto;
+  /* Center horizontally with a small top margin */
+  
+}
+
+.comment-send,
+.email-sub {
+  border: 3px solid black;
+  border-radius: 5px;
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  /* Center within the grid cell */
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+.email-sub {
+
+  margin-top: 5px;
+
+}
+
+
+@media (min-width: 769px) {
+  .overall-bottom-container {
+    grid-template-areas:
+      "comment-text email-text"
+      "comment-container email-container"
+      "comment-send email-sub";
+  }
+
+  .comment-text {
+    grid-area: comment-text;
+  }
+
+  .email-text {
+    grid-area: email-container;
+    margin-top: 48px;
+  }
+
+  .comment-container {
+    grid-area: comment-container;
+  }
+
+  .email-container {
+    grid-area: email-container;
+    margin-top: 90px;
+  }
+
+  .comment-send {
+    grid-area: comment-send;
+  }
+
+  .email-sub {
+    grid-area: email-sub;
+    
+  
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .overall-bottom-container {
+    grid-template-columns: 1fr;
+    /* Single column layout for narrow screens */
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub"
+    ;
+  }
+
+  .comment-text,
+  .email-text {
+    text-align: center;
+    /* Ensure text is centered */
+
+  }
+}
+
+
+/*
+
+.bear {
+  z-index: 1;
+  position: relative;
+  margin-right: -40%; 
+  margin-bottom: -110px;
+  transform: translateY(-75%) translateX(280%);
+  width: 400px;
+  overflow: hidden;
+}
+
+*/
+
+
+.hr {
+
+  border: 2px solid black;
+  transform: translate(0px, -185px);
+
+}
+
+
+footer {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 10px 1px;
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 555;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+
+
+}
+
+.footer-right {
+  flex: 1;
+  justify-content: flex-end;
+  /* Align right content to the end */
+  text-align: right;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+/*
+
+.footer-left {
+  justify-content: flex-start;
+ 
+  flex: 1;
+  text-align: left;
+  font-family: Calibri, sans-serif;
+  padding-top: 2px;
+  padding-left: 8px;
+}
+
+.footer-centralizer {
+  display: flex;
+  flex: 1 0 auto;
+
+  transform: translateX(0%);
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  
+}
+
+.footer-center {
+  
+  font-family: Calibri, sans-serif;
+  color: black;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+*/
+
+
+.footer-left,
+.footer-center {
+  display: flex;
+  align-items: center;
+  font-family: Calibri, sans-serif;
+  
+}
+
+.footer-left {
+  text-align: left;
+  padding-left: 8px;
+  font-family: Calibri, sans-serif;
+}
+
+.footer-center {
+  text-align: left;
+  padding-left: 8px;
+  color: black; 
+  font-family: Calibri, sans-serif;
+}
+
+
+
+
+/* Maintain space and alignment for footer-center content */
+.footer-center p {
+  text-align: left;
+  font-size: 16px;
+  vertical-align: middle;
+  
+}
+
+.footer-center img {
+  vertical-align: middle;
+}
+
+.fa-mars {
+  font-size: 26px;
+  vertical-align: middle;
+  padding-bottom: 6px;
+  margin-right: 12px;
+}
+
+.footer-center a {
+  text-decoration: none;
+}
+
+.footer-center i {
+  color: black;
+  
+}
+
+.blue-text {
+  color: blue;
+  font-weight: bold;
+}
+
+.supported-text {
+
+  padding-top: 4px;
+}
+
+.devil {
+
+  padding-bottom: 3px;
+}
+
+.halo {
+  padding-bottom: 10px;
+
+}
+
+.footer-right .fa {
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+.footer-right {
+
+  text-align: right;
+  padding: 0px 0px;
+  margin-top: 2px;
+
+}
+
+.footer-right .fa-youtube {
+  font-size: 30px;
+  color: red;
+  padding: 5px;
+}
+
+.footer-right .fa-youtube:hover {
+  font-size: 30px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-envelope {
+  font-size: 29px;
+  color: black;
+  padding: 5px;
+}
+
+.footer-right .fa-envelope:hover {
+  font-size: 29px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-telegram {
+  font-size: 29.5px;
+  color: rgb(49, 172, 224);
+  padding: 5px;
+}
+
+.footer-right .fa-telegram:hover {
+  font-size: 29.5px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-discord {
+  font-size: 29px;
+  color: rgba(84, 98, 228);
+  padding: 5px;
+}
+
+.footer-right .fa-discord:hover {
+  font-size: 29px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-square-github {
+  font-size: 33px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.footer-right .fa-square-github:hover {
+  font-size: 33px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-linkedin {
+  font-size: 33px;
+  color: rgb(13, 120, 243);
+  padding: 5px;
+  border-radius: 12%;
+  /* Adjust for round corners */
+  display: inline-block;
+  position: relative;
+}
+
+.footer-right .fa-linkedin:hover {
+  font-size: 33px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+  border-radius: 12%;
+  /* Adjust for round corners */
+  display: inline-block;
+  position: relative;
+}
+
+
+.footer-right .fa-instagram {
+  font-size: 32px;
+  color: black;
+  padding: 5px;
+}
+
+.footer-right .fa-instagram:hover {
+  font-size: 32px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+.footer-right .fa-square-facebook {
+  font-size: 31px;
+  color: rgb(1, 26, 110);
+  padding: 5px;
+}
+
+.footer-right .fa-square-facebook:hover {
+  font-size: 31px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+}
+
+/*
+.footer-right .fa-square-whatsapp {
+font-size: 35px;
+padding: 25px 5px;
+color:lime;
+background-color: transparent;
+border-radius: 5%;
+border-color:black;
+margin-top: 10px;
+}
+*/
+
+
+.footer-right .fa-whatsapp {
+  color: black;
+  font-size: 33px;
+  padding: 2px 5px;
+  margin-bottom: 2px;
+
+
+}
+
+.footer-right .fa-whatsapp:hover {
+  color: white;
+  font-size: 33px;
+  padding: 2px 5px;
+  border-radius: 10%;
+  background-color: lime;
+
+}
+
+.footer-right .fa-x-twitter {
+  font-size: 31px;
+  color: black;
+  padding: 3px;
+  padding-right: 6px;
+  padding-left: 1.5px;
+
+}
+
+.footer-right .fa-x-twitter:hover {
+  font-size: 31px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 3px;
+  padding-right: 6px;
+  padding-left: 1.5px;
+}
+
+
+
+/*
+
+
+@media only screen and (min-width: 1px) {
+
+  @-moz-document url-prefix() {
+    
+
+    .firefox-mobile .home-description {
+      zoom: 2.3;
+    }
+ 
+ 
+
+  .firefox-mobile .top-search-buttons {
+   
+    transform: translateY(-95%) translateX(75%);
+  }
+  
+
+  .firefox-mobile .counter img {
+    transform: translateY(-25%) translateX(-1%);
+  }
+
+  .firefox-mobile .counter-text {
+    font-size: 28px; 
+    top: 150px; 
+    left: 540px; 
+  }
+
+  .firefox-mobile .counter-text2 {
+    font-size: 28px; 
+    top: 150px; 
+    left: 610px; 
+  }
+
+  .firefox-mobile .overall-bottom-container {
+  margin-bottom: 25px;
+
+  }
+
+}
+
+}
+
+*/
+
+
