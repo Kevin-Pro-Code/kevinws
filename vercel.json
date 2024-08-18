@@ -17,7 +17,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/kevinws.html"
+      "dest": "/index.html"
     }
   ]
 }
