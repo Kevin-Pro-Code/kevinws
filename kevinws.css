@@ -13,37 +13,28 @@ background-color: rgb(214, 214, 214);
 
 
   @media (max-width: 1279px) {
+    
     body {
-        zoom: 1.0; 
-        
+      zoom: 0.7; 
+      
     }
+       
    
-    .footer {
+    .navbar {
 
-      zoom: 0.2; 
+      zoom: 0.8; 
+      
     }
 
-    .footer-left, .footer-left2, .footer-center {
 
- 
-      font-size: 12px;
 
-    }
-    
-} 
 
-/*
 
-@media (min-width: 1279px) {
-  .home-description {
 
-    zoom: 2.5;
-    
   }
- 
-}
-  
-*/
+
+
+
 
 
 p {
@@ -722,7 +713,7 @@ footer {
   display: flex;
   align-items: center;
   font-family: Calibri, sans-serif;
-  
+  font-size: 16px;
 }
 
 .footer-left {
