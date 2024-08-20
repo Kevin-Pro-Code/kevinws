@@ -497,14 +497,19 @@ border: 4px solid blue;
   /* Style for the additional text content */
   .extra-text {
   color: white;
-  font-size: 40px;
+  font-size: 23px;
   text-align: left;
   font-family: Calibri;
   }
 
   
+  .home-text {
+
+    font-size: 23px;
+  }
   
-  
+
+
   .fa-address-card, .fa-copyright, .fa-newspaper, .fa-image, .fa-briefcase, .fa-user-group, .fa-robot, .fa-language 
 
   {
