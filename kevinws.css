@@ -34,14 +34,16 @@ padding-right: 42px;
 
 
 footer {
+
 display: none;
+zoom: 0.6;
+z-index: 9999;
 
 }
 
-.footer {
-  display: none;
-  
-  }
+
+
+
 
   }
 
