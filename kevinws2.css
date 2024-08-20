@@ -491,15 +491,15 @@ border: 4px solid blue;
     color: white;
   font-size: 55px;
   text-align: left;
-  font-family: Calibri, sans-serif;
+  font-family: Calibri;
   }
   
   /* Style for the additional text content */
   .extra-text {
   color: white;
-  font-size: 18px;
+  font-size: 40px;
   text-align: left;
-  font-family: Calibri, sans-serif;
+  font-family: Calibri;
   }
 
   
