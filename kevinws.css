@@ -44,11 +44,20 @@ footer {
   .english-text,
   .portuguese-text {
      
- margin-right: 10px;
+    margin-right: 10px;
     
     justify-content: center;
     align-items: center;
   }
+
+.low-icons {
+
+    margin-right: 10px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
 
 
   }
