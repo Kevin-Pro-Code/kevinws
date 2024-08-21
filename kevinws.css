@@ -12,9 +12,6 @@ background-color: rgb(214, 214, 214);
 
 
 
-  
-
-
 
 p {
   color: black;
@@ -636,70 +633,22 @@ footer {
 
 }
 
-.footer-right {
-  flex: 1;
-  justify-content: flex-end;
-  /* Align right content to the end */
-  text-align: right;
-  margin-bottom: 3px;
-  margin-right: 5px;
-}
-
-/*
-
-.footer-left {
-  justify-content: flex-start;
- 
-  flex: 1;
-  text-align: left;
-  font-family: Calibri, sans-serif;
-  padding-top: 2px;
-  padding-left: 8px;
-}
-
-.footer-centralizer {
+.footer-container {
   display: flex;
-  flex: 1 0 auto;
-
-  transform: translateX(0%);
-  text-align: left;
-  justify-content: left;
-  align-items: left;
-  
+  justify-content: flex-start; /* Align items from the left */
+  align-items: center; /* Center items vertically */
+  width: 100%;
 }
 
-.footer-center {
-  
-  font-family: Calibri, sans-serif;
-  color: black;
-  text-align: left;
-  justify-content: left;
-  align-items: left;
+.footer-left, .footer-center {
+  margin: 0 3px; /* Add margin to separate the elements */
+  text-align: left; /* Align text within elements to the left */
 }
 
-*/
-
-
-.footer-left,
-.footer-center {
-  justify-content: flex-start;
-  font-family: Calibri, sans-serif;
-  font-size: 16px;
-}
-
-.footer-left {
-  justify-content: flex-start;
-  text-align: center;
-  padding-left: 8px;
-  font-family: Calibri, sans-serif;
-}
-
-.footer-center {
-  justify-content: flex-start;
-  text-align: left;
-  padding-left: 4px;
-  color: black; 
-  font-family: Calibri, sans-serif;
+.footer-right {
+  margin-left: auto; /* Pushes the footer-right to the far right */
+  text-align: right;
+  padding-right: 10px;
 }
 
 
@@ -1045,8 +994,7 @@ text-align: center; /* Centers text */
 .low-icons {
 
   margin-left: 6px;
-  
-  
+    
 }
 
 }
