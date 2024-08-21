@@ -152,8 +152,14 @@
     /* Set the text color to ensure visibility */
     text-decoration-color: white;
     /* Set any other properties affecting visibility */
+   
     
+  }
+
+  .flag-button:hover .lock-icon:hover {
     
+    color: grey;
+     
   }
   
   
@@ -316,10 +322,10 @@
   
   
   .lock-icon {
-    font-size: 1em;
+    
     /* Adjust the size as needed */
     color: white;
-    padding-left: 25px;
+    margin-left: 25px;
   
   }
   
