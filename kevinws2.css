@@ -239,32 +239,6 @@
     
   }
 
-
-  @media (max-device-width: 399px){
-
-    .english-text,
-    .portuguese-text {
-      font-size: 17px; 
-      transform: translateY(-135%) translateX(26%); 
-    }
-  
-  
-  }
-  
-  
-  
-  @media (min-device-width: 400px) and (max-device-width: 860px) {
-    .english-text,
-    .portuguese-text {
-      font-size: 17px; 
-      transform: translateY(-135%) translateX(30%); 
-      
-      justify-content: center;
-      align-items: center;
-    }
-  
-    
-  }
   
   
    

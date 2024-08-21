@@ -36,10 +36,45 @@ margin-right: 50px;
 
 footer {
 
+/*
   display: none !important;
-  
+*/
+
+
   }
 
+.footer-right {
+
+  display: none !important;
+
+
+
+}
+
+.footer-centralizer, .footer-left {
+  position: relative; /* Removes fixed positioning */
+  display: flex; /* Enables flexbox */
+  justify-content: left; /* Centers items horizontally */
+  align-items: left; /* Centers items vertically */
+  width: auto; /* Adjusts width to content */
+  margin: 0 5px; /* Adds a small margin between elements */
+  transform: none; /* Removes any transform effects */
+}
+
+.footer-center {
+  display: flex; /* Keeps the items in a row */
+  align-items: left; /* Vertical alignment */
+  justify-content: left; /* Horizontal alignment */
+}
+
+.footer-container {
+  display: flex; /* Flex container for both elements */
+  justify-content: center; /* Centers the whole footer content */
+  align-items: center; /* Centers vertically */
+  flex-wrap: wrap; /* Allows wrapping if necessary */
+  width: 100%; /* Full width of the footer */
+  text-align: center; /* Centers text */
+}
 
   .english-text,
   .portuguese-text {
@@ -80,7 +115,7 @@ p {
   .counter {
       position: absolute;
      
-      transform: translateY(380%) translateX(375%);
+      fo
   }
 }
 */
@@ -481,18 +516,7 @@ video {
   
 }
 
-.bottom-aligner {
 
-
-
-}
-
-
-.bottom-aligner2 {
-
-
-  
-}
 
 .comment-text {
   font-size: 25px;
@@ -583,7 +607,7 @@ video {
 
 .email-sub {
 
-  margin-top: 5px;
+  margin-top: 6px;
 
 }
 

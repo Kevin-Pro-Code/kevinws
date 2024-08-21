@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lowIcons = document.querySelector('.low-icons');
     const lockIcon = document.querySelector('.lock-icon i'); // Lock icon element
 
-    let isLocked = true; // Track if the lock is active
+    let isLocked = false; // Track if the lock is active
 
     // Flag image sources for English
     const englishFlags = [
