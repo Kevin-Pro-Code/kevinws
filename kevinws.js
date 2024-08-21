@@ -193,6 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const lowIcons = document.querySelector('.low-icons');
     const lockIcon = document.querySelector('.lock-icon i'); // Lock icon element
 
+    let isLocked = true; // Track if the lock is active
+
     // Flag image sources for English
     const englishFlags = [
         { src: 'united-kingdom.png', class: 'uk' },
@@ -275,11 +277,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle language on button click
     flagButton.addEventListener('click', function(event) {
-        // Check if the lock icon is locked
-        if (lockIcon.classList.contains('fa-lock')) {
-            event.preventDefault();  // Prevent any action if locked
+        if (isLocked) {
             console.log("Translation functionality is disabled because the lock is active");
-            return;  // Exit the function
+            return; // Exit if locked
         }
 
         event.preventDefault(); // Prevent default anchor click behavior
@@ -290,6 +290,22 @@ document.addEventListener('DOMContentLoaded', function() {
             setLanguage('en');
         } else {
             setLanguage('pt');
+        }
+    });
+
+    // Handle lock icon toggle
+    document.querySelector('.lock-icon').addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent click event from propagating to parent elements
+
+        const iconElement = this.querySelector('i');
+
+        // Toggle the lock state
+        if (iconElement.classList.contains('fa-lock-open')) {
+            iconElement.className = 'fa-solid fa-lock'; // Closed lock icon
+            isLocked = true; // Set lock state to locked
+        } else if (iconElement.classList.contains('fa-lock')) {
+            iconElement.className = 'fa-solid fa-lock-open'; // Open lock icon
+            isLocked = false; // Set lock state to unlocked
         }
     });
 });
@@ -793,17 +809,6 @@ window.addEventListener('resize', () => {
 */
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector(".lock-icon").addEventListener("click", function() {
-        const iconElement = this.querySelector("i");
 
-        // Toggling the icon
-        if (iconElement.classList.contains("fa-lock-open")) {
-            iconElement.className = "fa-solid fa-lock";  // Closed lock icon
-        } else if (iconElement.classList.contains("fa-lock")){
-            iconElement.className = "fa-solid fa-lock-open";  // Open lock icon
-        }
-    });
-});
 
 
