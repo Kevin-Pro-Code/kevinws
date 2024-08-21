@@ -41,6 +41,15 @@ footer {
   }
 
 
+  .english-text,
+  .portuguese-text {
+     
+ margin-right: 10px;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
 
   }
 
