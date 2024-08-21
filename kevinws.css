@@ -12,89 +12,7 @@ background-color: rgb(214, 214, 214);
 
 
 
-  @media (max-width: 760px) {
-    
-    body {
-
-      zoom: 0.45; 
-      
-    }
-       
-   
-    .navbar {
-
-      zoom: 0.65; 
-      
-    }
-
-.overall-bottom-container {
-
-padding-right: 50px;
-margin-right: 50px;
-
-}
-
-footer {
-
-/*
-  display: none !important;
-*/
-
-
-  }
-
-.footer-right {
-
-  display: none !important;
-
-
-
-}
-
-.footer-centralizer, .footer-left {
-  position: relative; /* Removes fixed positioning */
-  display: flex; /* Enables flexbox */
-  justify-content: left; /* Centers items horizontally */
-  align-items: left; /* Centers items vertically */
-  width: auto; /* Adjusts width to content */
-  margin: 0 5px; /* Adds a small margin between elements */
-  transform: none; /* Removes any transform effects */
-}
-
-.footer-center {
-  display: flex; /* Keeps the items in a row */
-  align-items: left; /* Vertical alignment */
-  justify-content: left; /* Horizontal alignment */
-}
-
-.footer-container {
-  display: flex; /* Flex container for both elements */
-  justify-content: center; /* Centers the whole footer content */
-  align-items: center; /* Centers vertically */
-  flex-wrap: wrap; /* Allows wrapping if necessary */
-  width: 100%; /* Full width of the footer */
-  text-align: center; /* Centers text */
-}
-
-  .english-text,
-  .portuguese-text {
-     
-    margin-right: 10px;
-    
-    justify-content: center;
-    align-items: center;
-  }
-
-.low-icons {
-
-    margin-left: 6px;
-    
-    
-}
-
-  }
-
-
+  
 
 
 
@@ -764,21 +682,22 @@ footer {
 
 .footer-left,
 .footer-center {
-  display: flex;
-  align-items: center;
+  justify-content: flex-start;
   font-family: Calibri, sans-serif;
   font-size: 16px;
 }
 
 .footer-left {
-  text-align: left;
+  justify-content: flex-start;
+  text-align: center;
   padding-left: 8px;
   font-family: Calibri, sans-serif;
 }
 
 .footer-center {
+  justify-content: flex-start;
   text-align: left;
-  padding-left: 8px;
+  padding-left: 4px;
   color: black; 
   font-family: Calibri, sans-serif;
 }
@@ -1051,3 +970,83 @@ margin-top: 10px;
 */
 
 
+@media (max-width: 760px) {
+    
+  body {
+
+    zoom: 0.45; 
+    
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.65; 
+    
+  }
+
+.overall-bottom-container {
+
+padding-right: 50px;
+margin-right: 50px;
+
+}
+
+footer {
+
+/*
+display: none !important;
+*/
+
+
+}
+
+.footer-right {
+
+display: none !important;
+
+
+}
+
+.footer-centralizer, .footer-left {
+position: relative; /* Removes fixed positioning */
+display: flex; /* Enables flexbox */
+justify-content: normal; 
+align-items: left; /* Centers items vertically */
+width: auto; /* Adjusts width to content */
+margin: 0 5px; /* Adds a small margin between elements */
+transform: none; /* Removes any transform effects */
+}
+
+.footer-center {
+display: flex; /* Keeps the items in a row */
+align-items: left; /* Vertical alignment */
+justify-content: normal; 
+}
+
+.footer-container {
+display: flex; /* Flex container for both elements */
+justify-content: center; /* Centers the whole footer content */
+align-items: center; /* Centers vertically */
+flex-wrap: wrap; /* Allows wrapping if necessary */
+width: 100%; /* Full width of the footer */
+text-align: center; /* Centers text */
+}
+
+.english-text,
+.portuguese-text {
+   
+  margin-right: 10px;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.low-icons {
+
+  margin-left: 6px;
+  
+  
+}
+
+}
