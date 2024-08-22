@@ -963,7 +963,7 @@ display: flex; /* Enables flexbox */
 justify-content: normal; 
 align-items: left; /* Centers items vertically */
 width: auto; /* Adjusts width to content */
-margin: 0 5px; /* Adds a small margin between elements */
+margin: 0 1px; /* Adds a small margin between elements */
 transform: none; /* Removes any transform effects */
 }
 
