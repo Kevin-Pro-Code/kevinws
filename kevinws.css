@@ -937,7 +937,7 @@ margin-top: 10px;
 .overall-bottom-container {
 
 
-margin-right: 25px;
+margin-right: 35px;
 
 }
 
@@ -961,10 +961,11 @@ display: none !important;
 position: relative; /* Removes fixed positioning */
 display: flex; /* Enables flexbox */
 justify-content: normal; 
-align-items: left; /* Centers items vertically */
+align-items: center;
 width: auto; /* Adjusts width to content */
 margin: 0 1px; /* Adds a small margin between elements */
 transform: none; /* Removes any transform effects */
+
 }
 
 .footer-center {
