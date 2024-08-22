@@ -918,6 +918,12 @@ margin-top: 10px;
 
 */
 
+@media (max-width: 300px) {
+  .footer-container {
+    display: none !important;
+  }
+}
+
 
 @media (max-width: 760px) {
     
