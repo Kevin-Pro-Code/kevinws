@@ -812,3 +812,5 @@ window.addEventListener('resize', () => {
 
 
 
+alert("Este site está em construção!!! Confira os projetos e outras abas que foram implementadas! Encontra-se em adaptação para multiplos Browsers, então, recomenda-se o uso do Google Chrome!");
+alert("This website is under construction!!! Check the projects and other tabs that have been implemented! It is adapting to multiple browsers, then using Google Chrome is recommended!");
