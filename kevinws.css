@@ -918,7 +918,7 @@ margin-top: 10px;
 
 */
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
   .footer-container {
     display: none !important;
   }
