@@ -942,62 +942,6 @@ margin-top: 10px;
     
   }
 
-.overall-bottom-container {
 
-  justify-content: center; /* Horizontal centering */
-  align-items: center;  
-padding-right: 4%;
-
-}
-
-
-
-.footer-right {
-
-display: none !important;
-
-
-}
-
-.footer-centralizer, .footer-left {
-position: relative; /* Removes fixed positioning */
-display: flex; /* Enables flexbox */
-justify-content: normal; 
-align-items: center;
-width: auto; /* Adjusts width to content */
-margin: 0 1px; /* Adds a small margin between elements */
-transform: none; /* Removes any transform effects */
-
-}
-
-.footer-center {
-display: flex; /* Keeps the items in a row */
-align-items: left; /* Vertical alignment */
-justify-content: normal; 
-}
-
-.footer-container {
-display: flex; /* Flex container for both elements */
-justify-content: center; /* Centers the whole footer content */
-align-items: center; /* Centers vertically */
-flex-wrap: wrap; /* Allows wrapping if necessary */
-width: 100%; /* Full width of the footer */
-text-align: center; /* Centers text */
-}
-
-.english-text,
-.portuguese-text {
-   
-  margin-right: 10px;
-  
-  justify-content: center;
-  align-items: center;
-}
-
-.low-icons {
-
-  margin-left: 6px;
-    
-}
 
 }
