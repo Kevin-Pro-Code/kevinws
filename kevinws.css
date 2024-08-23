@@ -922,8 +922,6 @@ margin-top: 10px;
   .footer-container {
     display: none !important;
   }
-
-
   
 
 }
@@ -934,7 +932,7 @@ margin-top: 10px;
   body {
 
     zoom: 0.45; 
-    
+    overflow-x: hidden;
   }
      
  
@@ -951,14 +949,7 @@ width: 100%;
 
 }
 
-footer {
 
-/*
-display: none !important;
-*/
-
-
-}
 
 .footer-right {
 
