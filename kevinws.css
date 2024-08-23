@@ -918,90 +918,71 @@ margin-top: 10px;
 
 */
 
-@media (max-width: 600px) {
+@media (max-width: 0px) {
   .footer-container {
     display: none !important;
   }
+
+
+  
+
 }
 
 
 @media (max-width: 760px) {
-    
   body {
-
     zoom: 0.45; 
-    
   }
-     
- 
+
   .navbar {
-
     zoom: 0.65; 
-    
   }
 
-.overall-bottom-container {
+  .overall-bottom-container {
+    padding-right: 50px;
+    width: 100%;
+  }
 
+  footer {
+    /* display: none !important; */
+  }
 
-margin-right: 35px;
+  .footer-right {
+    display: none !important;
+  }
 
-}
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%;
+    text-align: left; /* Aligns text to the left */
+  }
 
-footer {
+  .footer-left,
+  .footer-centralizer {
+    display: flex; /* Enables flexbox */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    margin: 0 1px; /* Adds a small margin between elements */
+    width: auto; /* Adjusts width to content */
+  }
 
-/*
-display: none !important;
-*/
+  .footer-center {
+    display: flex; /* Keeps the items in a row */
+    align-items: left; /* Vertical alignment */
+    justify-content: normal; 
+  }
 
+  .english-text,
+  .portuguese-text {
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
-
-.footer-right {
-
-display: none !important;
-
-
-}
-
-.footer-centralizer, .footer-left {
-position: relative; /* Removes fixed positioning */
-display: flex; /* Enables flexbox */
-justify-content: normal; 
-align-items: center;
-width: auto; /* Adjusts width to content */
-margin: 0 1px; /* Adds a small margin between elements */
-transform: none; /* Removes any transform effects */
-
-}
-
-.footer-center {
-display: flex; /* Keeps the items in a row */
-align-items: left; /* Vertical alignment */
-justify-content: normal; 
-}
-
-.footer-container {
-display: flex; /* Flex container for both elements */
-justify-content: center; /* Centers the whole footer content */
-align-items: center; /* Centers vertically */
-flex-wrap: wrap; /* Allows wrapping if necessary */
-width: 100%; /* Full width of the footer */
-text-align: center; /* Centers text */
-}
-
-.english-text,
-.portuguese-text {
-   
-  margin-right: 10px;
-  
-  justify-content: center;
-  align-items: center;
-}
-
-.low-icons {
-
-  margin-left: 6px;
-    
-}
-
+  .low-icons {
+    margin-left: 6px;
+  }
 }
