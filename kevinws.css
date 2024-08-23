@@ -944,8 +944,8 @@ margin-top: 10px;
 
 .overall-bottom-container {
 
-  justify-content: center; /* Horizontal centering */
-  align-items: center;  
+justify-content: center; /* Horizontal centering */
+align-items: center;  
 padding-right: 4%;
 
 }
@@ -960,7 +960,7 @@ display: none !important;
 }
 
 .footer-centralizer, .footer-left {
-position: relative; /* Removes fixed positioning */
+position: fixed;
 display: flex; /* Enables flexbox */
 justify-content: normal; 
 align-items: center;
