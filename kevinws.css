@@ -687,10 +687,16 @@ footer {
   font-weight: bold;
 }
 
-.supported-text {
-
-  padding-top: 4px;
+.supported-text1, .supported-text2, .rights2 {
+  font-size: 15px; /* Sets the font size for both text elements */
+  font-family: Calibri;
 }
+
+.supported-text2 {
+
+  padding-top: 1px;
+}
+
 
 .devil {
 
