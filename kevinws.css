@@ -959,6 +959,13 @@ display: none !important;
 
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  gap: 1px; /* Space between columns */
+}
 
 
 .english-text,
