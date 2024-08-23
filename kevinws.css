@@ -690,13 +690,19 @@ footer {
 .supported-text1, .supported-text2, .rights2 {
   font-size: 15px; /* Sets the font size for both text elements */
   font-family: Calibri;
+ 
 }
 
 .supported-text2 {
 
-  padding-top: 0px;
+  padding-top: 2px;
 }
 
+.footer-container {
+
+  margin-left: 5px;
+
+}
 
 .devil {
 
