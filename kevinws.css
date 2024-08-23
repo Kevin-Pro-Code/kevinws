@@ -959,47 +959,7 @@ display: none !important;
 
 }
 
-.footer-centralizer {
-position: fixed;
-display: flex; /* Enables flexbox */
-justify-content: normal; 
-align-items: center;
-width: auto; /* Adjusts width to content */
-margin: 0 1px; /* Adds a small margin between elements */
-transform: none; /* Removes any transform effects */
 
-}
-
-.footer-left {
-  position: fixed;
-  display: flex; /* Enables flexbox */
-  justify-content: normal; 
-  align-items: center;
-  width: auto; /* Adjusts width to content */
-  margin: 0 1px; /* Adds a small margin between elements */
-  transform: none; /* Removes any transform effects */
-  margin-right: 350px;
-  }
-  
-
-.footer-center {
- 
-  position: fixed;
-  display: flex; /* Enables flexbox */
-align-items: left; /* Vertical alignment */
-justify-content: normal; 
-
-}
-
-.footer-container {
-display: flex; /* Flex container for both elements */
-justify-content: center; /* Centers the whole footer content */
-align-items: center; /* Centers vertically */
-flex-wrap: wrap; /* Allows wrapping if necessary */
-width: 100%; /* Full width of the footer */
-text-align: center; /* Centers text */
-margin-right: 140px;
-}
 
 .english-text,
 .portuguese-text {
