@@ -944,7 +944,9 @@ margin-top: 10px;
 
 .overall-bottom-container {
 
-
+  justify-content: center; /* Horizontal centering */
+  align-items: center;  
+padding-right: 4%;
 
 }
 
