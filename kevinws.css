@@ -702,14 +702,14 @@ footer {
 }
 
 .supported-text2 {
-
+  align-items: center;
   padding-top: 2px;
 }
 
 .footer-container {
-
+  align-items: center;
   margin-left: 5px;
-
+  
 }
 
 .devil {
@@ -981,7 +981,7 @@ display: none !important;
 
 .footer-center {
 
-  margin-top: 19px;
+  align-items: center;
 
 }
 
@@ -998,7 +998,7 @@ display: none !important;
 .supported-text1, .supported-text2, .rights2 {
   font-size: 15px; /* Sets the font size for both text elements */
   font-family: Calibri;
- 
+  align-items: center;
 }
 
 .english-text,
