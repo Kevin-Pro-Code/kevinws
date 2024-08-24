@@ -642,6 +642,7 @@ footer {
 
 .footer-left, .footer-center {
   margin: 0 3px; /* Add margin to separate the elements */
+  margin-bottom: 1px;
   text-align: left; /* Align text within elements to the left */
 }
 
@@ -657,7 +658,7 @@ footer {
 /* Maintain space and alignment for footer-center content */
 .footer-center p {
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   vertical-align: middle;
   
 }
@@ -973,7 +974,7 @@ display: none !important;
 
 .footer-center {
 
-  margin-top: 18px;
+  margin-top: 16px;
 
 }
 
