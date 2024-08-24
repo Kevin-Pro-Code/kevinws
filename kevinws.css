@@ -640,11 +640,18 @@ footer {
   width: 100%;
 }
 
-.footer-left, .footer-center {
+.footer-left {
   margin: 0 3px; /* Add margin to separate the elements */
-  margin-bottom: 1px;
+  margin-top: 1px;
   text-align: left; /* Align text within elements to the left */
 }
+
+.footer-center {
+  margin: 0 3px; /* Add margin to separate the elements */
+  margin-top: 17.5px;
+  text-align: left; /* Align text within elements to the left */
+}
+
 
 .footer-right {
   margin-left: auto; /* Pushes the footer-right to the far right */
@@ -974,7 +981,7 @@ display: none !important;
 
 .footer-center {
 
-  margin-top: 16px;
+  margin-top: 19px;
 
 }
 
