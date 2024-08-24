@@ -971,14 +971,27 @@ display: none !important;
 
 }
 
+.footer-center {
+
+  margin-top: 18px;
+
+}
+
+
 .footer-container {
   display: grid;
   grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
   gap: 1px; /* Space between columns */
+  
 }
 
+.supported-text1, .supported-text2, .rights2 {
+  font-size: 15px; /* Sets the font size for both text elements */
+  font-family: Calibri;
+ 
+}
 
 .english-text,
 .portuguese-text {
