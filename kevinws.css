@@ -300,6 +300,8 @@ p {
 }
 
 .portfolio-description {
+
+  position: relative;
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
@@ -309,10 +311,6 @@ p {
   border-radius: 10px;
   /* Rounded corners for the box */
   margin-top: -80px;
-  /* Adjust distance from video */
-  z-index: 0;
-  /* Ensure the description is above the video */
-  position: relative;
   /* Ensure it stays within the flow of the document */
   word-spacing: 3px;
   line-height: 2;
@@ -331,6 +329,38 @@ p {
   padding-left: 10px;
 
 }
+
+/*
+
+.flag-icon1 {
+  position: absolute;
+  top: 265px; 
+  right: 260px; 
+  width: 40px; 
+  z-index: 100; 
+}
+
+.flag-icon2 {
+  position: absolute;
+  top: 265px; 
+  right: 200px; 
+  width: 40px; 
+  z-index: 100; 
+}
+
+.flag-icon1:hover, .flag-icon2:hover  {
+  width: 55px; 
+}
+
+.flag-icon1.active {
+  width: 80px; 
+}
+
+*/
+
+
+
+
 
 .about-content {
   color: white;
@@ -703,7 +733,9 @@ footer {
 
 .supported-text2 {
   align-items: center;
+  font-family: Calibri;
   padding-top: 2px;
+ 
 }
 
 .footer-container {
