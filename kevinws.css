@@ -330,33 +330,10 @@ p {
 
 }
 
-/*
 
-.flag-icon1 {
-  position: absolute;
-  top: 265px; 
-  right: 260px; 
-  width: 40px; 
-  z-index: 100; 
-}
 
-.flag-icon2 {
-  position: absolute;
-  top: 265px; 
-  right: 200px; 
-  width: 40px; 
-  z-index: 100; 
-}
 
-.flag-icon1:hover, .flag-icon2:hover  {
-  width: 55px; 
-}
 
-.flag-icon1.active {
-  width: 80px; 
-}
-
-*/
 
 
 
@@ -417,16 +394,43 @@ font-family: Consolas, sans-serif;
 */
 }
 
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
 
 video {
-  width: 70%;
+  width: 75%;
   height: auto;
   border-radius: 40px;
   /* Adjust the value as needed */
   margin-bottom: 20px;
   /* Space between videos */
+  margin-left: 13%;
+   
 }
 
+.flags {
+    position: absolute;
+    top: 2%; /* Position from the top as a percentage of the container height */
+    right: 14%; /* Position from the right as a percentage of the container width */
+    display: flex;
+    gap: 10px; /* Space between flags */
+    border-radius: 15%;
+
+  
+}
+
+
+.flag:hover {
+  width: 50px;
+  height: auto;
+  top: 15%;
+  right: 50%;
+
+}
 
 
 
