@@ -414,8 +414,8 @@ video {
 
 .flags {
     position: absolute;
-    top: 2%; /* Position from the top as a percentage of the container height */
-    right: 14%; /* Position from the right as a percentage of the container width */
+    top: 83%; /* Position from the top as a percentage of the container height */
+    right: 29.5%; /* Position from the right as a percentage of the container width */
     display: flex;
     gap: 10px; /* Space between flags */
     border-radius: 15%;
