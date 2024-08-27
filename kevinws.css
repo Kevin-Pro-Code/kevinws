@@ -434,7 +434,7 @@ video {
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
  
   .flags {
     position: absolute;
@@ -445,7 +445,7 @@ video {
     border-radius: 15%;
     max-width: 100%;
   
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
 
  
