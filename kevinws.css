@@ -446,10 +446,11 @@ video {
   }
 
   .flags {
-      top: 70%; /* Adjust based on mobile screen size */
+      top: 90%; /* Adjust based on mobile screen size */
       right: 10%; /* Adjust based on mobile screen size */
       flex-direction: row; /* Arrange flags horizontally */
       justify-content: center; /* Center flags horizontally */
+      margin-bottom: 20px;
   }
 
   .flag {
