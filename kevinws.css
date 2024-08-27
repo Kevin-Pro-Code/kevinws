@@ -435,28 +435,20 @@ video {
 
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
-  .video-container {
-      width: 100%;
-      margin-left: 0;
-  }
-
-  video {
-      width: 100%;
-      margin-left: 0;
-  }
-
+ 
   .flags {
-      top: 90%; /* Adjust based on mobile screen size */
-      right: 10%; /* Adjust based on mobile screen size */
-      flex-direction: row; /* Arrange flags horizontally */
-      justify-content: center; /* Center flags horizontally */
-      margin-bottom: 20px;
-  }
+    position: absolute;
+    top: 83%; /* Position from the top as a percentage of the container height */
+    right: 29.5%; /* Position from the right as a percentage of the container width */
+    display: flex;
+    gap: 10px; /* Space between flags */
+    border-radius: 15%;
+    max-width: 100%;
+  
+    margin-bottom: 25px;
+}
 
-  .flag {
-      width: 30px; /* Adjust size for mobile */
-      height: auto;
-  }
+ 
 }
 
 
