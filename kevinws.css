@@ -732,7 +732,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: flex-start; /* Align items from the left */
-  align-items: flex-start; /* Center items vertically */
+  align-items: center; /* Center items vertically */
   width: 100%;
 }
 
@@ -746,6 +746,7 @@ footer {
   margin: 0 3px; /* Add margin to separate the elements */
   margin-top: 17.5px;
   text-align: left; /* Align text within elements to the left */
+  margin-bottom: 13.5px;
 }
 
 
@@ -754,7 +755,6 @@ footer {
   text-align: right;
   padding-right: 10px;
 }
-
 
 
 
@@ -1084,7 +1084,8 @@ display: none !important;
   display: flex; /* Use flexbox to arrange the text content */
   align-items: center; /* Align vertically */
   justify-content: center;
-  
+
+  vertical-align: middle;
 }
 
 
