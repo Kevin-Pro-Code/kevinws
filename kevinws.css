@@ -460,8 +460,8 @@ margin-left: 16%;
     
     .flags {
       position: absolute;
-      top: 83%;
-      right: 16%;
+      top: 81%;
+      right: 21%;
       display: flex;
       gap: 10px;
       border-radius: 15%;
