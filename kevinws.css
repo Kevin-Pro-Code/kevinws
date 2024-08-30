@@ -159,7 +159,7 @@ p {
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .kevinbox {
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,10 @@ p {
 }
 
 @media (max-width: 480px) {
- 
+  .sbutton, .sbutton2 {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
 }
 
 
@@ -435,7 +438,7 @@ margin-left: 16%;
 
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px) {
  
   .video-container {
     position: relative;
@@ -460,7 +463,7 @@ margin-left: 16%;
     .flags {
       position: absolute;
       top: 1%;
-      right: 34%;
+      right: 35%;
       display: flex;
       gap: 10px;
       border-radius: 15%;
@@ -621,7 +624,7 @@ margin-left: 16%;
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 760px) {
   .overall-bottom-container {
     grid-template-areas:
       "comment-text email-text"
@@ -660,7 +663,7 @@ margin-left: 16%;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .overall-bottom-container {
     grid-template-columns: 1fr;
     /* Single column layout for narrow screens */
@@ -1045,8 +1048,7 @@ margin-top: 10px;
 }
 
 
-
-@media (max-width: 725px) {
+@media (max-width: 760px) {
     
   body {
 
@@ -1113,8 +1115,6 @@ display: none !important;
   margin-left: 6px;
     
 }
-
-
 
 
 }
