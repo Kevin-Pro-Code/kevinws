@@ -724,7 +724,7 @@ footer {
   white-space: nowrap;
   z-index: 555;
   font-weight: bold;
-  font-family: Calibri, sans-serif;
+  font-family: Calibri;
 
 }
 
@@ -732,7 +732,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: flex-start; /* Align items from the left */
-  align-items: center; /* Center items vertically */
+  align-items: flex-start; /* Center items vertically */
   width: 100%;
 }
 
@@ -1078,15 +1078,19 @@ display: none !important;
 
 }
 
+
+.footer-left, 
 .footer-center {
-
-  align-items: center;
-
+  display: flex; /* Use flexbox to arrange the text content */
+  align-items: center; /* Align vertically */
+  justify-content: center;
+  
 }
 
 
+
 .footer-container {
-  display: grid;
+
   grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
@@ -1098,6 +1102,7 @@ display: none !important;
   font-size: 15px; /* Sets the font size for both text elements */
   font-family: Calibri;
   align-items: center;
+  justify-content: center;
 }
 
 .english-text,
@@ -1114,5 +1119,5 @@ display: none !important;
     
 }
 
-
 }
+

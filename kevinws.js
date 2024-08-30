@@ -814,7 +814,18 @@ alert("This website is under construction!!! Check the projects and other tabs t
 */
 
 
-
+window.addEventListener('resize', function() {
+    const zoomLevel = window.devicePixelRatio;
+    const container = document.querySelector('.footer-container'); // Select the container element
+  
+    if (zoomLevel >= 1.25 && zoomLevel <= 1.75) { // Check if zoom is between 125% and 175%
+      container.style.justifyContent = 'center'; // Center items horizontally
+    } else {
+      // Reset to default alignment (if you want a different alignment outside the zoom range)
+      container.style.justifyContent = 'flex-start'; // or 'flex-end', or 'space-between', etc. 
+    }
+  });
+  
 
 
 
