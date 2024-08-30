@@ -815,7 +815,7 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 
 window.addEventListener('resize', function() {
-    window.requestAnimationFrame(function() { // Schedule the code to execute before the next repaint
+    window.requestAnimationFrame(function() {
       const zoomLevel = window.devicePixelRatio;
       const container = document.querySelector('.footer-container'); 
   
