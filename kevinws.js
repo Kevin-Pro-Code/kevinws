@@ -815,6 +815,18 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 
 
+window.addEventListener('resize', function() {
+    const zoomLevel = window.devicePixelRatio;
+    const screenWidth = window.innerWidth; // Get the current screen width
+  
+    // Check if both conditions are met
+    if (screenWidth <= 780 && zoomLevel > 1.25) { // Check zoom level only if screen width is <= 780px
+      document.querySelector('.flags').style.display = 'none';
+    } else {
+      document.querySelector('.flags').style.display = 'flex';
+    }
+  });
 
 
 
+  

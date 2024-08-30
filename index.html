@@ -220,6 +220,7 @@
 .flag.br {
     opacity: 1.0; /* Default opacity for the Brazilian flag */
 }
+
                
             </style>
 
@@ -291,7 +292,7 @@
                     });
                 });
 
-                document.querySelectorAll('.flags img').forEach(flag => {
+    document.querySelectorAll('.flags img').forEach(flag => {
     flag.addEventListener('click', function() {
         // Remove the 'active' class from all flags
         document.querySelectorAll('.flags img').forEach(f => f.classList.remove('active'));

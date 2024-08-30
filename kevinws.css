@@ -460,6 +460,19 @@ margin-left: 16%;
     
     .flags {
       position: absolute;
+      top: 1%;
+      right: 33%;
+      display: flex;
+      gap: 10px;
+      border-radius: 15%;
+      max-width: 100%; 
+    
+    }
+    
+
+    /*
+    .flags {
+      position: absolute;
       top: 81%;
       right: 21%;
       display: flex;
@@ -468,15 +481,17 @@ margin-left: 16%;
       max-width: 100%; 
     
     }
-    
+    */
+
+
     .flag {
       width: 10%; 
       height: auto;
     }
     
 
-
 }
+
 
 
 
