@@ -1047,18 +1047,18 @@ margin-top: 10px;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 120px) {
     
   body {
 
-    
+    zoom: 0.45; 
     
   }
      
  
   .navbar {
 
-   
+    zoom: 0.65; 
     
   }
 
