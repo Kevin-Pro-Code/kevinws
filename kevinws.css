@@ -434,24 +434,25 @@ margin-left: 16%;
 
 
 
-/*
+
 
 @media only screen and (max-width: 780px) {
  
-  .flags {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    display: flex;
-    gap: 10px;
-    border-radius: 15%;
-    max-width: 100%; 
-  }
-
  
+
+  video {
+    width: 95%; /* Increased width for a bigger video */
+    max-width: 100%;  /* Prevent video from overflowing the container */
+    height: auto;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-left: 16%;
+    }
+    
+
 }
 
-*/
+
 
 .overall-bottom-container {
   display: grid;
