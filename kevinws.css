@@ -731,9 +731,11 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start; /* Align items from the left */
-  align-items: center; /* Center items vertically */
+  align-items: center; /* Align vertically */
+  justify-content: center;
+  vertical-align: middle;
   width: 100%;
+  
 }
 
 .footer-left {
@@ -805,6 +807,7 @@ footer {
 }
 
 .footer-container {
+  
   align-items: center;
   margin-left: 5px;
   
@@ -1084,7 +1087,6 @@ display: none !important;
   display: flex; /* Use flexbox to arrange the text content */
   align-items: center; /* Align vertically */
   justify-content: center;
-
   vertical-align: middle;
 }
 
@@ -1096,6 +1098,7 @@ display: none !important;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
   gap: 1px; /* Space between columns */
+  
   
 }
 
