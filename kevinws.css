@@ -438,10 +438,19 @@ margin-left: 16%;
 
 @media only screen and (max-width: 780px) {
  
- 
+  .video-container {
+    position: relative;
+    display: flex; /* Make it a flexbox container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-right: 140px;
+  }
 
   video {
-    width: 95%; /* Increased width for a bigger video */
+    width: 90%; /* Increased width for a bigger video */
     max-width: 100%;  /* Prevent video from overflowing the container */
     height: auto;
     border-radius: 40px;
@@ -449,6 +458,23 @@ margin-left: 16%;
     margin-left: 16%;
     }
     
+    .flags {
+      position: absolute;
+      top: 83%;
+      right: 16%;
+      display: flex;
+      gap: 10px;
+      border-radius: 15%;
+      max-width: 100%; 
+    
+    }
+    
+    .flag {
+      width: 10%; 
+      height: auto;
+    }
+    
+
 
 }
 
