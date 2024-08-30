@@ -312,6 +312,7 @@ p {
   /* Rounded corners for the box */
   margin-top: -80px;
   /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
   word-spacing: 3px;
   line-height: 2;
 
@@ -403,6 +404,7 @@ font-family: Consolas, sans-serif;
   max-width: 900px;
   height: auto;
   margin-right: 140px;
+  
 }
 
 
