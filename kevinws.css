@@ -708,6 +708,7 @@ margin-left: 16%;
 
 
 footer {
+
   background-color: white;
   color: white;
   text-align: center;
@@ -725,8 +726,8 @@ footer {
   font-weight: bold;
   font-family: Calibri, sans-serif;
 
-
 }
+
 
 .footer-container {
   display: flex;
@@ -988,6 +989,8 @@ margin-top: 10px;
 
 
 
+
+
 /*
 
 
@@ -1093,7 +1096,7 @@ display: none !important;
 }
 
 .supported-text1, .supported-text2, .rights2 {
-  font-size: 15px; /* Sets the font size for both text elements */
+  font-size: 10px; /* Sets the font size for both text elements */
   font-family: Calibri;
   align-items: center;
 }
