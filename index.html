@@ -330,16 +330,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-window.addEventListener('resize', function() {
-      const zoomLevel = window.devicePixelRatio;
-      const footerRight = document.querySelector('.footer-right');
+let resizeTimeout;
 
-      if (zoomLevel > 1.11) { 
-        footerRight.style.display = 'none'; 
-      } else { 
-        footerRight.style.display = 'flex'; 
-      }
-    });
+window.addEventListener('resize', function() {
+  clearTimeout(resizeTimeout); // Clear any existing timeout
+  resizeTimeout = setTimeout(function() {
+    const zoomLevel = window.devicePixelRatio;
+    const footerRight = document.querySelector('.footer-right');
+
+    if (zoomLevel > 1.11) { 
+      footerRight.style.display = 'none'; 
+    } else { 
+      footerRight.style.display = 'flex'; 
+    }
+  }, 100); // Adjust the delay (in milliseconds) as needed
+});
+
+
+
 
 </script>
             
