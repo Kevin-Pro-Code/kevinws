@@ -1011,54 +1011,6 @@ margin-top: 10px;
 
 
 
-
-/*
-
-
-@media only screen and (min-width: 1px) {
-
-  @-moz-document url-prefix() {
-    
-
-    .firefox-mobile .home-description {
-      zoom: 2.3;
-    }
- 
- 
-
-  .firefox-mobile .top-search-buttons {
-   
-    transform: translateY(-95%) translateX(75%);
-  }
-  
-
-  .firefox-mobile .counter img {
-    transform: translateY(-25%) translateX(-1%);
-  }
-
-  .firefox-mobile .counter-text {
-    font-size: 28px; 
-    top: 150px; 
-    left: 540px; 
-  }
-
-  .firefox-mobile .counter-text2 {
-    font-size: 28px; 
-    top: 150px; 
-    left: 610px; 
-  }
-
-  .firefox-mobile .overall-bottom-container {
-  margin-bottom: 25px;
-
-  }
-
-}
-
-}
-
-*/
-
 @media (max-width: 300px) {
   .footer-container {
     display: none !important;
@@ -1100,14 +1052,13 @@ display: none !important;
 }
 
 
-.footer-left, 
+.footer-left,
 .footer-center {
-  display: flex; /* Use flexbox to arrange the text content */
-  align-items: center; /* Align vertically */
-  justify-content: center;
-  vertical-align: middle;
+  display: flex; 
+  justify-content: flex-start;  /* Align to the left */
+  align-items: center; 
+  /* ... other styles ... */
 }
-
 
 
 .footer-container {
