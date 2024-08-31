@@ -25,17 +25,6 @@ p {
 }
 
 
- /* Styles for smartphones 
- @media (max-width: 700px) {
-  .counter {
-      position: absolute;
-     
-      fo
-  }
-}
-*/
-
-
 .kevinbox {
   display: flex;
   justify-content: center; /* Center content */
@@ -703,15 +692,15 @@ footer {
 
   background-color: white;
   color: white;
-  text-align: center;
   padding: 10px 1px;
   height: 20px;
   width: 100%;
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
   font-weight: bold;
   white-space: nowrap;
   z-index: 555;
@@ -723,7 +712,7 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: flex-start; /* Align vertically */
+  align-items: flex-start; 
   justify-content: flex-start;
   vertical-align: middle;
   width: 100%;
@@ -1043,7 +1032,6 @@ padding-right: 4%;
 }
 
 
-
 .footer-right {
 
 display: none !important;
@@ -1052,13 +1040,14 @@ display: none !important;
 }
 
 
-.footer-left,
+.footer-left, 
 .footer-center {
-  display: flex; 
-  justify-content: flex-start;  /* Align to the left */
-  align-items: center; 
-  /* ... other styles ... */
+  display: flex; /* Use flexbox to arrange the text content */
+  align-items: flex-start; /* Align vertically */
+  justify-content: flex-start;
+  vertical-align: middle;
 }
+
 
 
 .footer-container {
