@@ -698,7 +698,7 @@ footer {
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
@@ -712,10 +712,10 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: flex-start; 
-  justify-content: flex-start;
+  align-items: center; 
+  justify-content: center;
   vertical-align: middle;
-  width: 100%;
+  
   
 }
 
@@ -1042,7 +1042,7 @@ display: none !important;
 
 .footer-left, 
 .footer-center {
-  display: flex; /* Use flexbox to arrange the text content */
+  
   align-items: flex-start; /* Align vertically */
   justify-content: flex-start;
   vertical-align: middle;
@@ -1083,10 +1083,3 @@ display: none !important;
 
 }
 
-/* For larger screens (regular desktop) */
-@media only screen and (min-width: 780px) and (max-width: 1024px) {
-  /* Styles for larger screens */
-  .footer-right {
-    display: none !important;
-  }
-}
