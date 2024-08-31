@@ -344,12 +344,12 @@ window.addEventListener('resize', function() {
     window.addEventListener('resize', function() {
   window.requestAnimationFrame(function() {
     const zoomLevel = window.devicePixelRatio;
-    const footer = document.querySelector('footer'); 
+    const footer = document.querySelector('footer');
 
     // Check if it's Android and likely in desktop mode
     if (isAndroidDesktopMode()) { 
-      if (zoomLevel > 1.5) { 
-        footer.style.zoom = '0.5'; // Zoom out to 50%
+      if (zoomLevel > 1.25 && zoomLevel <= 1.75) {
+        footer.style.zoom = '0.7'; // Zoom out to 70%
       } else {
         footer.style.zoom = '1'; // Reset to default zoom (100%)
       }
