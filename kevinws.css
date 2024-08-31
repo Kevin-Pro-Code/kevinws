@@ -332,14 +332,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
 .about-content {
   color: white;
   padding-left: 10px;
@@ -731,8 +723,8 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: center; /* Align vertically */
-  justify-content: center;
+  align-items: flex-start; /* Align vertically */
+  justify-content: flex-start;
   vertical-align: middle;
   width: 100%;
   
@@ -756,6 +748,7 @@ footer {
   margin-left: auto; /* Pushes the footer-right to the far right */
   text-align: right;
   padding-right: 10px;
+  vertical-align: middle;
 }
 
 
@@ -841,60 +834,76 @@ footer {
   font-size: 30px;
   color: red;
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-youtube:hover {
   font-size: 30px;
   color: rgba(39, 38, 38, 0.322);
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-envelope {
   font-size: 29px;
   color: black;
-  padding: 5px;
+  margin-top: 2px;
+  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-envelope:hover {
   font-size: 29px;
   color: rgba(39, 38, 38, 0.322);
-  padding: 5px;
+  margin-top: 2px;
+  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-telegram {
   font-size: 29.5px;
   color: rgb(49, 172, 224);
-  padding: 5px;
+  padding: 6px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-telegram:hover {
   font-size: 29.5px;
   color: rgba(39, 38, 38, 0.322);
-  padding: 5px;
+  padding: 6px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-discord {
   font-size: 29px;
   color: rgba(84, 98, 228);
-  padding: 5px;
+  margin-top: 4px;
+  vertical-align: middle;
+  padding: 2px;
 }
 
 .footer-right .fa-discord:hover {
   font-size: 29px;
   color: rgba(39, 38, 38, 0.322);
-  padding: 5px;
+  margin-top: 4px;
+  vertical-align: middle;
+  padding: 2px;
 }
 
 .footer-right .fa-square-github {
   font-size: 33px;
   color: rgb(0, 0, 0);
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-square-github:hover {
   font-size: 33px;
   color: rgba(39, 38, 38, 0.322);
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-linkedin {
@@ -905,6 +914,7 @@ footer {
   /* Adjust for round corners */
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 }
 
 .footer-right .fa-linkedin:hover {
@@ -915,6 +925,7 @@ footer {
   /* Adjust for round corners */
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 }
 
 
@@ -922,24 +933,28 @@ footer {
   font-size: 32px;
   color: black;
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-instagram:hover {
   font-size: 32px;
   color: rgba(39, 38, 38, 0.322);
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-square-facebook {
   font-size: 31px;
   color: rgb(1, 26, 110);
   padding: 5px;
+  vertical-align: middle;
 }
 
 .footer-right .fa-square-facebook:hover {
   font-size: 31px;
   color: rgba(39, 38, 38, 0.322);
   padding: 5px;
+  vertical-align: middle;
 }
 
 /*
@@ -958,36 +973,37 @@ margin-top: 10px;
 .footer-right .fa-whatsapp {
   color: black;
   font-size: 33px;
-  padding: 2px 5px;
+  padding: 4px 5px;
   margin-bottom: 2px;
-
+  vertical-align: middle;
 
 }
 
 .footer-right .fa-whatsapp:hover {
   color: white;
   font-size: 33px;
-  padding: 2px 5px;
+  padding: 4px 5px;
   border-radius: 10%;
   background-color: lime;
-
+  vertical-align: middle;
 }
 
 .footer-right .fa-x-twitter {
   font-size: 31px;
   color: black;
-  padding: 3px;
+  padding: 5px;
   padding-right: 6px;
   padding-left: 1.5px;
-
+  vertical-align: middle;
 }
 
 .footer-right .fa-x-twitter:hover {
   font-size: 31px;
   color: rgba(39, 38, 38, 0.322);
-  padding: 3px;
+  padding: 5px;
   padding-right: 6px;
   padding-left: 1.5px;
+  vertical-align: middle;
 }
 
 
