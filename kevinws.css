@@ -1083,3 +1083,10 @@ display: none !important;
 
 }
 
+/* For larger screens (regular desktop) */
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+  /* Styles for larger screens */
+  .footer-right {
+    display: none !important;
+  }
+}
