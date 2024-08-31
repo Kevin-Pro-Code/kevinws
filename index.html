@@ -330,24 +330,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-window.addEventListener('resize', function() {
-      const zoomLevel = window.devicePixelRatio;
-      const footerRight = document.querySelector('.footer-right');
+function updateFooterDisplay() {
+  const zoomLevel = window.devicePixelRatio;
+  const footerRight = document.querySelector('.footer-right');
 
-      if (zoomLevel > 1.11) { 
-        footerRight.style.display = 'none'; 
-      } else { 
-        footerRight.style.display = 'flex'; 
-      }
-    });
+  if (zoomLevel > 1.11) {
+    footerRight.style.display = 'none';
+  } else {
+    footerRight.style.display = 'flex';
+  }
+}
 
-    window.addEventListener('resize', function() {
+function updateFooterZoom() {
   window.requestAnimationFrame(function() {
     const zoomLevel = window.devicePixelRatio;
     const footer = document.querySelector('footer');
 
     // Check if it's Android and likely in desktop mode
-    if (isAndroidDesktopMode()) { 
+    if (isAndroidDesktopMode()) {
       if (zoomLevel > 1.25 && zoomLevel <= 1.75) {
         footer.style.zoom = '0.7'; // Zoom out to 70%
       } else {
@@ -355,14 +355,24 @@ window.addEventListener('resize', function() {
       }
     }
   });
-});
+}
 
 function isAndroidDesktopMode() {
   // Check if the user agent contains 'Android' and keywords for desktop mode
-  return /Android/.test(navigator.userAgent) && 
-         /Windows|Macintosh|Linux/.test(navigator.userAgent) && 
+  return /Android/.test(navigator.userAgent) &&
+         /Windows|Macintosh|Linux/.test(navigator.userAgent) &&
          !(/Mobile|Tablet/.test(navigator.userAgent));
 }
+
+// Execute the functions during initialization
+document.addEventListener('DOMContentLoaded', function() {
+  updateFooterDisplay();
+  updateFooterZoom();
+});
+
+// Add the event listeners for window resize
+window.addEventListener('resize', updateFooterDisplay);
+window.addEventListener('resize', updateFooterZoom);
 
 </script>
             
