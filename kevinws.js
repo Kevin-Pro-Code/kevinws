@@ -817,4 +817,13 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
   
 
-
+window.addEventListener('resize', function() {
+    window.requestAnimationFrame(function() {
+      const zoomLevel = window.devicePixelRatio;
+      const container = document.querySelector('.footer-container'); 
+  
+      if (zoomLevel >= 1.25 && zoomLevel <= 1.50) {
+        container.style.justifyContent = 'center'; 
+      } 
+    });
+  });

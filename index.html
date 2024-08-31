@@ -283,18 +283,7 @@
             
             <script>
 
-window.addEventListener('resize', function() {
-  window.requestAnimationFrame(function() {
-    const zoomLevel = window.devicePixelRatio;
-    const container = document.querySelector('.footer-container'); 
 
-    if (zoomLevel >= 1.25 && zoomLevel <= 5.0) { // Zoom between 125% and 500%
-      container.style.justifyContent = 'center'; 
-    } else if (zoomLevel < 1.25) { // Zoom less than 125%
-      container.style.justifyContent = 'flex-start'; 
-    }
-  });
-});
 
 
                 document.querySelectorAll('.flags img').forEach(flag => {

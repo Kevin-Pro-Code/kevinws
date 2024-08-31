@@ -823,11 +823,16 @@ footer {
 
 
 .footer-right {
+  display: flex;   /* Turn the footer-right into a flex container */
+  justify-content: flex-start; /* Align items to the left (optional) */ 
+  align-items: center;    /* Align items vertically to the center (optional) */
+  padding: 0px 0px;      /* Keep the existing padding */
+}
 
-  text-align: right;
-  padding: 0px 0px;
-  margin-top: 2px;
 
+
+.footer-right a { /* Style the links within the footer-right */
+  margin-right: 4px;  /* Add some space between the icons */
 }
 
 .footer-right .fa-youtube {
@@ -842,23 +847,20 @@ footer {
   color: rgba(39, 38, 38, 0.322);
   padding: 5px;
   vertical-align: middle;
+
 }
 
 .footer-right .fa-envelope {
   font-size: 29px;
   color: black;
-  margin-top: 2px;
-  margin-right: 5px;
-  margin-left: 5px;
+  padding: 6px;
   vertical-align: middle;
 }
 
 .footer-right .fa-envelope:hover {
   font-size: 29px;
   color: rgba(39, 38, 38, 0.322);
-  margin-top: 2px;
-  margin-right: 5px;
-  margin-left: 5px;
+  padding: 6px;
   vertical-align: middle;
 }
 
