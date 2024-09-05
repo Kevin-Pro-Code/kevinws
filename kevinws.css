@@ -874,17 +874,17 @@ footer {
 .footer-right .fa-discord {
   font-size: 29px;
   color: rgba(84, 98, 228);
-  margin-top: 4px;
+  margin-top: 1px;
   vertical-align: middle;
-  padding: 2px;
+  padding: 1px;
 }
 
 .footer-right .fa-discord:hover {
   font-size: 29px;
   color: rgba(39, 38, 38, 0.322);
-  margin-top: 4px;
+  margin-top: 1px;
   vertical-align: middle;
-  padding: 2px;
+  padding: 1px;
 }
 
 .footer-right .fa-square-github {
@@ -1005,6 +1005,11 @@ margin-top: 10px;
 
 
 @media (max-width: 300px) {
+ 
+  footer {
+  display: none !important;
+ }
+ 
   .footer-container {
     display: none !important;
   }
