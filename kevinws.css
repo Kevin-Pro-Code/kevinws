@@ -180,9 +180,6 @@ p {
 }
 
 
-
-
-
 /*
 
 .overall-top-container {
@@ -1005,7 +1002,7 @@ margin-top: 10px;
 
 
 @media (max-width: 300px) {
- 
+ /*
   footer {
   display: none !important;
  }
@@ -1015,7 +1012,7 @@ margin-top: 10px;
   }
   
 }
-
+*/
 
 @media (max-width: 760px) {
     
