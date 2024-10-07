@@ -209,7 +209,7 @@ p {
 
 
 
-.home-container {
+.about-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -222,7 +222,7 @@ p {
 
 }
 
-.home-description {
+.about-description {
   background-color: black;
   border: 4px solid blue;
   padding: 15px;
@@ -238,7 +238,7 @@ p {
   text-align: left;
 }
 
-.home-description p {
+.about-description p {
   margin: 0;
   /* Remove default margin */
   color: white;
@@ -246,7 +246,7 @@ p {
 
 }
 
-.home-content {
+.about-content {
   color: white;
   padding-left: 10px;
 
@@ -278,7 +278,7 @@ p {
 }
 
 
-.portfolio-container {
+.projects-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -292,7 +292,7 @@ p {
 
 }
 
-.portfolio-description {
+.projects-description {
 
   position: relative;
   background-color: black;
@@ -312,13 +312,13 @@ p {
 }
 
 
-.portfolio-description p {
+.projects-description p {
   margin: 0;
   /* Remove default margin */
   color: white;
 }
 
-.portfolio-content {
+.projects-content {
 
   padding-left: 10px;
 

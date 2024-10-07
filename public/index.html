@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="kevinws.css">
-    <link rel="stylesheet" href="kevinws2.css">
+    <link rel="stylesheet" href="/public/kevinws.css">
+    <link rel="stylesheet" href="/public/kevinws2.css">
 
-    <script src="kevinws.js"></script>
-    <script src="kevinws2.js"></script>
+    <script src="/public/kevinws.js"></script>
+    <script src="/public/kevinws2.js"></script>
     <title>Kevin's Portfolio</title>
 
 </head>
 <body>
-                  
-       
+      
     <div class="navbar-encapsulation">
         
     <div class="navbar">
@@ -25,14 +24,14 @@
                 <div id="sub-tabs-box" class="sub-tabs-box">
                     <ul>
                         <li>
-                            <a href="#subtab1" class="subtab" ><i class="fa-regular fa-address-card"></i> 
+                            <a href="#subtab1" class="subtab" id="about-tab"><i class="fa-regular fa-address-card"></i> 
                                 <span class="translate-text" data-translate="st1">Sobre</span>
                         </a>
                         </li>
                     </ul>   
                         <ul>            
                         <li>
-                            <a href="#subtab2" class="subtab"><i class="fa-regular fa-copyright"></i>
+                            <a href="#subtab2" class="subtab" id="copyright-tab"><i class="fa-regular fa-copyright"></i>
                                 <span class="translate-text" data-translate="st2">Termos de Direitos Autorais</span>
 
                         </a>
@@ -46,13 +45,13 @@
                 <div id="sub-tabs-box2" class="sub-tabs-box2">
                     
                     <ul>
-                        <li><a href="#subtab3" class="subtab"><i class="fa-regular fa-newspaper"></i>
+                        <li><a href="#subtab3" class="subtab" id="articles-tab"><i class="fa-regular fa-newspaper"></i>
                             <span class="translate-text" data-translate="st3">Artigos</span>
                     </a>
                     </li>
                     </ul>
                         <ul>
-                        <li><a href="#subtab4" class="subtab"><i class="fa-regular fa-image"></i>
+                        <li><a href="#subtab4" class="subtab" id="images-tab"><i class="fa-regular fa-image"></i>
                             <span class="translate-text" data-translate="st4">Imagens</span>
                     </a>
                     </li>
@@ -71,19 +70,19 @@
             
                 <div id="sub-tabs-box3" class="sub-tabs-box3">
                     <ul>
-                        <li><a href="#subtab6" class="subtab"><i class="fa-solid fa-user-group"></i>
+                        <li><a href="#subtab6" class="subtab" id="coop-tab"><i class="fa-solid fa-user-group"></i>
                             <span class="translate-text" data-translate="st6">Co-op</span>
                     </a>                    
                     </li>
                     </ul>
                     <ul>
-                        <li><a href="#subtab7" class="subtab"><i class="fa-solid fa-robot"></i>
+                        <li><a href="#subtab7" class="subtab" id="tradingbot-tab"><i class="fa-solid fa-robot"></i>
                             <span class="translate-text" data-translate="st7">Robôs de Investimento</span>
                     </a>
                     </li>
                     </ul>
                     <ul>
-                        <li><a href="#subtab8" class="subtab"><i class="fa-solid fa-language"></i>
+                        <li><a href="#subtab8" class="subtab" id="languages-tab"><i class="fa-solid fa-language"></i>
                             <span class="translate-text" data-translate="st8">Línguas</span>
                     </a>
                     </li>
@@ -118,8 +117,7 @@
        
         </ul>
         
-    </div>
-    
+    </div>    
     
     <div class="kevinbox">
         
@@ -131,14 +129,14 @@
         
         <div class="top-search-buttons">
             <div class="button-row">
-            <!--
+            
             <button class="sbutton">Intro</button>
-            -->
+            
             <button class="sbutton">Assembly</button>
             <button class="sbutton">C</button>
             <button class="sbutton">C++</button>
             <button class="sbutton">Java</button>
-            <button class="sbutton">English</button>
+            <button class="sbutton">English</butto
             <button class="sbutton">Russian</button>
             <button class="sbutton">LeetCode</button>
             <button class="sbutton">SQL</button>
@@ -148,9 +146,9 @@
             <button class="sbutton2">HTML</button>
             <button class="sbutton2">CSS</button>
             <button class="sbutton2">JavaScript</button>
-            <!--
-            <button class="sbutton2">React</button>
-            -->
+            
+            <button class="sbutton2">French</button>
+            
             <button class="sbutton2">JavaFX</button>
             <button class="sbutton2">Python</button>
             <button class="sbutton2">Lua</button>
@@ -179,13 +177,13 @@
     </div>
 </div>  
 
-    <main>
-                             
+        <main>        
+
             <br><br><br><br><br><br><br><br><br>
 
-                   <div class="home-content">
-                    <div class="home-container">
-                        <div class="home-description">
+                   <div class="about-content" style="display: none;">
+                    <div class="about-container">
+                        <div class="about-description">
                             <p> 
                                 <div class="ola-text" data-translate="greeting">
                                Saudações!
@@ -193,8 +191,8 @@
                                 </div>
                                 <br>
                                 
-                                <div class="home-text" data-translate="home-itext">
-                                Meu nome é Kevin, nasci na Suíça em 1994 e me mudei para o Brasil depois de 1 ano e meio, filho de mãe brasileira e pai português, tenho parentes espalhados por toda a Europa e Brasil, a seguir, tenho interesse em programação de computadores e também enfatizo meus interesses gerais por linguagens. Depois que meu inglês melhorou, tive algum tempo para aprender francês e sueco, porque achei lindo, mas o russo parecia ser uma língua mais poderosa em alguns aspectos, então eu a escolhi. Formei-me como Técnico em Radiologia e trabalhei durante anos na oficina do meu pai, então decidi migrar para a área de TI. 
+                                <div class="about-text" data-translate="about-itext">
+                                Meu nome é Kevin, nasci na Suíça em 1994 e me mudei para o Brasil depois de 1 ano e meio, filho de mãe brasileira e pai português, tenho parentes espalhados por toda a Europa e Brasil, a seguir, tenho interesse em programação de computadores e também enfatizo meus interesses gerais por linguagens. Depois que meu inglês melhorou, tive algum tempo para aprender francês e sueco, porque achei bonito, mas o russo parecia ser uma língua mais poderosa em alguns aspectos, então eu a escolhi. Formei-me como Técnico em Radiologia e trabalhei durante anos na oficina do meu pai, então decidi migrar para a área de TI. 
                                 </div>
                                 <div id="extra-text-container"></div>
                                 <button class="expand-toabout">>></button>
@@ -219,16 +217,27 @@
 .flag.br {
     opacity: 1.0; /* Default opacity for the Brazilian flag */
 }
-
-               
             </style>
 
-            <div class="portfolio-content">
+
+<div class="copyright-content" style="display: none;">
+    <p class="title">Copyright</p>
+</div>
+
+<div class="articles-content" style="display: none;">
+    <p class="title">Articles</p>
+</div>
+
+<div class="images-content" style="display: none;">
+    <p class="title">Images</p>
+</div>
+
+            <div class="projects-content">
                 <br><br><br>
                 <p class="title">Video Title</p>
                 <br><br><br>
-                <div class="portfolio-container">
-                    <div class="portfolio-description">
+                <div class="projects-container">
+                    <div class="projects-description">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
                     </div>
                     
@@ -245,8 +254,8 @@
                 </div>
                 <p class="title">Video Title</p>
                 <br><br><br>
-                <div class="portfolio-container">
-                    <div class="portfolio-description">
+                <div class="projects-container">
+                    <div class="projects-description">
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
                     </div>
                     
@@ -262,8 +271,8 @@
                     </div>
                 </div>
                 <p class="title">Video Title</p><br><br><br>
-                <div class="portfolio-container">
-                    <div class="portfolio-description">
+                <div class="projects-container">
+                    <div class="projects-description">
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text...</p>
                     </div>
                     
@@ -381,41 +390,23 @@ window.addEventListener('resize', updateFooterZoom);
 </script>
             
 
-    
-    <div class="service-content" style="display: none">
-    
+  
+    <div class="coop-content" style="display: none">
+        <p class="title">Coop</p>
     </div>
-    <div class="co-op-content" style="display: none">
 
+    <div class="tradingbot-content" style="display: none">
+    <p class="title">Trading Bot</p>
     </div>
+
     <div class="languages-content" style="display: none">
-
+        <p class="title">Languages</p>
     </div>
-    <div class="extras-content" style="display: none"> 
-
+    
+    <div class="contact-content" style="display: none;">
+        <p class="title">Contact</p>
     </div>
-
-<!--
-    <div class="about-content">
-
-        <div class="about-container">
-        <div class="about-description">
-            <p> 
-                <div class="ola-text">
-                What is this website about?
-                </div>
-               <br>
-               This website is mainly about projects in the field of information technology (programming), more specifically in: C, C++, Java, Web and Android. It is with pleasure that I show you my projects and intentions, I am also interested in trading robots and languages as hobby, which are things that are also part of the IT area. In my history with programming, I began to understand it in interspersed periods and saw concepts such as variables and conditions in Ruby from RPG Maker XP. Soon after, I started programming some bots for the Tibia game called Elf Bot, in which I dealt with general programming in the Lua language. Years later I took a course in the C language, and that was when some more serious studies began, when I read a book of 250 pages in a short time and I got 10/10 on a C test. Soon after that I started dealing with other content such as C++ and created my first project in C++ with more than 6 thousand lines of code, which worked in the IDE console. This project brought me joy, because I understood that discipline and organization are needed to build a project. That's when I took a HTML course and after that I got involved with CSS and JavaScript (This website was made using HTML5, CSS3, JavaScript and React). And it was Java and MYSQL that made things more exciting and it was also surprising to deal with a purely object-oriented language. After that, I started a passion for Web Browsers, such as the one i did in the Java framework, called JavaFX. So, realizing that the onset of the mobile era dealt with Java, I decided to get to know Kotlin, and it became one of my main focus on programming. I have the perspective that any project that is developed must apply principles, and everything that is done results in lessons learned. It is through this type of notion that I shape myself, thus adapting to the posture and behaviors of colleagues and the company. I am always open to learning the syntax of programming languages, understanding lexical and semantic parameters and also existing programming methodologies. I will name a few areas where I want to develop skills or gain knowledge about and that will upgrade my capacities into my future programming. Let's start with Assembly: this programming language is on the opposite pole of more abstracted languages because it is a low level language, it is closely related to machine language and the usage of a low level language is not only about movements we do through robotics, such as microprocessors, it is about basic and little things that is indispensable for an operational system such as it's drivers. It also can be part of how an IDE compiles a language through the low level code it is written. Other thing i wanna have contact with and improve is bending toward computer science foundations, because it gives to the programmer the apparatus for a better programming structure. Also programming challenges such as ''LeetCode'' is always useful to be practicing, for me into some languages as: Java or C++, but the extra complexity about where a language can reach through its libraries and functions is not about to be explored too deeply without having something to do with it (without a program that is practical and useful). There's an importance in improving the NoSQL area and gaining knowledge about how a DB operates with certain programming languages, as it is the average SQL. I also plan to involve myself with programming of close environments that simulate self-driven cars, usually in Python and C++, such as CARLA.
-
-            </p>
-            
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-
-</div>
--->
-
+    
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
