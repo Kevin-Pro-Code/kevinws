@@ -260,7 +260,7 @@ p {
 
 .expand-toabout {
   font-weight: bold;
-  font-size: 40px; /* Increase font size */
+  font-size: 30px; /* Increase font size */
   margin-left: auto; /* Align button to the right */
   margin-top: 20px;
  
@@ -268,9 +268,9 @@ p {
   border: none; /* Remove default border */
   background-color: white; /* Example background color */
   color: black; /* Example text color */
-  padding: 10px 20px; /* Optional padding */
+  padding: 10px 30px; /* Optional padding */
   cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 15px; /* Optional rounded corners */
+  border-radius: 10px; /* Optional rounded corners */
   
 }
 
