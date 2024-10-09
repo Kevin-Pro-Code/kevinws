@@ -518,7 +518,9 @@ alert("This website is under construction!!! Check the projects and other tabs t
 */
 
 
-
+if (window.devicePixelRatio > 1.5) {
+    document.querySelector('.navbar').style.fontSize = '2.85rem';
+  }
   
 
 

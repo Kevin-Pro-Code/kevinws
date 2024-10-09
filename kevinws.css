@@ -11,9 +11,11 @@ background-color: rgb(214, 214, 214);
 }
 
 .navbar {
-  font-size: 4vw;  /* Adjusts relative to the viewport width */
-  padding: 2vh;    /* Vertical padding relative to viewport height */
+
+  zoom: 0.85; 
+  
 }
+
 
 p {
   color: black;
