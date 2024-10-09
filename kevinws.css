@@ -19,7 +19,7 @@ background-color: rgb(214, 214, 214);
 /* Adjust for high-density screens */
 @media (min-resolution: 2dppx) {
   .navbar {
-    font-size: 0.9rem;
+    font-size: 0.1rem;
   }
 }
 
