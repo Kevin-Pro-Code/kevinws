@@ -10,17 +10,10 @@ background-color: rgb(214, 214, 214);
   display: block;
 }
 
-/* Default styles */
 .navbar {
-  font-size: 1rem;
-  padding: 10px;
-}
 
-/* Adjust for high-density screens */
-@media (min-resolution: 2dppx) {
-  .navbar {
-    font-size: 0.1rem;
-  }
+  zoom: 0.85; 
+  
 }
 
 
