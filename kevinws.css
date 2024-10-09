@@ -10,12 +10,26 @@ background-color: rgb(214, 214, 214);
   display: block;
 }
 
+/* Default navbar styling */
 .navbar {
-
-  zoom: 0.85; 
-  
+  font-size: 1rem;
+  padding: 10px;
 }
 
+/* High pixel density screens */
+@media (min-resolution: 2dppx) {
+  .navbar {
+    font-size: 0.9rem; /* Slightly reduce font size for high-density displays */
+  }
+}
+
+/* Adjust specifically for different screen sizes */
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.8rem; /* Further adjustments for smaller screens */
+    padding: 8px;
+  }
+}
 
 p {
   color: black;
@@ -474,9 +488,6 @@ margin-left: 16%;
 
 }
 
-
-
-
 .overall-bottom-container {
   display: grid;
   gap: 5px;
@@ -495,8 +506,6 @@ margin-left: 16%;
   padding-left: 55px;
   overflow: hidden;
 
-  
-
 }
 
 .title-mail-box {
@@ -504,10 +513,8 @@ margin-left: 16%;
   flex-direction: column;
   align-items: center;
   width: 100%;
-
   
 }
-
 
 
 .comment-text {
@@ -549,7 +556,6 @@ margin-left: 16%;
   font-family: Calibri, sans-serif;
   text-indent: 10px;
   
-
 }
 
 .comment-container {
