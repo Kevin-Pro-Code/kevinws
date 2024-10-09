@@ -522,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const navbar = document.querySelector('.navbar');
         if (navbar) {
             // Attempt alternative scaling approach
-            navbar.style.transform = 'scale(1.1)'; // Adjust based on observed needs
+            navbar.style.transform = 'scale(1.5)'; // Adjust based on observed needs
             navbar.style.transformOrigin = '0 0';
         }
     }
