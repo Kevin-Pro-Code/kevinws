@@ -1027,7 +1027,7 @@ margin-top: 10px;
  
   .navbar {
 
-    zoom: 0.525; 
+    zoom: 0.590; 
     
   }
 
@@ -1054,7 +1054,7 @@ zoom: 1.5;
   align-items: flex-start; /* Align vertically */
   justify-content: flex-start;
   vertical-align: middle;
-  zoom: 1.5; 
+  zoom: 0.9; 
 }
 
 
