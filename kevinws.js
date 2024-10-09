@@ -518,10 +518,13 @@ alert("This website is under construction!!! Check the projects and other tabs t
 */
 
 
-if (window.devicePixelRatio < 2) {
-    // Change the font size and scale of the navbar
-    const navbar = document.querySelector('.navbar');
-
-    navbar.style.transform = 'scale(0.5)'; // Apply scaling
-}
-
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.devicePixelRatio > 2) {
+        // Change the font size and scale of the navbar
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {  // Ensure the element exists before modifying it
+            navbar.style.fontSize = '0.9rem'; // Adjust font size
+            navbar.style.transform = 'scale(0.95)'; // Apply scaling
+        }
+    }
+});
