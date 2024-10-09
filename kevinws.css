@@ -1023,14 +1023,7 @@ margin-top: 10px;
     
   }
 
-  @media screen and (min-resolution: 2dppx) {
-    .navbar {
-        font-size: 0.9rem;
-        transform: scale(0.95); /* Optional redundancy under CSS */
-    }
-}
-
-
+  
 .overall-bottom-container {
 
 justify-content: center; /* Horizontal centering */
