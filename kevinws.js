@@ -519,7 +519,9 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 
 if (window.devicePixelRatio > 2) {
-    document.querySelector('.navbar').style.fontSize = '0.9rem';
+    // Change the font size and scale of the navbar
+    const navbar = document.querySelector('.navbar');
+    navbar.style.fontSize = '0.9rem'; // Optionally adjust font size
+    navbar.style.transform = 'scale(1.55)'; // Apply scaling
 }
-
 
