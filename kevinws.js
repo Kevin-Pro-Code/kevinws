@@ -518,8 +518,8 @@ alert("This website is under construction!!! Check the projects and other tabs t
 */
 
 
-if (window.devicePixelRatio > 1.5) {
-    document.documentElement.style.setProperty('--navbar-scale', '0.95');
-  }
+if (window.devicePixelRatio > 2) {
+    document.querySelector('.navbar').style.fontSize = '0.9rem';
+}
 
 
