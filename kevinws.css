@@ -21,6 +21,7 @@ background-color: rgb(214, 214, 214);
   .navbar {
       font-size: 0.7rem; /* Adjust font size for high-density screens */
       padding: 8px; /* Make padding adjustments if necessary */
+      zoom: 1.85; 
   }
 }
 
@@ -28,6 +29,7 @@ background-color: rgb(214, 214, 214);
 @media (min-resolution: 2dppx) {
   .navbar {
       font-size: 0.65rem;
+      zoom: 1.85; 
   }
 }
 
