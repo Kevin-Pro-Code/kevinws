@@ -10,25 +10,9 @@ background-color: rgb(214, 214, 214);
   display: block;
 }
 
-/* Default navbar styling */
 .navbar {
-  font-size: 1rem;
-  padding: 10px;
-}
-
-/* High pixel density screens */
-@media (min-resolution: 2dppx) {
-  .navbar {
-    font-size: 0.9rem; /* Slightly reduce font size for high-density displays */
-  }
-}
-
-/* Adjust specifically for different screen sizes */
-@media (max-width: 480px) {
-  .navbar {
-    font-size: 0.8rem; /* Further adjustments for smaller screens */
-    padding: 8px;
-  }
+  font-size: 4vw;  /* Adjusts relative to the viewport width */
+  padding: 2vh;    /* Vertical padding relative to viewport height */
 }
 
 p {
