@@ -1,7 +1,7 @@
 
 body {
 
-  /*
+/*
 background-color: rgb(214, 214, 214);
 */
 
@@ -10,10 +10,17 @@ background-color: rgb(214, 214, 214);
   display: block;
 }
 
+/* Default styles */
 .navbar {
+  font-size: 1rem;
+  padding: 10px;
+}
 
-  zoom: 0.85; 
-  
+/* Adjust for high-density screens */
+@media (min-resolution: 2dppx) {
+  .navbar {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -1027,7 +1034,7 @@ margin-top: 10px;
  
   .navbar {
 
-    zoom: 0.650; 
+    zoom: 0.65; 
     
   }
 
@@ -1092,33 +1099,3 @@ zoom: 1.5;
 
 }
 
-@media (min-width: 760px) and (max-width: 900px) {
-    
-  body {
-    zoom: 0.45; 
-  }
-
-  .navbar {
-    zoom: 0.75; 
-  }
-
-  .overall-bottom-container {
-    justify-content: center; /* Horizontal centering */
-    align-items: center;  
-    padding-right: 4%;
-    zoom: 1.2; 
-  }
-
-  .footer-right {
-    display: none !important;
-    /* Note: 'zoom' is not needed here if the element is hidden */
-  }
-
-  .footer-left, 
-  .footer-center {
-    align-items: flex-start; /* Align vertically */
-    justify-content: flex-start;
-    vertical-align: middle;
-    zoom: 1.2; 
-  }
-}
