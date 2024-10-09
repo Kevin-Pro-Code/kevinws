@@ -522,6 +522,6 @@ if (window.devicePixelRatio < 2) {
     // Change the font size and scale of the navbar
     const navbar = document.querySelector('.navbar');
 
-    navbar.style.transform = 'scale(1.0)'; // Apply scaling
+    navbar.style.transform = 'scale(0.5)'; // Apply scaling
 }
 

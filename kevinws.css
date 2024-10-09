@@ -16,23 +16,6 @@ background-color: rgb(214, 214, 214);
   
 }
 
-/* Styling for high-resolution displays (e.g., Retina displays) */
-@media (min-resolution: 1dppx) {
-  .navbar {
-      font-size: 0.7rem; /* Adjust font size for high-density screens */
-      padding: 8px; /* Make padding adjustments if necessary */
-      zoom: 1.85; 
-  }
-}
-
-/* Further adjustments for super high-density screens */
-@media (min-resolution: 2dppx) {
-  .navbar {
-      font-size: 0.65rem;
-      zoom: 1.85; 
-  }
-}
-
 
 p {
   color: black;
