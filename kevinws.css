@@ -1092,3 +1092,33 @@ zoom: 1.5;
 
 }
 
+@media (min-width: 760px) and (max-width: 900px) {
+    
+  body {
+    zoom: 0.45; 
+  }
+
+  .navbar {
+    zoom: 0.75; 
+  }
+
+  .overall-bottom-container {
+    justify-content: center; /* Horizontal centering */
+    align-items: center;  
+    padding-right: 4%;
+    zoom: 1.2; 
+  }
+
+  .footer-right {
+    display: none !important;
+    /* Note: 'zoom' is not needed here if the element is hidden */
+  }
+
+  .footer-left, 
+  .footer-center {
+    align-items: flex-start; /* Align vertically */
+    justify-content: flex-start;
+    vertical-align: middle;
+    zoom: 1.2; 
+  }
+}
