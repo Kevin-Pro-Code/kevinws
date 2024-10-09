@@ -134,7 +134,7 @@ p {
   font-size: 18px;
   color: #000;
   cursor: pointer;
-  transform: translateY(38%) translateX(-200%);
+  transform: translateY(32%) translateX(-200%);
 }
 
 .counter {
@@ -1020,14 +1020,14 @@ margin-top: 10px;
     
   body {
 
-    zoom: 0.45; 
+    zoom: 0.35; 
     
   }
      
  
   .navbar {
 
-    zoom: 0.625; 
+    zoom: 0.525; 
     
   }
 
@@ -1036,7 +1036,7 @@ margin-top: 10px;
 justify-content: center; /* Horizontal centering */
 align-items: center;  
 padding-right: 4%;
-
+zoom: 0.8; 
 }
 
 
@@ -1044,7 +1044,7 @@ padding-right: 4%;
 
 display: none !important;
 
-
+zoom: 1.5;
 }
 
 
@@ -1054,6 +1054,7 @@ display: none !important;
   align-items: flex-start; /* Align vertically */
   justify-content: flex-start;
   vertical-align: middle;
+  zoom: 1.5; 
 }
 
 
