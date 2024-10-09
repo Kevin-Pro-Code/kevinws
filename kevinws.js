@@ -517,19 +517,15 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 */
 
-
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Device Pixel Ratio:", window.devicePixelRatio);
-
     if (window.devicePixelRatio > 2) {
         const navbar = document.querySelector('.navbar');
-        console.log("Navbar element found?", Boolean(navbar));
-        
         if (navbar) {
-            navbar.style.fontSize = '0.9rem';
-            navbar.style.transform = 'scale(0.95)';
-            console.log("Styles applied");
+            // Attempt alternative scaling approach
+            navbar.style.transform = 'scale(1.1)'; // Adjust based on observed needs
+            navbar.style.transformOrigin = '0 0';
         }
     }
 });
+
 
