@@ -1005,7 +1005,7 @@ margin-top: 10px;
 }
 
 
-@media (max-width: 760px) and (min-resolution: 240dpi) and (max-resolution: 250dpi) {
+@media (max-width: 760px) and (min-resolution: 150dpi) and (max-resolution: 250dpi) {
     
   body {
 
@@ -1034,7 +1034,6 @@ zoom: 1.2;
 
 display: none !important;
 
-zoom: 1.5;
 }
 
 
@@ -1044,7 +1043,7 @@ zoom: 1.5;
   align-items: flex-start; /* Align vertically */
   justify-content: flex-start;
   vertical-align: middle;
-  zoom: 1.2; 
+ 
 }
 
 
@@ -1056,7 +1055,7 @@ zoom: 1.5;
   align-items: center; /* Centers content vertically */
   gap: 1px; /* Space between columns */
   
-  
+  zoom: 1.2; 
 }
 
 .supported-text1, .supported-text2, .rights2 {
