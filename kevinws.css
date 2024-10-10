@@ -1081,7 +1081,7 @@ display: none !important;
 justify-content: center; /* Horizontal centering */
 align-items: center;  
 padding-right: 4%;
-zoom: 1.5; 
+zoom: 0.9; 
 }
 
 
@@ -1089,7 +1089,7 @@ zoom: 1.5;
 
 display: none !important;
 
-zoom: 1.5;
+
 }
 
 
