@@ -1089,9 +1089,7 @@ zoom: 0.9;
 
 display: none !important;
 
-
 }
-
 
 .footer-left, 
 .footer-center {
@@ -1101,7 +1099,6 @@ display: none !important;
   vertical-align: middle;
   zoom: 0.9; 
 }
-
 
 
 .footer-container {
@@ -1135,4 +1132,15 @@ display: none !important;
     
 }
 
+}
+
+
+/* Assume devices with a wide viewport (>1000px) are in desktop mode */
+@media (min-width: 1000px) {
+  /* Apply styles that are intended for desktop layout */
+  .overall-bottom-container {
+      flex-direction: row;
+      justify-content: space-between;
+      /* Other styles that make sense for desktop */
+  }
 }
