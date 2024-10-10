@@ -1005,7 +1005,7 @@ margin-top: 10px;
 }
 
 
-@media (max-width: 760px) and (min-resolution: 0dpi) and (max-resolution: 5275dpi) {
+@media (max-width: 760px) and (min-resolution: 150dpi) and (max-resolution: 600dpi) {
     
   body {
 
