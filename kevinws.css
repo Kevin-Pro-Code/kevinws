@@ -536,7 +536,7 @@ margin-left: 16%;
   margin: 0 auto;
   /* Center within the grid cell */
   font-family: Calibri, sans-serif;
-  text-indent: 5px;
+  text-indent: 10px;
   
 }
 
@@ -1009,7 +1009,7 @@ margin-top: 10px;
     
   body {
 
-    zoom: 0.45; 
+    zoom: 0.4; 
     /* 0.35  */
 
   }
