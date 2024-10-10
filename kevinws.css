@@ -1006,23 +1006,25 @@ margin-top: 10px;
 
 @media (max-width: 760px) {
     
-/* Ensure the parent has a defined height for the navbar height to relate to */
-body, html {
-  height: 80%;
-  margin: 0;
-}
-
-.container {
-  width: 80%; /* Full width of the viewport or parent element */
-  height: 80%; /* Full height of the viewport or parent element */
-}
-
-.navbar {
-  width: 80%; /* Makes navbar stretch across the full width of the parent */
-  height: 80%; /* Takes up 10% of the parent's height */
-  padding: 1%; /* Padding as a percentage of the navbar's width */
-  box-sizing: border-box; /* Includes padding in the width/height calculations */
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .navbar {
+    width: 80%;
+    height: 80%;
+    padding: 1%;
+    box-sizing: border-box;
+    transform: scale(0.8); /* Scales down to 80% of its original size */
+    transform-origin: 0 0; /* Keeps the top-left corner as the anchor point */
+  }
+  
 
   
 .overall-bottom-container {
