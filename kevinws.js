@@ -329,19 +329,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//FIREFOX MOBILE SOMETHING
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-    var isMobile = /Mobi|Android/i.test(navigator.userAgent);
-  
-    if (isFirefox && isMobile) {
-      document.body.classList.add('firefox-mobile');
-    }
-  });
-
-
 
 //CLICK OUT AND UNSELECT SUBTABS
 
