@@ -1005,13 +1005,19 @@ margin-top: 10px;
 }
 
 @media (max-width: 760px) {
+    
   body {
-      font-size: 0.7vw; /* Adjust the font size for smaller screens */
+
+    zoom: 0.35; 
+    
   }
+     
+ 
   .navbar {
-    font-size: 0.7vw; /* Adjust the font size for smaller screens */
+
+    zoom: 0.75; 
+    
   }
-}
 
   
 .overall-bottom-container {
