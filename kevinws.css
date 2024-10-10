@@ -1013,8 +1013,8 @@ body, html {
 }
 
 .container {
-  width: 100%; /* Full width of the viewport or parent element */
-  height: 100%; /* Full height of the viewport or parent element */
+  width: 80%; /* Full width of the viewport or parent element */
+  height: 80%; /* Full height of the viewport or parent element */
 }
 
 .navbar {
