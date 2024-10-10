@@ -1008,7 +1008,7 @@ margin-top: 10px;
     
 /* Ensure the parent has a defined height for the navbar height to relate to */
 body, html {
-  height: 100%;
+  height: 80%;
   margin: 0;
 }
 
@@ -1018,8 +1018,8 @@ body, html {
 }
 
 .navbar {
-  width: 100%; /* Makes navbar stretch across the full width of the parent */
-  height: 10%; /* Takes up 10% of the parent's height */
+  width: 80%; /* Makes navbar stretch across the full width of the parent */
+  height: 80%; /* Takes up 10% of the parent's height */
   padding: 1%; /* Padding as a percentage of the navbar's width */
   box-sizing: border-box; /* Includes padding in the width/height calculations */
 }
