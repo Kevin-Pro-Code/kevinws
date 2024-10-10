@@ -328,8 +328,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 //CLICK OUT AND UNSELECT SUBTABS
 
 
@@ -506,22 +504,15 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 
 
-function applyResponsiveScaling() {
-    const isSmallScreen = window.matchMedia("(max-width: 760px)").matches;
-    const bodyStyle = document.body.style;
-    const navbarStyle = document.querySelector('.navbar').style;
-    const zoomInfoElement = document.getElementById('zoom-info');
-
-    if (isSmallScreen) {
-        bodyStyle.zoom = '10%'; // For browsers that support zoom
-        navbarStyle.zoom = '15%';
-        zoomInfoElement.textContent = 'Zoom level: 70% (body), 65% (navbar)';
+function checkDesktopMode() {
+    const widthThreshold = 1000; // Define what constitutes "desktop mode"
+    if (window.innerWidth > widthThreshold) {
+        document.body.classList.add('desktop-mode');
     } else {
-        bodyStyle.zoom = '100%';
-        navbarStyle.zoom = '100%';
-        zoomInfoElement.textContent = 'Zoom level: 100%';
+        document.body.classList.remove('desktop-mode');
     }
 }
 
-applyResponsiveScaling(); // Initial call to set the zoom
-window.addEventListener('resize', applyResponsiveScaling);
+// Initial check and setup event listener
+checkDesktopMode();
+window.addEventListener('resize', checkDesktopMode);

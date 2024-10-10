@@ -1144,3 +1144,9 @@ display: none !important;
       /* Other styles that make sense for desktop */
   }
 }
+
+body.desktop-mode .overall-bottom-container {
+  flex-direction: row;
+  justify-content: space-between;
+  /* Desktop-specific styles */
+}
