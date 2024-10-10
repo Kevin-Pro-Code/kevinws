@@ -517,15 +517,6 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 */
 
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.devicePixelRatio > 2) {
-        const navbar = document.querySelector('.navbar');
-        if (navbar) {
-            // Attempt alternative scaling approach
-            navbar.style.transform = 'scale(1.5)'; // Adjust based on observed needs
-            navbar.style.transformOrigin = '0 0';
-        }
-    }
-});
+
 
 

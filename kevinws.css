@@ -202,10 +202,6 @@ p {
 */
 
 
-
-
-
-
 .about-container {
   position: relative;
   display: flex;
@@ -1010,18 +1006,23 @@ margin-top: 10px;
 
 @media (max-width: 760px) {
     
-  body {
+/* Ensure the parent has a defined height for the navbar height to relate to */
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-    zoom: 0.35; 
-    
-  }
-     
- 
-  .navbar {
+.container {
+  width: 100%; /* Full width of the viewport or parent element */
+  height: 100%; /* Full height of the viewport or parent element */
+}
 
-    zoom: 0.65; 
-    
-  }
+.navbar {
+  width: 100%; /* Makes navbar stretch across the full width of the parent */
+  height: 10%; /* Takes up 10% of the parent's height */
+  padding: 1%; /* Padding as a percentage of the navbar's width */
+  box-sizing: border-box; /* Includes padding in the width/height calculations */
+}
 
   
 .overall-bottom-container {
@@ -1084,4 +1085,5 @@ zoom: 1.5;
 }
 
 }
+
 
