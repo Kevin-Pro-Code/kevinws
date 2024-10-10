@@ -1006,19 +1006,18 @@ margin-top: 10px;
 
 @media (max-width: 760px) {
     
-  body, html {
-    transform: scale(0.7); /* Scales down to 80% of its original size */
+  body {
+
+    zoom: 0.35; 
+    
   }
-  
+     
  
-  
   .navbar {
-    
- 
-    transform: scale(0.7); /* Scales down to 80% of its original size */
+
+    zoom: 0.65; 
     
   }
-  
 
   
 .overall-bottom-container {

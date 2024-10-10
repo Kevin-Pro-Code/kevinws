@@ -517,6 +517,13 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 */
 
-
+function applyZoomConditionally() {
+    const zoomPercentage = 70;
+    if (window.matchMedia("(max-width: 760px)").matches) {
+        document.body.style.zoom = `${zoomPercentage}%`;
+    } else {
+        document.body.style.zoom = "100%"; // Reset to no zoom
+    }
+}
 
 
