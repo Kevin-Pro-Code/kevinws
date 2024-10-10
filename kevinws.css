@@ -1007,19 +1007,13 @@ margin-top: 10px;
 @media (max-width: 760px) {
     
   body, html {
-    height: 100%;
-    margin: 0;
+    transform: scale(0.8); /* Scales down to 80% of its original size */
   }
   
-  .container {
-    width: 80%;
-    height: 80%;
-  }
+ 
   
   .navbar {
-    width: 80%;
-    height: 80%;
-    padding: 1%;
+    
     box-sizing: border-box;
     transform: scale(0.8); /* Scales down to 80% of its original size */
     transform-origin: 0 0; /* Keeps the top-left corner as the anchor point */
