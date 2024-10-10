@@ -526,8 +526,8 @@ function applyResponsiveScaling() {
     const zoomInfoElement = document.getElementById('zoom-info');
 
     if (isSmallScreen) {
-        bodyStyle.zoom = '70%'; // For browsers that support zoom
-        navbarStyle.zoom = '75%';
+        bodyStyle.zoom = '10%'; // For browsers that support zoom
+        navbarStyle.zoom = '15%';
         zoomInfoElement.textContent = 'Zoom level: 70% (body), 65% (navbar)';
     } else {
         bodyStyle.zoom = '100%';
