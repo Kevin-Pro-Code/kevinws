@@ -536,7 +536,7 @@ margin-left: 16%;
   margin: 0 auto;
   /* Center within the grid cell */
   font-family: Calibri, sans-serif;
-  text-indent: 10px;
+  text-indent: 5px;
   
 }
 
@@ -1005,12 +1005,13 @@ margin-top: 10px;
 }
 
 
-@media (max-width: 760px) and (min-resolution: 150dpi) and (max-resolution: 250dpi) {
+@media (max-width: 760px) and (min-resolution: 120dpi) and (max-resolution: 250dpi) {
     
   body {
 
     zoom: 0.45; 
     /* 0.35  */
+
   }
      
  
@@ -1018,6 +1019,7 @@ margin-top: 10px;
 
     zoom: 0.85; 
     /* 0.65  */
+    
   }
 
   
