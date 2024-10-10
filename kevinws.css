@@ -1006,10 +1006,10 @@ margin-top: 10px;
 
 @media (max-width: 760px) {
   body {
-      font-size: 1.5vw; /* Adjust the font size for smaller screens */
+      font-size: 0.7vw; /* Adjust the font size for smaller screens */
   }
   .navbar {
-    font-size: 1.5vw; /* Adjust the font size for smaller screens */
+    font-size: 0.7vw; /* Adjust the font size for smaller screens */
   }
 }
 
