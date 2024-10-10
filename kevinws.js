@@ -517,19 +517,24 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 */
 
-function applyZoomConditionally() {
-    const zoomPercentage = 40;
-    if (window.matchMedia("(max-width: 760px)").matches) {
-        document.body.style.zoom = `${zoomPercentage}%`;
+
+
+function applyResponsiveScaling() {
+    const isSmallScreen = window.matchMedia("(max-width: 760px)").matches;
+    const bodyStyle = document.body.style;
+    const navbarStyle = document.querySelector('.navbar').style;
+    const zoomInfoElement = document.getElementById('zoom-info');
+
+    if (isSmallScreen) {
+        bodyStyle.zoom = '70%'; // For browsers that support zoom
+        navbarStyle.zoom = '75%';
+        zoomInfoElement.textContent = 'Zoom level: 70% (body), 65% (navbar)';
     } else {
-        document.body.style.zoom = "100%"; // Reset to no zoom
+        bodyStyle.zoom = '100%';
+        navbarStyle.zoom = '100%';
+        zoomInfoElement.textContent = 'Zoom level: 100%';
     }
 }
 
-// Initial invocation
-applyZoomConditionally();
-
-// Add event listener to handle window resizing
-window.addEventListener("resize", applyZoomConditionally);
-
-
+applyResponsiveScaling(); // Initial call to set the zoom
+window.addEventListener('resize', applyResponsiveScaling);
