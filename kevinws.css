@@ -504,10 +504,9 @@ margin-left: 16%;
   font-weight: bold;
   font-family: Calibri, sans-serif;
   text-align: center;
-  /* Ensure text is centered */
-  margin-bottom: 2px;
-  /* Add some space below */
   
+  /* Add some space below */
+  margin-bottom: 4px;
 }
 
 
@@ -516,9 +515,8 @@ margin-left: 16%;
   font-weight: bold;
   font-family: Calibri, sans-serif;
   text-align: center;
-  /* Ensure text is centered */
-  margin-bottom: 5px;
-  /* Add some space below */
+  margin-bottom: 16px;
+  
 }
 
 .comment-container,
@@ -537,16 +535,16 @@ margin-left: 16%;
   /* Center within the grid cell */
   font-family: Calibri, sans-serif;
   text-indent: 10px;
-  
+ 
 }
 
 .comment-container {
   height: 250px;
   /* Specific height for the comment container */
   resize: none;
-  /* No resizing allowed for textarea */
-  padding-top: 6px;
+  /* No resizing allowed for textarea */ 
   margin-bottom: 5px;
+  
 }
 
 .email-container {
@@ -557,6 +555,7 @@ margin-left: 16%;
   /* Adjust this value to move down */
   transform: translateY(0%);
   /* Adjust for positioning */
+  
 }
 
 .cmail-container {
@@ -581,8 +580,7 @@ margin-left: 16%;
   margin: 0 auto;
   /* Center within the grid cell */
   text-align: center;
-  margin-bottom: 15px;
-
+  
 }
 
 .email-sub {
@@ -1135,18 +1133,3 @@ display: none !important;
 }
 
 
-/* Assume devices with a wide viewport (>1000px) are in desktop mode */
-@media (min-width: 1000px) {
-  /* Apply styles that are intended for desktop layout */
-  .overall-bottom-container {
-      flex-direction: row;
-      justify-content: space-between;
-      /* Other styles that make sense for desktop */
-  }
-}
-
-body.desktop-mode .overall-bottom-container {
-  flex-direction: row;
-  justify-content: space-between;
-  /* Desktop-specific styles */
-}

@@ -504,15 +504,3 @@ alert("This website is under construction!!! Check the projects and other tabs t
 
 
 
-function checkDesktopMode() {
-    const widthThreshold = 1000; // Define what constitutes "desktop mode"
-    if (window.innerWidth > widthThreshold) {
-        document.body.classList.add('desktop-mode');
-    } else {
-        document.body.classList.remove('desktop-mode');
-    }
-}
-
-// Initial check and setup event listener
-checkDesktopMode();
-window.addEventListener('resize', checkDesktopMode);
