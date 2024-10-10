@@ -633,7 +633,7 @@ margin-left: 16%;
 
 @media (max-width: 760px) {
   .overall-bottom-container {
-    grid-template-columns: 5fr;
+    grid-template-columns: 1fr;
     /* Single column layout for narrow screens */
     grid-template-areas:
       "comment-text"
@@ -1023,13 +1023,7 @@ margin-top: 10px;
   }
 
   
-.overall-bottom-container {
 
-justify-content: center; /* Horizontal centering */
-align-items: center;  
-padding-right: 4%;
-zoom: 1.0; 
-}
 
 
 .footer-right {
@@ -1100,13 +1094,6 @@ display: none !important;
   }
 
   
-.overall-bottom-container {
-
-justify-content: center; /* Horizontal centering */
-align-items: center;  
-padding-right: 4%;
-zoom: 0.9; 
-}
 
 
 .footer-right {
