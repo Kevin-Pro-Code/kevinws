@@ -505,7 +505,7 @@ margin-left: 16%;
   font-family: Calibri, sans-serif;
   text-align: center;
   /* Ensure text is centered */
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   /* Add some space below */
   
 }
@@ -555,14 +555,15 @@ margin-left: 16%;
   height: 75px;
   margin-top: 0px;
   /* Adjust this value to move down */
-  transform: translateY(0%);
+  transform: translateY(15%);
   /* Adjust for positioning */
+  
 }
 
 .cmail-container {
   height: 70px;
   /* Height for the comment mail feedback container */
-  margin: 10px auto;
+  margin: 20px auto;
   /* Center horizontally with a small top margin */
   
 }
@@ -587,7 +588,7 @@ margin-left: 16%;
 
 .email-sub {
 
-  margin-top: 6px;
+  margin-top: 17px;
 
 }
 
@@ -1028,7 +1029,7 @@ margin-top: 10px;
 justify-content: center; /* Horizontal centering */
 align-items: center;  
 padding-right: 4%;
-zoom: 3.5; 
+zoom: 1.0; 
 }
 
 
@@ -1105,7 +1106,7 @@ display: none !important;
 justify-content: center; /* Horizontal centering */
 align-items: center;  
 padding-right: 4%;
-zoom: 2.3; 
+zoom: 0.9; 
 }
 
 
