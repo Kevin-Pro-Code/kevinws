@@ -631,28 +631,6 @@ margin-left: 16%;
 
 
 
-@media (max-width: 760px) {
-  .overall-bottom-container {
-    grid-template-columns: 1fr;
-    /* Single column layout for narrow screens */
-    grid-template-areas:
-      "comment-text"
-      "comment-container"
-      "comment-send"
-      "email-text"
-      "email-container"
-      "email-sub"
-    ;
-  }
-
-  .comment-text,
-  .email-text {
-    text-align: center;
-    /* Ensure text is centered */
-
-  }
-}
-
 
 /*
 
