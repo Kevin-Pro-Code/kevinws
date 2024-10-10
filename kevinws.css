@@ -1026,7 +1026,7 @@ margin-top: 10px;
 justify-content: center; /* Horizontal centering */
 align-items: center;  
 padding-right: 4%;
-zoom: 0.9; 
+zoom: 1.2; 
 }
 
 
@@ -1044,7 +1044,7 @@ zoom: 1.5;
   align-items: flex-start; /* Align vertically */
   justify-content: flex-start;
   vertical-align: middle;
-  zoom: 0.9; 
+  zoom: 1.2; 
 }
 
 
