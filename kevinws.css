@@ -1007,16 +1007,16 @@ margin-top: 10px;
 @media (max-width: 760px) {
     
   body, html {
-    transform: scale(0.8); /* Scales down to 80% of its original size */
+    transform: scale(1.0); /* Scales down to 80% of its original size */
   }
   
  
   
   .navbar {
     
-    box-sizing: border-box;
-    transform: scale(0.8); /* Scales down to 80% of its original size */
-    transform-origin: 0 0; /* Keeps the top-left corner as the anchor point */
+ 
+    transform: scale(1.0); /* Scales down to 80% of its original size */
+    
   }
   
 
