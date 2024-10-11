@@ -591,7 +591,42 @@ margin-left: 16%;
 }
 
 
+@media (min-width: 760px) {
+  .overall-bottom-container {
+    grid-template-areas:
+      "comment-text email-text"
+      "comment-container email-container"
+      "comment-send email-sub";
+  }
 
+  .comment-text {
+    grid-area: comment-text;
+  }
+
+  .email-text {
+    grid-area: email-container;
+    margin-top: 48px;
+  }
+
+  .comment-container {
+    grid-area: comment-container;
+  }
+
+  .email-container {
+    grid-area: email-container;
+    margin-top: 90px;
+  }
+
+  .comment-send {
+    grid-area: comment-send;
+  }
+
+  .email-sub {
+    grid-area: email-sub;
+    
+  
+  }
+}
 
 
 /*
@@ -957,7 +992,7 @@ margin-top: 10px;
  
   .navbar {
 
-    zoom: 0.90; 
+    zoom: 0.85; 
     /* 0.65  */
     
   }
