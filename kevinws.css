@@ -997,7 +997,7 @@ display: none !important;
   align-items: center; /* Centers content vertically */
   gap: 1px; /* Space between columns */
   
-  zoom: 1.15; 
+  zoom: 1.125; 
 }
 
 .supported-text1, .supported-text2, .rights2 {
