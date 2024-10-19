@@ -1032,7 +1032,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 0.60; 
+    zoom: 0.57; 
     /* 0.65  */
   }
 
@@ -1096,7 +1096,7 @@ display: none !important;
 }
 
 
-@media (min-width: 1150px) {
+@media (min-width: 900px) {
   .overall-bottom-container {
     grid-template-areas:
       "comment-text email-text"
