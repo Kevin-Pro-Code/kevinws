@@ -1084,14 +1084,14 @@ display: none !important;
     
   body {
 
-    zoom: 9.43; 
+    zoom: 0.415; 
     
   }
      
   
   .navbar {
 
-    zoom: 9.87; 
+    zoom: 0.815; 
         
   }
 
@@ -1099,7 +1099,7 @@ display: none !important;
 
 
 
-@media (max-width: 760px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) {
+@media (max-width: 760px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELLPHONE*/ {
     
   body {
 
@@ -1110,7 +1110,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 0.76; 
+    zoom: 0.66; 
     
   }
 
@@ -1170,25 +1170,6 @@ display: none !important;
   margin-left: 6px;
     
 }
-
-}
-
-@media (max-width: 760px) and (min-resolution: 600dpi) {
-    
-  body {
-
-    zoom: 0.39; 
-    
-
-  }
-     
- 
-  .navbar {
-
-    zoom: 0.815; 
-  
-    
-  }
 
 }
 
