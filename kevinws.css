@@ -1216,10 +1216,10 @@ display: none !important;
 
 @media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) {
   .chrome-mobile body {
-      zoom: 5.40; 
+      zoom: 0.45; 
   }
 
   .chrome-mobile .navbar {
-      zoom: 5.60; 
+      zoom: 0.62; 
   }
 }
