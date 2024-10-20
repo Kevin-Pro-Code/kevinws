@@ -1020,11 +1020,11 @@ display: none !important;
 
 }
 
-@media (max-width: 760px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (max-width: 760px) and (max-resolution: 140dpi) {
     
   body {
 
-    zoom: 9.39; 
+    zoom: 5.39; 
     
 
   }
@@ -1032,7 +1032,28 @@ display: none !important;
  
   .navbar {
 
-    zoom: 9.815; 
+    zoom: 5.815; 
+  
+    
+  }
+
+}
+
+
+
+@media (max-width: 760px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+    
+  body {
+
+    zoom: 0.39; 
+    
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.815; 
   
     
   }
@@ -1043,7 +1064,7 @@ display: none !important;
     
   body {
 
-    zoom: 9.43; 
+    zoom: 0.43; 
     
 
   }
@@ -1051,7 +1072,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 9.87; 
+    zoom: 0.87; 
    
     
   }
@@ -1062,14 +1083,14 @@ display: none !important;
     
   body {
 
-    zoom: 9.43; 
+    zoom: 0.43; 
     
   }
      
   
   .navbar {
 
-    zoom: 9.87; 
+    zoom: 0.87; 
         
   }
 
@@ -1081,14 +1102,14 @@ display: none !important;
     
   body {
 
-    zoom: 9.43; 
+    zoom: 0.43; 
    
   }
      
  
   .navbar {
 
-    zoom: 9.87; 
+    zoom: 0.87; 
     
   }
 
