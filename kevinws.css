@@ -1043,7 +1043,7 @@ display: none !important;
     
   body {
 
-    zoom: 0.1; 
+    zoom: 0.40; 
     /* 0.35  */
 
   }
@@ -1051,7 +1051,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 0.1; 
+    zoom: 0.85; 
     /* 0.65  */
     
   }
