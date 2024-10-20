@@ -942,7 +942,7 @@ margin-top: 10px;
 }
 
 
-@media (max-width: 760px) and (min-resolution: 120dpi) and (max-resolution: 200dpi) {
+@media (max-width: 760px) and (min-resolution: 120dpi) and (max-resolution: 140dpi) {
     
   body {
 
@@ -1019,6 +1019,64 @@ display: none !important;
 }
 
 }
+
+@media (max-width: 760px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+    
+  body {
+
+    zoom: 0.39; 
+    /* 0.35  */
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.815; 
+    /* 0.65  */
+    
+  }
+
+}
+
+@media (max-width: 760px) and (min-resolution: 160dpi) and (max-resolution: 180dpi) {
+    
+  body {
+
+    zoom: 0.38; 
+    /* 0.35  */
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.805; 
+    /* 0.65  */
+    
+  }
+
+}
+
+@media (max-width: 760px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) {
+    
+  body {
+
+    zoom: 0.38; 
+    /* 0.35  */
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.805; 
+    /* 0.65  */
+    
+  }
+
+}
+
 
 
 @media (max-width: 760px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) {
