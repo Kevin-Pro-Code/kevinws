@@ -1022,6 +1022,26 @@ display: none !important;
 
 }
 
+@media (min-width: 500px) and (max-width: 830px) and (max-resolution: 200dpi)
+{
+  body {
+
+    zoom: 0.39; 
+    
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.50; 
+  
+    
+  }
+
+}
+
+
 @media (max-width: 830px) and (max-resolution: 140dpi) {
     
   body {
