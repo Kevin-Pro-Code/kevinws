@@ -503,4 +503,8 @@ alert("This website is under construction!!! Check the projects and other tabs t
 */
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 && /Mobi|Android/i.test(navigator.userAgent)) {
+        document.body.classList.add('chrome-mobile');
+    }
+});
