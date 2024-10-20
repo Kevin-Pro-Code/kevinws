@@ -1024,14 +1024,15 @@ display: none !important;
     
   body {
 
-    zoom: 9.39; 
-   
+    zoom: 0.39; 
+    
+
   }
      
  
   .navbar {
 
-    zoom: 9.815; 
+    zoom: 0.815; 
   
     
   }
@@ -1042,7 +1043,7 @@ display: none !important;
     
   body {
 
-    zoom: 9.43; 
+    zoom: 0.43; 
     
 
   }
@@ -1050,7 +1051,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 9.87; 
+    zoom: 0.87; 
    
     
   }
@@ -1080,14 +1081,14 @@ display: none !important;
     
   body {
 
-    zoom: 0.43; 
+    zoom: 9.43; 
    
   }
      
  
   .navbar {
 
-    zoom: 0.87; 
+    zoom: 9.87; 
     
   }
 
