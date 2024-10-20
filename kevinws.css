@@ -1046,7 +1046,7 @@ display: none !important;
     
   body {
 
-    zoom: 0.39; 
+    zoom: 0.445; 
     
 
   }
@@ -1054,7 +1054,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 0.815; 
+    zoom: 0.93; 
   
     
   }
@@ -1170,7 +1170,16 @@ display: none !important;
   margin-left: 6px;
     
 }
+}
 
+@media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /* "CHROME'S MOM CEL" */{
+  .chrome-mobile body {
+      zoom: 0.50; 
+  }
+
+  .chrome-mobile .navbar {
+      zoom: 0.75; 
+  }
 }
 
 
@@ -1211,15 +1220,3 @@ display: none !important;
   }
 }
 
-
-
-
-@media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /* "CHROME'S MOM CEL" */{
-  .chrome-mobile body {
-      zoom: 0.50; 
-  }
-
-  .chrome-mobile .navbar {
-      zoom: 0.75; 
-  }
-}
