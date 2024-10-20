@@ -1172,6 +1172,25 @@ display: none !important;
 
 }
 
+@media (max-width: 760px) and (min-resolution: 600dpi) {
+    
+  body {
+
+    zoom: 5.39; 
+    
+
+  }
+     
+ 
+  .navbar {
+
+    zoom: 5.815; 
+  
+    
+  }
+
+}
+
 
 @media (min-width: 900px) {
   .overall-bottom-container {
