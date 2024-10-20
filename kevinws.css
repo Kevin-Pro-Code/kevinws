@@ -1063,16 +1063,14 @@ display: none !important;
   body {
 
     zoom: 0.43; 
-    /* 0.35  */
-
+    
   }
      
   
   .navbar {
 
     zoom: 0.87; 
-    /* 0.65  */
-    
+        
   }
 
 }
@@ -1083,15 +1081,15 @@ display: none !important;
     
   body {
 
-    zoom: 0.40; 
-    /* 0.35  */
+    zoom: 0.43; 
+   
   }
      
  
   .navbar {
 
-    zoom: 0.60; 
-    /* 0.65  */
+    zoom: 0.87; 
+    
   }
 
   
