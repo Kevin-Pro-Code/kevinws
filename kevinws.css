@@ -545,7 +545,8 @@ margin-left: 16%;
   resize: none;
   /* No resizing allowed for textarea */ 
   margin-bottom: 5px;
-  
+  padding-top: 10px; /* Adjust the padding to add space above */
+      
 }
 
 .email-container {
@@ -1041,7 +1042,6 @@ display: none !important;
 }
 
 
-
 @media (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
@@ -1097,8 +1097,6 @@ display: none !important;
 
 }
 
-
-
 @media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   body {
@@ -1106,14 +1104,12 @@ display: none !important;
     zoom: 0.40; 
    
   }
-     
- 
+      
   .navbar {
 
     zoom: 0.60; 
     
   }
-
   
 .overall-bottom-container {
 
@@ -1122,7 +1118,6 @@ align-items: center;
 padding-right: 4%;
 zoom: 0.9; 
 }
-
 
 .footer-right {
 
