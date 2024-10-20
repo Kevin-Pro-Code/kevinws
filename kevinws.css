@@ -1024,7 +1024,7 @@ display: none !important;
     
   body {
 
-    zoom: 0.39; 
+    zoom: 9.39; 
     /* 0.35  */
 
   }
@@ -1032,8 +1032,8 @@ display: none !important;
  
   .navbar {
 
-    zoom: 0.815; 
-    /* 0.65  */
+    zoom: 9.815; 
+  
     
   }
 
