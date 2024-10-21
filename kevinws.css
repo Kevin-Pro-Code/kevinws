@@ -1024,7 +1024,7 @@ display: none !important;
 
 
 
-@media (min-width: 150px) and (max-width: 430px) and (min-resolution: 30dpi) and (max-resolution: 300dpi) {
+@media (min-width: 150px) and (max-width: 380px) and (min-resolution: 30dpi) and (max-resolution: 300dpi) {
     
   body {
 
@@ -1042,7 +1042,7 @@ display: none !important;
 }
 
 
-@media (min-width: 430px) and (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
 
