@@ -1024,7 +1024,7 @@ display: none !important;
 
 
 
-@media (min-width: 450px) and (max-width: 830px) and (max-resolution: 140dpi) {
+@media (min-width: 450px) and (max-width: 830px) and (min-resolution: 70dpi) and (max-resolution: 140dpi) {
     
   body {
 
