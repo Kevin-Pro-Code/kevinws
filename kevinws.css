@@ -1036,7 +1036,7 @@ display: none !important;
  
   .navbar {
 
-    zoom: 9.55; 
+    zoom: 0.55; 
   
     
   }
@@ -1044,7 +1044,7 @@ display: none !important;
 }
 
 
-@media (min-width: 250px) and (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (min-width: 350px) and (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
 
@@ -1063,7 +1063,7 @@ display: none !important;
 
 }
 
-@media (min-width: 250px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 350px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
     
   body {
 
