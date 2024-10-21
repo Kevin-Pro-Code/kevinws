@@ -1081,7 +1081,7 @@ display: none !important;
 
 }
 
-@media (min-width: 400px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 500px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
     
   body {
 
