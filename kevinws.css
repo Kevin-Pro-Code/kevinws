@@ -1030,15 +1030,13 @@ display: none !important;
 
     zoom: 0.45; 
     
-
   }
      
  
   .navbar {
 
-    zoom: 0.72; 
-  
-    
+    zoom: 0.70; 
+      
   }
 
 }
@@ -1050,15 +1048,13 @@ display: none !important;
 
     zoom: 0.445; 
     
-
   }
      
  
   .navbar {
 
     zoom: 0.93; 
-  
-    
+      
   }
 
 }
@@ -1069,15 +1065,12 @@ display: none !important;
 
     zoom: 0.43; 
     
-
   }
      
- 
-  .navbar {
+   .navbar {
 
     zoom: 0.87; 
-   
-    
+       
   }
 
 }
@@ -1089,8 +1082,7 @@ display: none !important;
     zoom: 0.415; 
     
   }
-     
-  
+       
   .navbar {
 
     zoom: 0.81; 
