@@ -1075,7 +1075,7 @@ display: none !important;
 
 }
 
-@media (max-width: 830px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
+@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
     
   body {
 
@@ -1091,7 +1091,7 @@ display: none !important;
 
 }
 
-@media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   body {
 
@@ -1161,7 +1161,7 @@ display: none !important;
 }
 }
 
-@media (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /* "CHROME'S MOM CEL" */{
+@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /* "CHROME'S MOM CEL" */{
   .chrome-mobile body {
       zoom: 0.50; 
   }
