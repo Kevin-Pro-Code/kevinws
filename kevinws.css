@@ -1060,7 +1060,15 @@ display: none !important;
 }
 
 @media (min-width: 380px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
-    
+   
+  .chrome-mobile body {
+    zoom: 0.45; 
+}
+
+.chrome-mobile .navbar {
+    zoom: 0.95; 
+}
+
   body {
 
     zoom: 0.43; 
@@ -1093,6 +1101,14 @@ display: none !important;
 
 @media (min-width: 380px) and (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
+  .chrome-mobile body {
+    zoom: 0.50; 
+}
+
+.chrome-mobile .navbar {
+    zoom: 0.75; 
+}
+
   body {
 
     zoom: 0.40; 
@@ -1161,15 +1177,8 @@ display: none !important;
 }
 }
 
-@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /* "CHROME'S MOM CEL" */{
-  .chrome-mobile body {
-      zoom: 0.50; 
-  }
 
-  .chrome-mobile .navbar {
-      zoom: 0.75; 
-  }
-}
+
 
 
 @media (min-width: 900px) {
