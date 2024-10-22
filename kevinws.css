@@ -1081,6 +1081,62 @@ display: none !important;
        
   }
 
+  .overall-bottom-container {
+
+    justify-content: center; /* Horizontal centering */
+    align-items: center;  
+    padding-right: 4%;
+    zoom: 0.9; 
+    }
+    
+    .footer-right {
+    
+    display: none !important;
+    
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+      zoom: 0.9; 
+    }
+    
+    
+    .footer-container {
+    
+      grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      gap: 1px; /* Space between columns */
+      
+      
+    }
+    
+    .supported-text1, .supported-text2, .rights2 {
+      font-size: 15px; /* Sets the font size for both text elements */
+      font-family: Calibri;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .english-text,
+    .portuguese-text {
+       
+      margin-right: 10px;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .low-icons {
+    
+      margin-left: 6px;
+        
+    }
+
+
 }
 
 @media (min-width: 380px) and (max-width: 830px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
