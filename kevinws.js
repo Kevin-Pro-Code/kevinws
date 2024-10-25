@@ -509,6 +509,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
+        if (userAgent.indexOf('pluma') > -1) {
+            document.body.classList.add('pluma-mobile'); // Add class for Pluma
+        }
+        
         if (userAgent.indexOf('chrome') > -1) {
             document.body.classList.add('chrome-mobile');
         }
@@ -526,3 +530,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
