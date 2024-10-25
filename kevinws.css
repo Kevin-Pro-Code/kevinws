@@ -1102,10 +1102,8 @@ display: none !important;
         align-items: flex-start; /* Align vertically */
         justify-content: flex-start;
         vertical-align: middle;
-        
-           
-      }
-      
+                   
+      }      
       
       .footer-container {
       
@@ -1123,7 +1121,7 @@ display: none !important;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
-        padding-top: 1%;
+        padding-top: 0.5%;
       }
       
       .english-text,
