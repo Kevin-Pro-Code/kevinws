@@ -1102,7 +1102,7 @@ display: none !important;
         align-items: flex-start; /* Align vertically */
         justify-content: flex-start;
         vertical-align: middle;
-        zoom: 0.9; 
+        
         padding-bottom: 2%;
         margin-bottom: 2%;
       }
