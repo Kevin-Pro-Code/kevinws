@@ -1123,6 +1123,7 @@ display: none !important;
         font-family: Calibri;
         align-items: center;
         justify-content: center;
+        vertical-align: middle;
       }
       
       .english-text,
