@@ -1103,6 +1103,8 @@ display: none !important;
         justify-content: flex-start;
         vertical-align: middle;
         zoom: 0.9; 
+        padding-top: 2%;
+        margin-top: 2%;
       }
       
       
