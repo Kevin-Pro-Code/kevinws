@@ -1103,8 +1103,7 @@ display: none !important;
         justify-content: flex-start;
         vertical-align: middle;
         
-        padding-bottom: 1%;
-        
+           
       }
       
       
@@ -1118,12 +1117,13 @@ display: none !important;
         
       }
       
-      .supported-text1, .supported-text2, .rights2 {
+     .supported-text2, .rights2 {
         font-size: 15px; /* Sets the font size for both text elements */
         font-family: Calibri;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
+        padding-top: 1%;
       }
       
       .english-text,
