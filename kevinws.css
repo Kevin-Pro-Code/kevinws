@@ -398,7 +398,7 @@ margin-left: 16%;
 .flags {
   position: absolute;
   top: 1%;
-  right: 36.5%;
+  right: 37%;
   display: flex;
   gap: 10px;
   border-radius: 15%;
@@ -1138,7 +1138,6 @@ display: none !important;
           
       }
     
-
 
 }
 
