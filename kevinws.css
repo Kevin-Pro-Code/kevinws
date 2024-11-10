@@ -318,6 +318,89 @@ p {
 }
 
 
+.articles-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.articles-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.articles-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.articles-content {
+
+  padding-left: 10px;
+
+}
+
+.preview-article {
+  font-weight: bold;
+  font-size: 30px; /* Increase font size */
+  margin-left: auto; /* Align button to the right */
+  margin-top: 20px; 
+  display: block; /* Ensures it behaves like a block element */
+  border: none; /* Remove default border */
+  background-color: white; /* Example background color */
+  color: black; /* Example text color */
+  padding: 10px 30px; /* Optional padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 10px; /* Optional rounded corners */
+
+  position: absolute;
+  bottom: 0;  /* Align to the bottom */
+  left: 0;    /* Align to the left */
+  margin: 10px; /* Optional margin for spacing */
+  
+}
+
+
+.next-article {
+  font-weight: bold;
+  font-size: 30px; /* Increase font size */
+  margin-left: auto; /* Align button to the right */
+  margin-top: 20px; 
+  display: block; /* Ensures it behaves like a block element */
+  border: none; /* Remove default border */
+  background-color: white; /* Example background color */
+  color: black; /* Example text color */
+  padding: 10px 30px; /* Optional padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 10px; /* Optional rounded corners */
+  
+}
+
+
 .about-content {
   color: white;
   padding-left: 10px;
