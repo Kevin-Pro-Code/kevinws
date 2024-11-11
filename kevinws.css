@@ -502,59 +502,59 @@ p {
 
 }
 
-
-
-
-.contact-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  /* Adjust spacing between video containers */
-  font-size: 20px;
-  font-family: Calibri, sans-serif;
-  font-weight: bold;
-
-}
-
 .contact-description {
-
   position: relative;
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
-  /* Adjust width as needed */
-  text-align: center;
-  border-radius: 10px;
-  /* Rounded corners for the box */
-  margin-top: -80px;
-  /* Ensure it stays within the flow of the document */
+  width: 80%; /* Adjust width as needed */
+  border-radius: 10px; /* Rounded corners for the box */
+  margin-top: -80px; /* Ensure it stays within the flow of the document */
   margin-bottom: 20px;
   word-spacing: 3px;
   line-height: 2;
-
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: flex-start; /* Default to left alignment */
+  padding-left: 60px; /* Adjust padding as needed */
+  gap: 10px; /* Optional: Add space between items */
+  margin-left: auto;
+  margin-right: auto; /* This will center the box horizontally */
 }
 
 
 .contact-description p {
-  margin: 0;
-  /* Remove default margin */
+  margin: 0; /* Remove default margin */
   color: white;
+  text-align: center; /* Center the title text */
+  font-family: Helvetica;
+  font-size: 45px; /* Font size for the title */
+  font-weight: bold;
+  width: 100%; /* Ensure the title takes full width to be centered */
+}
+
+.contact-description .title2 {
+  margin: 0;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center; /* Center the title */
+  font-family: Helvetica;
+  align-self: center; /* Center the title only */
+}
+
+.contact-description a {
+  font-size: 45px;
+  color: green;
+  padding: 6px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Helvetica;
 }
 
 .contact-content {
-
   padding-left: 10px;
-
 }
-
-
-
-
-
 
 .preview-article {
   font-weight: bold;
@@ -576,7 +576,6 @@ p {
   
 }
 
-
 .next-article {
   font-weight: bold;
   font-size: 30px; /* Increase font size */
@@ -591,9 +590,6 @@ p {
   border-radius: 10px; /* Optional rounded corners */
   
 }
-
-
-
 
 
 .title {
@@ -644,8 +640,6 @@ margin-left: 16%;
   width: 10%; 
   height: auto;
 }
-
-
 
 
 @media only screen and (mxa-width: 760px) {
@@ -1100,6 +1094,169 @@ footer {
   vertical-align: middle;
 }
 
+
+/* ////////////  */
+
+#youtube {
+  font-size: 35px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#youtube:hover {
+  font-size: 35px;
+  color: grey;
+  padding: 5px;
+  vertical-align: middle;
+
+}
+
+#email {
+  font-size: 34px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#email:hover {
+  font-size: 34px;
+  color: grey;
+  padding: 6px;
+  vertical-align: middle;
+}
+
+#telegram {
+  font-size: 35px;
+  color: rgb(49, 172, 224);
+  padding: 6px;
+  vertical-align: middle;
+}
+
+#telegram:hover {
+  font-size: 35px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 6px;
+  vertical-align: middle;
+}
+
+#discord {
+  font-size: 34px;
+  color: rgba(84, 98, 228);
+  margin-top: 1px;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+#discord:hover {
+  font-size: 34px;
+  color: rgba(39, 38, 38, 0.322);
+  margin-top: 1px;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+#github {
+  font-size: 38px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#github:hover {
+  font-size: 38px;
+  color: grey;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#linkedin {
+  font-size: 38px;
+  color: rgb(13, 120, 243);
+  padding: 5px;
+  border-radius: 12%;
+  /* Adjust for round corners */
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+#linkedin:hover {
+  font-size: 38px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+  border-radius: 12%;
+  /* Adjust for round corners */
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+
+#instagram {
+  font-size: 38px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#instagram:hover {
+  font-size: 38px;
+  color: grey;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#facebook {
+  font-size: 41px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#facebook:hover {
+  font-size: 41px;
+  color: grey;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+
+#whatsapp {
+  color: white;
+  font-size: 43px;
+  padding: 4px 5px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+
+}
+
+#whatsapp:hover {
+  color: grey;
+  font-size: 43px;
+  padding: 4px 5px;
+  border-radius: 10%;
+ 
+  vertical-align: middle;
+}
+
+#twitter {
+  font-size: 36px;
+  color: black;
+  padding: 5px;
+  padding-right: 6px;
+  padding-left: 1.5px;
+  vertical-align: middle;
+}
+
+#twitter:hover {
+  font-size: 36px;
+  color: rgba(39, 38, 38, 0.322);
+  padding: 5px;
+  padding-right: 6px;
+  padding-left: 1.5px;
+  vertical-align: middle;
+}
 
 
 
