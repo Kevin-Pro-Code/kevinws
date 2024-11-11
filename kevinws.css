@@ -271,6 +271,51 @@ p {
 }
 
 
+.copyright-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.copyright-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+.copyright-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.copyright-content {
+
+  padding-left: 10px;
+
+}
+
 .projects-container {
   position: relative;
   display: flex;
@@ -364,6 +409,153 @@ p {
 
 }
 
+
+.coop-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.coop-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.coop-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.coop-content {
+
+  padding-left: 10px;
+
+}
+
+.tradingbot-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.tradingbot-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.tradingbot-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.tradingbot-content {
+
+  padding-left: 10px;
+
+}
+
+
+
+
+.contact-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.contact-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.contact-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.contact-content {
+
+  padding-left: 10px;
+
+}
+
+
+
+
+
+
 .preview-article {
   font-weight: bold;
   font-size: 30px; /* Increase font size */
@@ -401,48 +593,7 @@ p {
 }
 
 
-.about-content {
-  color: white;
-  padding-left: 10px;
-}
 
-.about-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  /* Adjust spacing between video containers */
-  font-size: 20px;
-  font-family: Calibri, sans-serif;
-  font-weight: bold;
-}
-
-.about-description {
-  background-color: black;
-  border: 3px solid blue;
-  padding: 10px;
-  width: 70%;
-  /* Adjust width as needed */
-  text-align: left;
-  border-radius: 10px;
-  /* Rounded corners for the box */
-  margin-top: -80px;
-  /* Adjust distance from video */
-  z-index: 0;
-  /* Ensure the description is above the video */
-  position: relative;
-  /* Ensure it stays within the flow of the document */
-  word-spacing: 3px;
-  line-height: 2;
-}
-
-.about-description p {
-  margin: 0;
-  color: white;
-  /* Set text color to white */
-}
 
 
 .title {
