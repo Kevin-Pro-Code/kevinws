@@ -507,7 +507,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 80%; /* Adjust width as needed */
+  width: 60%; /* Adjust width as needed */
   border-radius: 10px; /* Rounded corners for the box */
   margin-top: -80px; /* Ensure it stays within the flow of the document */
   margin-bottom: 20px;
@@ -520,6 +520,7 @@ p {
   gap: 10px; /* Optional: Add space between items */
   margin-left: auto;
   margin-right: auto; /* This will center the box horizontally */
+ 
 }
 
 
@@ -531,6 +532,7 @@ p {
   font-size: 45px; /* Font size for the title */
   font-weight: bold;
   width: 100%; /* Ensure the title takes full width to be centered */
+ 
 }
 
 .contact-description .title2 {
@@ -544,16 +546,95 @@ p {
 }
 
 .contact-description a {
-  font-size: 45px;
-  color: green;
-  padding: 6px;
-  vertical-align: middle;
-  text-align: center;
+  display: flex; /* Keep flex to align icon and text in a row */
+  align-items: center; /* Vertically center icon and text */
+  justify-content: flex-start; /* Align items to the left */
+  font-size: 20px; /* Adjust font size */
+  color: white; /* Set color for the text */
+  padding: 10px;
   font-family: Helvetica;
+  text-decoration: none; /* Remove underline */
+  gap: 10px; /* Space between icon and text */
+  width: fit-content; /* Ensure the link doesn't stretch across the container */
+}
+
+.contact-description a i {
+  font-size: 30px; /* Adjust icon size */
+}
+
+.contact-description a span {
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .contact-content {
   padding-left: 10px;
+}
+
+/* For the text next to the icon */
+.contact-span {
+  font-size: 20px; /* Set the default text size */
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#linkedin .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#email .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#youtube .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#discord .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#instagram .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#facebook .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#twitter .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#github .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#telegram .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
+}
+
+/* Specific style for LinkedIn link */
+#whatsapp .contact-span {
+  font-size: 30px; /* Increase font size for LinkedIn */
+  font-family: Calibri, sans-serif;
 }
 
 .preview-article {
@@ -1128,21 +1209,21 @@ footer {
 
 #telegram {
   font-size: 35px;
-  color: rgb(49, 172, 224);
+  color: white;
   padding: 6px;
   vertical-align: middle;
 }
 
 #telegram:hover {
   font-size: 35px;
-  color: rgba(39, 38, 38, 0.322);
+  color: grey;
   padding: 6px;
   vertical-align: middle;
 }
 
 #discord {
   font-size: 34px;
-  color: rgba(84, 98, 228);
+  color: white;
   margin-top: 1px;
   vertical-align: middle;
   padding: 1px;
@@ -1150,7 +1231,7 @@ footer {
 
 #discord:hover {
   font-size: 34px;
-  color: rgba(39, 38, 38, 0.322);
+  color: grey;
   margin-top: 1px;
   vertical-align: middle;
   padding: 1px;
@@ -1172,7 +1253,7 @@ footer {
 
 #linkedin {
   font-size: 38px;
-  color: rgb(13, 120, 243);
+  color: white;
   padding: 5px;
   border-radius: 12%;
   /* Adjust for round corners */
@@ -1183,7 +1264,7 @@ footer {
 
 #linkedin:hover {
   font-size: 38px;
-  color: rgba(39, 38, 38, 0.322);
+  color: grey;
   padding: 5px;
   border-radius: 12%;
   /* Adjust for round corners */
