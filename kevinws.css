@@ -723,7 +723,7 @@ margin-left: 16%;
 }
 
 
-@media only screen and (mxa-width: 760px) {
+@media only screen and (max-width: 760px) {
  
   .video-container {
     position: relative;
@@ -1342,88 +1342,31 @@ footer {
 
 
 
-@media (max-width: 760px) and (min-resolution: 120dpi) and (max-resolution: 140dpi) {
-    
+
+@media (min-width: 1px) and (max-width: 250px) {
+
+
   body {
 
-    zoom: 0.40; 
-    /* 0.35  */
-
+    zoom: 0.2; 
+    
   }
      
  
   .navbar {
 
-    zoom: 0.825; 
-    /* 0.65  */
-    
+    zoom: 0.6; 
+      
   }
 
-  
-.overall-bottom-container {
-
-justify-content: center; /* Horizontal centering */
-align-items: center;  
-padding-right: 4%;
-zoom: 1.0; 
-}
-
-
-.footer-right {
-
-display: none !important;
-
-}
-
-
-.footer-left, 
-.footer-center {
-  
-  align-items: flex-start; /* Align vertically */
-  justify-content: flex-start;
-  vertical-align: middle;
- 
-}
-
-
-
-.footer-container {
-
-  grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  gap: 1px; /* Space between columns */
-  
-  zoom: 1.125; 
-}
-
-.supported-text1, .supported-text2, .rights2 {
-  font-size: 15px; /* Sets the font size for both text elements */
-  font-family: Calibri;
-  align-items: center;
-  justify-content: center;
-}
-
-.english-text,
-.portuguese-text {
-   
-  margin-right: 10px;  
-  justify-content: center;
-  align-items: center;
-}
-
-.low-icons {
-
-  margin-left: 6px;
-    
-}
 
 }
 
 
 
-@media (min-width: 150px) and (max-width: 380px) and (min-resolution: 30dpi) and (max-resolution: 300dpi) {
-    
+@media (min-width: 250px) and (max-width: 350px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+
+
   body {
 
     zoom: 0.45; 
@@ -1437,10 +1380,52 @@ display: none !important;
       
   }
 
+
 }
 
 
-@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (min-width: 350px) and (max-width: 420px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+
+
+  body {
+
+    zoom: 0.45; 
+    
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.75; 
+      
+  }
+
+
+}
+
+
+
+@media (min-width: 420px) and (max-width: 800px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+
+
+  body {
+
+    zoom: 0.45; 
+    
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.85; 
+      
+  }
+
+
+}
+
+
+@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
 
@@ -1457,7 +1442,7 @@ display: none !important;
 
 }
 
-@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
    
   .chrome-mobile body {
     zoom: 0.45; 
@@ -1544,7 +1529,7 @@ display: none !important;
 
 }
 
-@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
+@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
     
   body {
 
@@ -1560,7 +1545,7 @@ display: none !important;
 
 }
 
-@media (min-width: 380px) and (max-width: 830px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
     zoom: 0.50; 
@@ -1638,11 +1623,35 @@ display: none !important;
 }
 }
 
+@media (min-width: 800px) and (max-width: 990px)
+
+{
+
+  .footer-right {
+
+    zoom: 0.75; 
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+      zoom: 0.75; 
+    }
+    
+    
+  
+
+}
+
+@media (min-width: 3980px) and (max-width: 9999px) {
+
+  
+ 
 
 
-
-
-@media (min-width: 900px) {
   .overall-bottom-container {
     grid-template-areas:
       "comment-text email-text"
