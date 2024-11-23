@@ -709,7 +709,7 @@ margin-left: 16%;
 .flags {
   position: absolute;
   top: 1%;
-  right: 35.6%;
+  right: 36.25%;
   display: flex;
   gap: 10px;
   border-radius: 15%;
@@ -898,7 +898,6 @@ footer {
   font-family: Calibri;
 
 }
-
 
 .footer-container {
   display: flex;
@@ -1360,6 +1359,24 @@ footer {
   }
 
 
+  
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */
+       
+    border-radius: 10px; /* Optional rounded corners */
+  }
+
+
 }
 
 
@@ -1378,6 +1395,24 @@ footer {
 
     zoom: 0.65; 
       
+  }
+
+
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */
+  
+    
+    border-radius: 10px; /* Optional rounded corners */
   }
 
 
@@ -1401,6 +1436,24 @@ footer {
   }
 
 
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */
+  
+    
+    border-radius: 10px; /* Optional rounded corners */
+  }
+
+
 }
 
 
@@ -1419,6 +1472,25 @@ footer {
 
     zoom: 0.85; 
       
+  }
+
+ 
+  
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */
+    
+    
+    border-radius: 10px; /* Optional rounded corners */
   }
 
 
@@ -1681,46 +1753,4 @@ display: none !important;
 
 }
 
-
-@media (min-width: 3980px) and (max-width: 9999px) {
-
-  
- 
-
-
-  .overall-bottom-container {
-    grid-template-areas:
-      "comment-text email-text"
-      "comment-container email-container"
-      "comment-send email-sub";
-  }
-
-  .comment-text {
-    grid-area: comment-text;
-  }
-
-  .email-text {
-    grid-area: email-container;
-    margin-top: 48px;
-  }
-
-  .comment-container {
-    grid-area: comment-container;
-  }
-
-  .email-container {
-    grid-area: email-container;
-    margin-top: 90px;
-  }
-
-  .comment-send {
-    grid-area: comment-send;
-  }
-
-  .email-sub {
-    grid-area: email-sub;
-    
-  
-  }
-}
 
