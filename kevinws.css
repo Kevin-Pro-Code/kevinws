@@ -1405,7 +1405,7 @@ footer {
 
 
 
-@media (min-width: 420px) and (max-width: 800px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+@media (min-width: 420px) and (max-width: 600px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
 
 
   body {
@@ -1425,7 +1425,7 @@ footer {
 }
 
 
-@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
 
@@ -1442,7 +1442,7 @@ footer {
 
 }
 
-@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
    
   .chrome-mobile body {
     zoom: 0.45; 
@@ -1529,7 +1529,7 @@ footer {
 
 }
 
-@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
+@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
     
   body {
 
@@ -1545,7 +1545,7 @@ footer {
 
 }
 
-@media (min-width: 380px) and (max-width: 800px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
     zoom: 0.50; 
@@ -1623,7 +1623,7 @@ display: none !important;
 }
 }
 
-@media (min-width: 800px) and (max-width: 990px)
+@media (min-width: 820px) and (max-width: 990px)
 
 {
 
@@ -1645,6 +1645,42 @@ display: none !important;
   
 
 }
+
+
+@media (min-width: 600px) and (max-width: 820px) {
+
+
+
+  body {
+
+    zoom: 0.60; 
+   
+  }
+      
+  .navbar {
+
+    zoom: 0.98; 
+    
+  }
+
+
+  .footer-right {
+
+    zoom: 1.25; 
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+      zoom: 1.25; 
+    }
+    
+
+}
+
 
 @media (min-width: 3980px) and (max-width: 9999px) {
 
