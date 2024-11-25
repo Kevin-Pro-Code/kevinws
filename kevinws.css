@@ -999,6 +999,7 @@ footer {
 .footer-right .fa {
   padding: 10px;
   font-size: 20px;
+  
 }
 
 
@@ -1007,6 +1008,7 @@ footer {
   justify-content: flex-start; /* Align items to the left (optional) */ 
   align-items: center;    /* Align items vertically to the center (optional) */
   padding: 0px 0px;      /* Keep the existing padding */
+  
 }
 
 
@@ -1034,7 +1036,8 @@ footer {
   font-size: 29px;
   color: black;
   padding: 6px;
-  vertical-align: middle;
+  padding-top: 20%;
+   vertical-align: middle;
 }
 
 .footer-right .fa-envelope:hover {

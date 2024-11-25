@@ -420,14 +420,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function updateFooterDisplay() {
   const zoomLevel = window.devicePixelRatio;
+  const screenWidth = window.innerWidth; // Get the current screen width
   const footerRight = document.querySelector('.footer-right');
 
-  if (zoomLevel > 2.05) {
+  if (!footerRight) return; // Ensure the element exists
+
+  // Adjust display based on zoom level and screen width
+  if ((zoomLevel > 1.9) && (screenWidth <= 520)) {
+    // Hide footer-right for incorrect zoom levels or small screens (e.g., tablets, phones)
     footerRight.style.display = 'none';
   } else {
+    // Show footer-right for valid zoom levels and wider screens
     footerRight.style.display = 'flex';
   }
 }
+
+// Run the function on page load
+document.addEventListener('DOMContentLoaded', updateFooterDisplay);
+
+// Add event listener for window resize to ensure updates on resize
+window.addEventListener('resize', updateFooterDisplay);
+
 
 function updateFooterZoom() {
   window.requestAnimationFrame(function() {
