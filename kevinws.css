@@ -1738,7 +1738,7 @@ footer {
 
 }
 
-@media (min-width: 280px) and (max-width: 900px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 380px) and (max-width: 900px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
     zoom: 0.50; 
