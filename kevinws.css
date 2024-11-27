@@ -1738,19 +1738,11 @@ footer {
 
 }
 
-@media (min-width: 20px) and (max-width: 900px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   
   
   
-  .chrome-mobile body {
-    zoom: 0.50; 
-}
-
-.chrome-mobile .navbar {
-    zoom: 0.75; 
-}
-
  
 .body {
 
