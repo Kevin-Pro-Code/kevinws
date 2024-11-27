@@ -3,7 +3,7 @@ body {
 
 /*
 background-color: rgb(214, 214, 214);
-*/  zoom: 0.60; 
+*/  zoom: 0.40; 
 
   margin: 0;
   background: linear-gradient(to bottom, white, gray, white);
@@ -12,7 +12,7 @@ background-color: rgb(214, 214, 214);
 
 .navbar {
 
-  zoom: 0.60; 
+  zoom: 0.50; 
   
 }
 
