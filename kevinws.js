@@ -1,37 +1,87 @@
-//ORGANIZE NAVBAR BUTTONS DISPLAY
-
 document.addEventListener('DOMContentLoaded', function() {
     var lastContentVisible = 'about-content'; // Initialize with the about content as the last visible.
 
+    // Function to show content (for both navbar and search system)
     function showContent(contentClass) {
         console.log('Showing content:', contentClass);
         var content = document.querySelector('.' + contentClass);
         if (content) {
-            content.style.display = 'block';
+            content.style.display = 'block'; // Ensure content is visible
         } else {
             console.error('Content not found:', contentClass);
         }
     }
 
+    // Function to hide content (for both navbar and search system)
     function hideContent(contentClass) {
         console.log('Hiding content:', contentClass);
         var content = document.querySelector('.' + contentClass);
         if (content) {
-            content.style.display = 'none';
+            content.style.display = 'none'; // Hide the content
         } else {
             console.error('Content not found:', contentClass);
         }
     }
 
+    // Function to hide all content before showing the new one
+    function hideAllContent() {
+        const allContent = document.querySelectorAll('.about-content, .projects-content, .contact-content, .languages-content, .copyright-content, .articles-content, .images-content, .coop-content, .tradingbot-content');
+        allContent.forEach(content => {
+            content.style.display = 'none';
+        });
+    }
+
+    // Function to highlight the matching text
+    function highlightText(content, query) {
+        const regex = new RegExp('(' + query + ')', 'gi'); // Create a case-insensitive regex to match the query
+        content.innerHTML = content.textContent.replace(regex, '<span class="highlight">$1</span>'); // Replace matches with a span
+    }
+
+    // Function to search content based on the query
+    function searchContent(query) {
+        // Get all content sections (even hidden ones)
+        const allContent = document.querySelectorAll('.about-content, .projects-content, .contact-content, .languages-content, .copyright-content, .articles-content, .images-content, .coop-content, .tradingbot-content');
+
+        // If the search bar is empty, hide all results
+        if (!query) {
+            hideAllContent(); // Hide all content if there's no query
+            return; // Exit early as there's no need to highlight or display any content
+        }
+
+        let foundMatch = false; // To track if any match is found
+
+        allContent.forEach((content) => {
+            // Clear any existing highlights
+            content.innerHTML = content.textContent; // Reset to original content without highlights
+
+            // Only show content that matches the query
+            if (content.textContent.toLowerCase().includes(query.toLowerCase())) {
+                showContent(content.classList[0]); // Show content if query matches
+                highlightText(content, query); // Highlight matched text
+                foundMatch = true;
+            } else {
+                hideContent(content.classList[0]); // Hide content if no match
+            }
+        });
+
+        // If no match found, you can optionally display a message or do something else
+        if (!foundMatch) {
+            console.log('No results found for query:', query);
+        }
+    }
+
+    // Function to setup subtabs for navbar
     function setupSubtab(subtabId, contentClass) {
         var subtab = document.getElementById(subtabId);
         if (subtab) {
             subtab.addEventListener('click', function() {
                 console.log('Clicked subtab:', subtabId);
+                
+                // Hide previously visible content
                 if (lastContentVisible !== contentClass) {
-                    hideContent(lastContentVisible); // Hide previously visible content.
-                    lastContentVisible = contentClass; // Update the last visible content reference.
-                    showContent(contentClass); // Show the content corresponding to the clicked subtab.
+                    hideContent(lastContentVisible); // Hide previously visible content
+                    lastContentVisible = contentClass; // Update the last visible content reference
+                    showContent(contentClass); // Show the content corresponding to the clicked subtab
                 }
             });
         } else {
@@ -50,11 +100,19 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSubtab('languages-tab', 'languages-content');
     setupSubtab('contact-tab', 'contact-content');
 
+    // Initially display the 'about-content' (managed by navbar)
     showContent('about-content');
-    hideContent('projects-content');
 
-    // Initially display the 'about-content'
-    
+    // Implementing search feature
+    const searchBar = document.getElementById('search-bar');
+    searchBar.addEventListener('input', function() {
+        const query = searchBar.value.trim();
+        searchContent(query);
+    });
+
+    // You can add any default display behavior for content sections here.
+    // For example, you might want to keep about-content visible initially.
+    hideContent('projects-content'); // You can change this as needed.
 });
 
 
@@ -530,4 +588,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+
 

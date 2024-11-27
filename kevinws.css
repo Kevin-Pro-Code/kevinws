@@ -17,6 +17,8 @@ background-color: rgb(214, 214, 214);
 }
 
 
+
+
 p {
   color: black;
 
@@ -229,6 +231,34 @@ p {
   word-spacing: 3px;
   line-height: 2.5;
   text-align: left;
+}
+
+#SearchResults {
+  background-color: black;
+  border: 4px solid blue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /* Centering the box horizontally */
+  margin: 0 auto; /* This centers the element horizontally */
+  width: 80%; /* Adjust width to control the size of the box (80% means it will take up 80% of the container's width) */
+  max-width: 1200px; /* Optional: Set a max-width to prevent the box from becoming too wide on large screens */
+
+  /* Add padding on sides for spacing inside the box */
+  padding: 20px; /* Adjust the padding as needed for spacing inside the box */
+  margin-top: 70px;
+  /* Adjust spacing between video containers */
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-bottom: 40px; /* Keeps the space below the box */
+}
+
+.highlight {
+  background-color: yellow; /* Change to any color you prefer */
+  font-weight: bold;
+  color: red; /* Optional, to change text color */
 }
 
 .about-description p {
@@ -502,6 +532,53 @@ p {
 
 }
 
+.languages-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+
+}
+
+.languages-description {
+
+  position: relative;
+  background-color: black;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 70%;
+  /* Adjust width as needed */
+  text-align: center;
+  border-radius: 10px;
+  /* Rounded corners for the box */
+  margin-top: -80px;
+  /* Ensure it stays within the flow of the document */
+  margin-bottom: 20px;
+  word-spacing: 3px;
+  line-height: 2;
+
+}
+
+
+.languages-description p {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.languages-content {
+
+  padding-left: 10px;
+
+}
+
+
 .contact-description {
   position: relative;
   background-color: black;
@@ -750,7 +827,7 @@ margin-left: 16%;
 
 .overall-bottom-container {
   display: grid;
-  gap: 5px;
+  gap: 5px;  
   grid-template-areas:
     "comment-text"
     "comment-container"
@@ -762,11 +839,52 @@ margin-left: 16%;
   /* Adjust as needed */
   margin: 0 auto;
   /* Center the container */
-  padding-bottom: 50px;
+  padding-bottom: 55px;
  
   overflow: hidden;
 
 }
+
+@media (min-width: 1000px) {
+  .overall-bottom-container {
+    grid-template-areas:
+      "comment-text email-text"
+      "comment-container email-container"
+      "comment-send email-sub";
+      padding-left: 6%;
+  }
+
+  .comment-text {
+    grid-area: comment-text;
+    
+  }
+
+  .email-text {
+    grid-area: email-text;
+ 
+     
+  }
+
+  .comment-container {
+    grid-area: comment-container;     
+  }
+
+  .email-container {        
+    grid-area: email-container;
+   }
+
+  .comment-send {
+    grid-area: comment-send;
+  }
+
+  .email-sub {
+    grid-area: email-sub;
+  }
+
+ 
+
+}
+
 
 
 .title-mail-box {
@@ -774,7 +892,6 @@ margin-left: 16%;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
 }
 
 
@@ -832,10 +949,8 @@ margin-left: 16%;
   max-width: 700px;
   width: 500px;
   height: 75px;
-  margin-top: 0px;
-  /* Adjust this value to move down */
-  transform: translateY(0%);
-  /* Adjust for positioning */
+  margin-top: 5px;
+
   
 }
 
@@ -869,6 +984,10 @@ margin-left: 16%;
   margin-top: 5px;
 
 }
+
+
+
+
 
 
 .hr {
@@ -1344,9 +1463,6 @@ footer {
 }
 
 
-
-
-
 @media (min-width: 1px) and (max-width: 250px) {
 
 
@@ -1625,22 +1741,22 @@ footer {
 @media (min-width: 380px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
-    zoom: 0.50; 
+    zoom: 0.10; 
 }
 
 .chrome-mobile .navbar {
-    zoom: 0.75; 
+    zoom: 0.15; 
 }
 
   body {
 
-    zoom: 0.40; 
+    zoom: 0.10; 
    
   }
       
   .navbar {
 
-    zoom: 0.60; 
+    zoom: 0.10; 
     
   }
   
