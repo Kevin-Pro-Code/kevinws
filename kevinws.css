@@ -3,7 +3,7 @@ body {
 
 /*
 background-color: rgb(214, 214, 214);
-*/  zoom: 0.40; 
+*/
 
   margin: 0;
   background: linear-gradient(to bottom, white, gray, white);
@@ -12,7 +12,7 @@ background-color: rgb(214, 214, 214);
 
 .navbar {
 
-  zoom: 0.50; 
+  zoom: 0.68; 
   
 }
 
@@ -1741,7 +1741,7 @@ footer {
 @media (min-width: 280px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   
-  body {
+   body {
 
     zoom: 0.40; 
    
@@ -1749,7 +1749,7 @@ footer {
       
   .navbar {
 
-    zoom: 0.60; 
+    zoom: 0.53; 
     
   }
   
