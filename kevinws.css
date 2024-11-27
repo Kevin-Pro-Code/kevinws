@@ -1824,13 +1824,13 @@ display: none !important;
 
   body {
 
-    zoom: 0.60; 
+    zoom: 0.10; 
    
   }
       
   .navbar {
 
-    zoom: 0.98; 
+    zoom: 0.18; 
     
   }
 
@@ -1859,7 +1859,7 @@ display: none !important;
 
   .footer-right {
 
-    zoom: 0.75; 
+    zoom: 0.15; 
     }
     
     .footer-left, 
@@ -1868,7 +1868,7 @@ display: none !important;
       align-items: flex-start; /* Align vertically */
       justify-content: flex-start;
       vertical-align: middle;
-      zoom: 0.75; 
+      zoom: 0.15; 
     }
     
     
