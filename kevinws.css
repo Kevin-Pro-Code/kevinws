@@ -17,6 +17,28 @@ background-color: rgb(214, 214, 214);
 }
 
 
+@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 100dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+    
+  .chrome-mobile body {
+    zoom: 0.50; 
+}
+
+.chrome-mobile .navbar {
+    zoom: 0.75; 
+}
+
+  body {
+
+    zoom: 0.40; 
+   
+  }
+      
+ .navbar {
+
+    zoom: 0.53; 
+    
+  }}
+
 
 
 p {
@@ -1748,15 +1770,15 @@ footer {
     zoom: 0.75; 
 }
 
-  .firefox-mobile .body {
+  body {
 
-    zoom: 5.40; 
+    zoom: 0.40; 
    
   }
       
-  .firefox-mobile .navbar {
+ .navbar {
 
-    zoom: 5.53; 
+    zoom: 0.53; 
     
   }
   
