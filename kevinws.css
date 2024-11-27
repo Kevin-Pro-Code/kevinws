@@ -1741,22 +1741,22 @@ footer {
 @media (min-width: 280px) and (max-width: 900px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
-    zoom: 2.50; 
+    zoom: 0.50; 
 }
 
 .chrome-mobile .navbar {
-    zoom: 2.75; 
+    zoom: 0.75; 
 }
 
   body {
 
-    zoom: 2.40; 
+    zoom: 0.40; 
    
   }
       
   .navbar {
 
-    zoom: 2.60; 
+    zoom: 0.60; 
     
   }
   
@@ -1818,47 +1818,3 @@ display: none !important;
 
 
 
-@media (min-width: 600px) and (max-width: 820px) {
-
-
-
-  .footer-right {
-
-    zoom: 0.70; 
-    }
-    
-    .footer-left, 
-    .footer-center {
-      
-      align-items: flex-start; /* Align vertically */
-      justify-content: flex-start;
-      vertical-align: middle;
-      zoom: 0.70; 
-    }
-    
-
-}
-
-
-@media (min-width: 820px) and (max-width: 990px)
-
-{
-
-  .footer-right {
-
-    zoom: 0.75; 
-    }
-    
-    .footer-left, 
-    .footer-center {
-      
-      align-items: flex-start; /* Align vertically */
-      justify-content: flex-start;
-      vertical-align: middle;
-      zoom: 0.75; 
-    }
-    
-    
-  
-
-}
