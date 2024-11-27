@@ -1635,7 +1635,7 @@ footer {
 
 }
 
-@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
    
   .chrome-mobile body {
     zoom: 0.45; 
@@ -1722,7 +1722,7 @@ footer {
 
 }
 
-@media (min-width: 380px) and (max-width: 600px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
+@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
     
   body {
 
@@ -1738,14 +1738,14 @@ footer {
 
 }
 
-@media (min-width: 280px) and (max-width: 900px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
-    zoom: 0.50; 
+    zoom: 0.90; 
 }
 
 .chrome-mobile .navbar {
-    zoom: 0.75; 
+    zoom: 0.95; 
 }
 
   body {
