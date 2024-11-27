@@ -16,7 +16,7 @@ background-color: rgb(214, 214, 214);
   
 }
 
-@media (min-width: 280px) and (max-width: 600px) and (min-resolution: 100dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 180px) and (max-width: 900px) and (min-resolution: 10dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
 
   body {
