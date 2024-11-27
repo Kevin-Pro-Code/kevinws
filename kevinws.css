@@ -1748,15 +1748,15 @@ footer {
     zoom: 0.75; 
 }
 
-  .firefox-mobile body {
+  .firefox-mobile .body {
 
-    zoom: 2.40; 
+    zoom: 5.40; 
    
   }
       
   .firefox-mobile .navbar {
 
-    zoom: 2.53; 
+    zoom: 5.53; 
     
   }
   
