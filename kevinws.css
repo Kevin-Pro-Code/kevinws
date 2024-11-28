@@ -270,10 +270,6 @@ p {
 
 
 
-
-
-
-
 .about-description p {
   margin: 0;
   /* Remove default margin */
@@ -288,7 +284,7 @@ p {
 
 }
 
-.ola-text {
+.extra-title {
   color: white;
   font-size: 55px;
   text-align: left;
@@ -296,6 +292,33 @@ p {
 
 }
 
+.about-text {
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+
+.about-text2 {
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  /* Adjust spacing between video containers */
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
 
 .expand-toabout {
   font-weight: bold;
@@ -727,39 +750,36 @@ p {
   font-family: Calibri, sans-serif;
 }
 
+.article-navigation {
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Push child elements to the edges */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Optional padding for spacing */
+  background-color: black; /* Example background color */
+}
+
 .preview-article {
   font-weight: bold;
-  font-size: 30px; /* Increase font size */
-  margin-left: auto; /* Align button to the right */
-  margin-top: 20px; 
-  display: block; /* Ensures it behaves like a block element */
-  border: none; /* Remove default border */
-  background-color: white; /* Example background color */
-  color: black; /* Example text color */
-  padding: 10px 30px; /* Optional padding */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 10px; /* Optional rounded corners */
-
-  position: absolute;
-  bottom: 0;  /* Align to the bottom */
-  left: 0;    /* Align to the left */
-  margin: 10px; /* Optional margin for spacing */
-  
+  font-size: 30px;
+  display: block; /* Ensure it behaves like a block element */
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .next-article {
   font-weight: bold;
-  font-size: 30px; /* Increase font size */
-  margin-left: auto; /* Align button to the right */
-  margin-top: 20px; 
-  display: block; /* Ensures it behaves like a block element */
-  border: none; /* Remove default border */
-  background-color: white; /* Example background color */
-  color: black; /* Example text color */
-  padding: 10px 30px; /* Optional padding */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 10px; /* Optional rounded corners */
-  
+  font-size: 30px;
+  display: block;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 
