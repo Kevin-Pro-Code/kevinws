@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Cache the last visible subtab and content class
     let lastContentVisible = null;
     let lastSubtabSelected = null;
 
@@ -16,38 +15,29 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to highlight matching text within content
     function highlightText(content, query) {
         const regex = new RegExp(query, 'gi');
-        // Ensure we only modify the text nodes, not the structure
         const originalText = content.textContent;
         content.innerHTML = originalText.replace(regex, '<span class="highlight">$&</span>');
     }
 
-    // Function to search and highlight content across the website
     function searchWebsite(query) {
-        // Hide the current subtab and content
-        hideSelectedSubtab();
-
-        // Search through all content sections
-        const contentSections = document.querySelectorAll('.about-content, .copyright-content, .portfolio-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
-
+        hideAllContent(); // Hide all content when a search is active
+        const allTextElements = document.querySelectorAll('.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+    
         let foundMatch = false;
-
-        contentSections.forEach(content => {
-            // Only check if the query is in the text content (ignoring case)
+    
+        allTextElements.forEach(content => {
             if (content.textContent.toLowerCase().includes(query.toLowerCase())) {
-                highlightText(content, query);
-                content.classList.remove('hidden'); // Show matching content
+                showContent(content.classList[0]); // Ensure the content is shown
+                highlightText(content, query); // Highlight the matching text
                 foundMatch = true;
-            } else {
-                content.classList.add('hidden'); // Hide content that doesn't match
             }
         });
-
-        // Display 'Not found!' message if no match is found
+    
         const notFoundMessage = document.getElementById('not-found-message');
-        if (!foundMatch) {
-            notFoundMessage.style.display = 'block';
-        } else {
-            notFoundMessage.style.display = 'none';
+        if (!foundMatch && notFoundMessage) {
+            notFoundMessage.style.display = 'block'; // Show 'Not Found' message if no match
+        } else if (notFoundMessage) {
+            notFoundMessage.style.display = 'none'; // Hide if a match is found
         }
     }
 
@@ -124,18 +114,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Setup search results container visibility
-    const searchResults = document.getElementById('SearchResults');
-    searchBar.addEventListener('input', function () {
-        const query = searchBar.value.trim();
-        if (query) {
-            searchResults.style.display = 'flex'; // Show search results
-        } else {
-            searchResults.style.display = 'none'; // Hide search results
-        }
-    });
-
     // Initially hide the search results
+    const searchResults = document.getElementById('SearchResults');
     if (searchResults) {
         searchResults.style.display = 'none';
     }

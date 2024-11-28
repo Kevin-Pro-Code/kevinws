@@ -1,16 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var lastContentVisible = 'about-content'; // Initialize with the about content as the last visible.
-
-    // Function to show content (for both navbar and search system)
-    function showContent(contentClass) {
-        console.log('Showing content:', contentClass);
-        var content = document.querySelector('.' + contentClass);
-        if (content) {
-            content.style.display = 'block'; // Ensure content is visible
-        } else {
-            console.error('Content not found:', contentClass);
-        }
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    var lastContentVisible = 'about-content'; // Initialize with the about content as the last visible
+    var lastSubtabSelected = null; // Track the last selected tab for highlighting
 
     // Function to hide content (for both navbar and search system)
     function hideContent(contentClass) {
@@ -23,73 +13,52 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Function to hide all content before showing the new one
+    // Function to show content (for both navbar and search system)
+    function showContent(contentClass) {
+        console.log('Showing content:', contentClass);
+        var content = document.querySelector('.' + contentClass);
+        if (content) {
+            content.style.display = 'block'; // Ensure content is visible
+        } else {
+            console.error('Content not found:', contentClass);
+        }
+    }
+
+    // Function to hide all content (for both navbar and search system)
     function hideAllContent() {
-        const allContent = document.querySelectorAll('.about-content, .projects-content, .contact-content, .languages-content, .copyright-content, .articles-content, .images-content, .coop-content, .tradingbot-content');
+        const allContent = document.querySelectorAll('.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
         allContent.forEach(content => {
             content.style.display = 'none';
         });
     }
 
-    // Function to highlight the matching text
-    function highlightText(content, query) {
-        const regex = new RegExp('(' + query + ')', 'gi'); // Create a case-insensitive regex to match the query
-        content.innerHTML = content.textContent.replace(regex, '<span class="highlight">$1</span>'); // Replace matches with a span
-    }
-
-    // Function to search content based on the query
-    function searchContent(query) {
-        // Get all content sections (even hidden ones)
-        const allContent = document.querySelectorAll('.about-content, .projects-content, .contact-content, .languages-content, .copyright-content, .articles-content, .images-content, .coop-content, .tradingbot-content');
-
-        // If the search bar is empty, hide all results
-        if (!query) {
-            hideAllContent(); // Hide all content if there's no query
-            return; // Exit early as there's no need to highlight or display any content
-        }
-
-        let foundMatch = false; // To track if any match is found
-
-        allContent.forEach((content) => {
-            // Clear any existing highlights
-            content.innerHTML = content.textContent; // Reset to original content without highlights
-
-            // Only show content that matches the query
-            if (content.textContent.toLowerCase().includes(query.toLowerCase())) {
-                showContent(content.classList[0]); // Show content if query matches
-                highlightText(content, query); // Highlight matched text
-                foundMatch = true;
-            } else {
-                hideContent(content.classList[0]); // Hide content if no match
-            }
-        });
-
-        // If no match found, you can optionally display a message or do something else
-        if (!foundMatch) {
-            console.log('No results found for query:', query);
-        }
-    }
-
-    // Function to setup subtabs for navbar
-    function setupSubtab(subtabId, contentClass) {
-        var subtab = document.getElementById(subtabId);
-        if (subtab) {
-            subtab.addEventListener('click', function() {
-                console.log('Clicked subtab:', subtabId);
-                
-                // Hide previously visible content
-                if (lastContentVisible !== contentClass) {
-                    hideContent(lastContentVisible); // Hide previously visible content
-                    lastContentVisible = contentClass; // Update the last visible content reference
-                    showContent(contentClass); // Show the content corresponding to the clicked subtab
+    // Setup subtabs
+    function setupSubtab(tabId, contentClass) {
+        const tab = document.getElementById(tabId);
+        if (tab) {
+            tab.addEventListener('click', function () {
+                // Hide all content and remove highlights
+                hideAllContent();
+                if (lastSubtabSelected) {
+                    lastSubtabSelected.classList.remove('highlight');
                 }
+
+                // Show the content for the selected tab
+                showContent(contentClass);
+
+                // Highlight the selected subtab
+                lastSubtabSelected = tab;
+                lastSubtabSelected.classList.add('highlight');
             });
         } else {
-            console.error(`Subtab with ID ${subtabId} not found.`);
+            console.error(`Tab with ID ${tabId} not found.`);
         }
     }
 
-    // Setup subtabs
+    // Initially hide the 'projects-content' and setup all other subtabs
+    hideContent('projects-content');  // Hide the projects content initially
+
+    // Setup each subtab
     setupSubtab('about-tab', 'about-content');
     setupSubtab('copyright-tab', 'copyright-content');
     setupSubtab('articles-tab', 'articles-content');
@@ -103,19 +72,210 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initially display the 'about-content' (managed by navbar)
     showContent('about-content');
 
-    // Implementing search feature
+    // --- Search System Integration ---
     const searchBar = document.getElementById('search-bar');
-    searchBar.addEventListener('input', function() {
+    searchBar.addEventListener('input', function () {
         const query = searchBar.value.trim();
-        searchContent(query);
+        if (query) {
+            searchWebsite(query); // Trigger search when there's input
+        } else {
+            resetSearchResults(); // Reset the page when the search bar is cleared
+        }
     });
 
-    // You can add any default display behavior for content sections here.
-    // For example, you might want to keep about-content visible initially.
-    hideContent('projects-content'); // You can change this as needed.
+    function searchWebsite(query) {
+        hideAllContent();
+    
+        const elementsToSearch = document.querySelectorAll(
+            '.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content'
+        );
+    
+        let foundMatch = false;
+    
+        elementsToSearch.forEach(element => {
+            // Restore original content if already altered
+            const originalHTML = element.getAttribute('data-original-html') || element.innerHTML;
+            element.innerHTML = originalHTML;
+    
+            // Save the original HTML
+            if (!element.getAttribute('data-original-html')) {
+                element.setAttribute('data-original-html', originalHTML);
+            }
+    
+            // Highlight matches
+            highlightMatches(element, query);
+    
+            // Check for matches
+            if (element.innerHTML.includes('<span class="highlight">')) {
+                showContent(element.classList[0]); // Show matching content
+                foundMatch = true;
+            }
+        });
+    
+        // Handle 'not found' message
+        const notFoundMessage = document.getElementById('not-found-message');
+        notFoundMessage.style.display = foundMatch ? 'none' : 'block';
+    }
+    
+    // Helper function to get all text content from an element and its children
+    function getFullTextContent(element) {
+        return element.textContent.trim(); // Combine all text nodes into a single string
+    }
+    
+    function highlightMatches(element, query) {
+        const regex = new RegExp(query, 'gi'); // Case-insensitive match
+        const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+    
+        const nodesToReplace = [];
+    
+        // Find and store matches in text nodes
+        while (walker.nextNode()) {
+            const currentNode = walker.currentNode;
+    
+            // If there's a match, save the node for replacement
+            if (regex.test(currentNode.nodeValue)) {
+                nodesToReplace.push(currentNode);
+            }
+        }
+    
+        // Replace text in all matching nodes
+        nodesToReplace.forEach(node => {
+            const parent = node.parentNode;
+    
+            // Create a container to hold the new HTML
+            const tempContainer = document.createElement('div');
+            tempContainer.innerHTML = node.nodeValue.replace(regex, match => `<span class="highlight">${match}</span>`);
+    
+            // Replace the text node with the new fragments
+            const fragments = document.createDocumentFragment();
+            Array.from(tempContainer.childNodes).forEach(child => fragments.appendChild(child));
+            parent.replaceChild(fragments, node);
+        });
+    }
+
+    // Function to reset search results
+    function resetSearchResults() {
+        const allTextElements = document.querySelectorAll('.about-content, .portfolio-content, .articles-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+        allTextElements.forEach(content => {
+            showContent(content.classList[0]); // Show all content
+        });
+
+        const notFoundMessage = document.getElementById('not-found-message');
+        if (notFoundMessage) {
+            notFoundMessage.style.display = 'none'; // Hide the not found message
+        }
+    }
 });
 
 
+
+/*
+function searchWebsite(query) {
+    hideAllContent(); // Hide all content when a search is active
+    const allTextElements = document.querySelectorAll(
+        '.about-content, .portfolio-content, .articles-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content'
+    );
+
+    let foundMatch = false;
+
+    allTextElements.forEach(content => {
+        const originalText = content.textContent;
+
+        // Check if the content includes the query
+        if (originalText.toLowerCase().includes(query.toLowerCase())) {
+            const regex = new RegExp(`(${query})`, 'gi'); // Create regex for the query (case-insensitive)
+            const highlightedText = originalText.replace(
+                regex,
+                '<span class="highlight">$1</span>' // Wrap matched text in a span for highlighting
+            );
+
+            // Update the content's innerHTML with highlighted text
+            content.innerHTML = highlightedText;
+
+            showContent(content.classList[0]); // Show matching content
+            foundMatch = true;
+        } else {
+            // Reset innerHTML to original text if it doesn't match
+            content.innerHTML = originalText;
+        }
+    });
+
+
+function searchWebsite(query) {
+        hideAllContent(); // Hide all content when a search is active
+        const allTextElements = document.querySelectorAll(
+            '.about-content, .portfolio-content, .articles-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content'
+        );
+    
+        let foundMatch = false;
+    
+        allTextElements.forEach(content => {
+            const originalText = content.textContent;
+    
+            // Remove previous highlights
+            content.querySelectorAll('.highlight').forEach(highlighted => {
+                const parent = highlighted.parentNode;
+                parent.replaceChild(document.createTextNode(highlighted.textContent), highlighted);
+                parent.normalize(); // Merge adjacent text nodes
+            });
+    
+            // Match entire phrases including spaces
+            const regex = new RegExp(`(${query})`, 'gi'); // Match the query anywhere, including multi-word phrases
+            const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, null, false);
+    
+            while (walker.nextNode()) {
+                const textNode = walker.currentNode;
+                if (regex.test(textNode.nodeValue)) {
+                    const fragment = document.createDocumentFragment();
+                    const parts = textNode.nodeValue.split(regex); // Split text by the query
+    
+                    parts.forEach(part => {
+                        if (regex.test(part)) {
+                            const span = document.createElement('span');
+                            span.classList.add('highlight');
+                            span.textContent = part;
+                            fragment.appendChild(span); // Highlight the matched part
+                        } else {
+                            fragment.appendChild(document.createTextNode(part)); // Add non-matched text as is
+                        }
+                    });
+    
+                    textNode.parentNode.replaceChild(fragment, textNode); // Replace the original node with highlighted version
+                    foundMatch = true;
+                }
+            }
+    
+            if (foundMatch) {
+                showContent(content.classList[0]); // Show the matching content
+            }
+        });
+    
+        // Display 'Not found!' message if no match is found
+        const notFoundMessage = document.getElementById('not-found-message');
+        if (!foundMatch && notFoundMessage) {
+            notFoundMessage.style.display = 'block';
+        } else {
+            if (notFoundMessage) notFoundMessage.style.display = 'none';
+        }
+    }
+       
+
+    // Function to reset search results
+    function resetSearchResults() {
+        const allTextElements = document.querySelectorAll('.about-content, .portfolio-content, .articles-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+        allTextElements.forEach(content => {
+            showContent(content.classList[0]); // Show all content
+        });
+
+        const notFoundMessage = document.getElementById('not-found-message');
+        if (notFoundMessage) {
+            notFoundMessage.style.display = 'none'; // Hide the not found message
+        }
+    }
+});
+
+
+    */
 
 //=========================================================================
 
@@ -256,9 +416,13 @@ function setEnglish() {
 }
 
 
+
+
+
+
 /*=================================================================*/
 
-//TOGGLE TRANSLATION THROUGH JSON
+//TOGGLE TRANSLATION BUTTON THROUGH JSON
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -323,14 +487,23 @@ document.addEventListener('DOMContentLoaded', function() {
         flagText.classList.remove('english-text');
         lowIcons.classList.add('portuguese-icons');
         lowIcons.classList.remove('english-icons');
-
+    
+        // Reset the brazil-icons class to ensure it doesn't persist when switching languages
+        lowIcons.classList.remove('brazil-icons');
+    
         flagImages.forEach((img, index) => {
             img.src = portugueseFlags[index].src;
             img.classList.add(portugueseFlags[index].class);
             img.classList.remove('uk', 'us', 'can'); // Remove English classes
+    
+            // Add the brazil-icons class when the Brazil flag is selected
+            if (img.classList.contains('br')) {
+                lowIcons.classList.add('brazil-icons');
+            }
         });
     }
 
+    
     function setEnglish() {
         flagText.innerHTML = 'Language: English';
         flagText.classList.add('english-text');
@@ -588,6 +761,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
 
 
 

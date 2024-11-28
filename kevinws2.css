@@ -97,9 +97,9 @@
     padding: 14px;
     /*   */
     width: 200px;
-    height: 72px;
+    height: 78px;
     text-decoration: none;
-    transform: translateY(8.5%) translateX(-1%);
+    transform: translateY(4.5%) translateX(-1%);
     padding-right: 58px;
     /* Adjust padding to your liking */
     margin-bottom: 0px;
@@ -120,12 +120,11 @@
     /* Change to inline-block to ensure the container's size fits its content */
     padding: 0px;
     width: 200px;
-    height: 72px;
+    height: 78px;
     text-decoration: none;
     transform: translateY(8.5%) translateX(-1%);
     padding-right: 58px;
     
-
     
     }
   
@@ -134,7 +133,7 @@
   .flag-button:hover {
     background-color: white;
     width: 200px;
-    height: 72px;
+    height: 78px;
   
   }
   
@@ -222,7 +221,7 @@
   
   .english-text {
     color: white;
-    transform: translateY(-135%) translateX(24.8%);
+    transform: translateY(-80%) translateX(24.8%);
     font-family: Calibri, sans-serif;
     font-size: 20px;
   
@@ -232,7 +231,7 @@
   .portuguese-text {
     color: white;
     /* Color for Portuguese text */
-    transform: translateY(-135%) translateX(24.8%);
+    transform: translateY(-80%) translateX(24.8%);
     font-family: Calibri, sans-serif;
     font-size: 20px;
     
@@ -280,21 +279,21 @@
   .all-flags {
   
     margin: 0;
-    transform: translateY(-35%) translateX(25%);
+    transform: translateY(-30%) translateX(25%);
   
   }
   
   
   .low-icons {
   
-    transform: translateY(5%) translateX(19%);
+    transform: translateY(25%) translateX(19%);
     
   }
   
   
   .portuguese-icons {
   
-    transform: translateY(5%) translateX(19%);
+    transform: translateY(25%) translateX(19%);
   }
   
   
@@ -303,7 +302,7 @@
     /* Adjust the size as needed */
     color: white;
     margin-left: 25px;
-  
+   
   }
   
   .color-icon {
