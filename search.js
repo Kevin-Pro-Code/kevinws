@@ -11,17 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
             lastContentVisible.classList.add('hidden'); // Hide the current content
         }
     }
-
-    // Function to highlight matching text within content
-    function highlightText(content, query) {
-        const regex = new RegExp(query, 'gi');
-        const originalText = content.textContent;
-        content.innerHTML = originalText.replace(regex, '<span class="highlight">$&</span>');
-    }
+  
 
     function searchWebsite(query) {
         hideAllContent(); // Hide all content when a search is active
-        const allTextElements = document.querySelectorAll('.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+        const allTextElements = document.querySelectorAll('.about-content, .extra-text, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
     
         let foundMatch = false;
     

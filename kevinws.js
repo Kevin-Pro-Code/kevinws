@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var lastContentVisible = 'about-content'; // Initialize with the about content as the last visible
     var lastSubtabSelected = null; // Track the last selected tab for highlighting
@@ -26,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to hide all content (for both navbar and search system)
     function hideAllContent() {
-        const allContent = document.querySelectorAll('.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+        const allContent = document.querySelectorAll('.about-content, .extra-text, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
         allContent.forEach(content => {
             content.style.display = 'none';
         });
@@ -87,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
         hideAllContent();
     
         const elementsToSearch = document.querySelectorAll(
-            '.about-content, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content'
+            '.about-content, .extra-text, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content'
         );
     
         let foundMatch = false;
@@ -123,7 +132,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     function highlightMatches(element, query) {
-        const regex = new RegExp(query, 'gi'); // Case-insensitive match
+        const escapedQuery = query.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); // Escape special regex characters
+        const regex = new RegExp(escapedQuery, 'gi'); // Case-insensitive match with escaped query
         const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
     
         const nodesToReplace = [];
@@ -152,10 +162,11 @@ document.addEventListener('DOMContentLoaded', function () {
             parent.replaceChild(fragments, node);
         });
     }
+    
 
     // Function to reset search results
     function resetSearchResults() {
-        const allTextElements = document.querySelectorAll('.about-content, .portfolio-content, .articles-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
+        const allTextElements = document.querySelectorAll('.about-content, .extra-text, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
         allTextElements.forEach(content => {
             showContent(content.classList[0]); // Show all content
         });
@@ -166,6 +177,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+
+
 
 
 
