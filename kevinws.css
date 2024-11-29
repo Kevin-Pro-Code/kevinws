@@ -17,6 +17,495 @@ background-color: rgb(214, 214, 214);
 }
 
 
+.navbar {
+
+  position: relative;
+  background-color: black;
+
+/*
+border-width: 4px;
+border-style: solid;
+border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+width: 100%;
+background-image: url('bg.png');
+
+*/
+
+  white-space: nowrap;
+  border-right: 2px solid black;
+  border-bottom: none;  
+  align-items: center;  
+  z-index: 10;
+  
+
+
+/* overflow: hidden; */
+  
+
+}
+  
+
+
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: left;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  line-height: 0.5;
+  /* Adjust line height to a smaller value */
+  font-size: 20px;
+  margin-bottom: -3px;
+  margin-top: -1px;
+  margin-right: 42px;
+  margin-left: -5px;
+  justify-content: center;
+  
+  overflow: hidden;
+
+  
+}
+
+.navbar ul li {
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;    
+  margin-right: 0px;
+
+ 
+}
+
+.navbar ul li a {
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  outline: none;
+  padding: 46px 25px;
+  padding-top: 45px;
+  border-radius: 6px; 
+  background-color: blue;    
+  margin-bottom: 4px;
+  border-radius: 12px;
+
+}
+
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+
+  border-radius: 12px;
+ 
+
+
+
+}
+
+
+
+.flag-container .flag-button {
+  display: inline-block;
+  /* Change to inline-block to ensure the container's size fits its content */
+  padding: 14px;
+  /*   */
+  width: 200px;
+  height: 78px;
+  text-decoration: none;
+  transform: translateY(4.5%) translateX(-1%);
+  padding-right: 58px;
+  /* Adjust padding to your liking */
+  margin-bottom: 0px;
+  margin-top: -1px;
+  margin-right: -5px;
+ 
+  overflow: hidden;
+  border-radius: 10px;
+  border: 4px solid blue;
+  background-color: black;
+  margin-left: 12px;
+ 
+  
+}
+
+.flag-button {
+  display: inline-block;
+  /* Change to inline-block to ensure the container's size fits its content */
+  padding: 0px;
+  width: 200px;
+  height: 78px;
+  text-decoration: none;
+  transform: translateY(8.5%) translateX(-1%);
+  padding-right: 58px;
+  
+  
+  }
+
+
+
+.flag-button:hover {
+  background-color: white;
+  width: 200px;
+  height: 78px;
+
+}
+
+.flag-button:hover .flag-text {
+  color: black;
+  /* Set the text color to ensure visibility */
+  text-decoration-color: white;
+  /* Set any other properties affecting visibility */
+  
+  
+}
+
+.flag-button:hover .lock-icon {
+  color: black;
+  /* Set the text color to ensure visibility */
+  text-decoration-color: white;
+  /* Set any other properties affecting visibility */
+ 
+  
+}
+
+.flag-button:hover .lock-icon:hover {
+  
+  color: grey;
+   
+}
+
+
+.flag-button:hover .color-icon {
+  color: black;
+  /* Set the text color to ensure visibility */
+  text-decoration-color: white;
+  /* Set any other properties affecting visibility */
+  
+  
+}
+
+.flag-button:hover .change-icon {
+  color: black;
+  /* Set the text color to ensure visibility */
+  text-decoration-color: white;
+  /* Set any other properties affecting visibility */
+  
+  
+}
+
+
+.flag-container .flag-button img {
+  margin-right: -3px;
+  /* Adjust spacing between flag images */
+  transform: translateY(0%) translateX(0%);
+  /* Update transform for better alignment */
+  overflow: hidden;
+
+}
+
+
+
+
+.flag-container .flag-button a {
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+
+
+}
+
+
+
+.flag-text {
+  color: white;
+  font-family: Calibri, sans-serif;
+  
+  transform: translateY(0%) translateX(0%);
+
+}
+
+.flag-text:hover {
+  color: black;
+  text-decoration-color: black;
+
+
+
+}
+
+.english-text {
+  color: white;
+  transform: translateY(-80%) translateX(24.8%);
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+
+}
+
+
+.portuguese-text {
+  color: white;
+  /* Color for Portuguese text */
+  transform: translateY(-80%) translateX(24.8%);
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  
+  
+}
+
+
+
+ 
+
+.flag-container .flag-button img {
+  /* Generic flag styling for other flags */
+  margin-right: 4px;
+}
+
+/* Styles for flags */
+.uk,
+.us,
+.can,
+.ir,
+.au,
+.nz,
+.br,
+.an {
+  width: 44px;
+  /* Ensure all flags have consistent width */
+  height: 44px;
+  /* Ensure all flags have consistent height */
+  object-fit: cover;
+  /* Maintain aspect ratio */
+}
+
+.pt {
+
+  width: 44px;
+  /* Ensure all flags have consistent width */
+  height: 44px;
+  /* Ensure all flags have consistent height */
+
+  transform: translateY(0%) translateX(0%);
+}
+
+
+
+.all-flags {
+
+  margin: 0;
+  transform: translateY(-30%) translateX(25%);
+
+}
+
+
+.low-icons {
+
+  transform: translateY(25%) translateX(19%);
+  
+}
+
+
+.portuguese-icons {
+
+  transform: translateY(25%) translateX(19%);
+}
+
+
+.lock-icon {
+  
+  /* Adjust the size as needed */
+  color: white;
+  margin-left: 25px;
+ 
+}
+
+.color-icon {
+  font-size: 1em;
+  /* Adjust the s
+  ize as needed */
+  color: white;
+  padding-left: 25px;
+}
+
+.change-icon {
+  font-size: 1em;
+  /* Adjust the size as needed */
+  color: white;
+  padding-left: 25px;
+}
+
+
+/* Hover effect for active navigation link */
+.navbar ul li a.active {
+  background-color: white; /* Example background color for active state */
+  color: black; /* Example text color for active state */
+}
+
+
+
+.navbar-encapsulation {
+  display: flex;
+  flex-direction: column; /* Stack navbar and sub-tabs vertically */
+  width: 100%;
+  position: relative;
+  z-index: 10;
+ 
+  
+
+}
+
+
+
+
+/* Sub-tab container styles */
+.sub-tabs-box, .sub-tabs-box2, .sub-tabs-box3, .sub-tabs-box4 {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  width: 350px; /* Adjust as needed */   
+  background-color: black;     
+  z-index: 5; /* Ensure it appears above other elements */
+  border-radius: 16px; /* Rounded corners for the box */
+  top: 100%;      
+  border: 4px solid blue;
+  display:none;
+
+}
+
+
+
+
+/* Sub-tab list styles */
+.sub-tabs-box ul, .sub-tabs-box2 ul, .sub-tabs-box3 ul, .sub-tabs-box4 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: Calibri;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 2.5; /* Adjust line height */
+  
+}
+
+
+/* Sub-tab list item styles */
+.sub-tabs-box ul li,
+.sub-tabs-box2 ul li,
+.sub-tabs-box3 ul li,
+.sub-tabs-box4 ul li {
+  text-align: center;
+  padding: 0;
+  display: block; /* Make each subtab take up the full width */
+  width: 100%;    /* Ensure the <li> takes up the full width of its container */
+  
+
+  
+}
+
+
+
+/* Sub-tab link styles */
+.sub-tabs-box ul li a,
+.sub-tabs-box2 ul li a,
+.sub-tabs-box3 ul li a,
+.sub-tabs-box4 ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set link color */
+  display: block; /* Make <a> a block element so it takes full width of <li> */
+  
+  padding: 10px; /* Adjust padding if necessary */
+  background-color: black; /* Button background color */   
+  border-radius: 8px; /* Rounded corners for each button */
+  margin-bottom: 0px;
+
+  text-align: left;
+}
+
+
+/* Hover effect for sub-tab links */
+.sub-tabs-box ul li a:hover, .sub-tabs-box2 ul li a:hover, .sub-tabs-box3 ul li a:hover, .sub-tabs-box4 ul li a:hover {
+  background-color: white; /* Hover background color */
+  color: black; /* Hover text color */
+ 
+  padding: 10px;
+  
+
+}
+
+
+
+
+
+.subtab {
+
+height: 50px;
+
+
+}
+
+
+.home-tab {
+border: 4px solid blue;
+
+}
+
+
+.portfolio-tab {
+border: 4px solid blue;
+
+}
+
+
+.extras-tab {
+  border: 4px solid blue;
+  
+  }
+  
+  .contact-tab {
+    border: 4px solid blue;
+    
+    }
+    
+
+
+/* Optional: Styling for horizontal rules */
+.hr1, .hr2, .hr3, .hr4 {
+  width: calc(100% + 20px); /* Adjust width to account for padding */
+  margin: 10px -10px; /* Adjust margin to fit within the padding */
+  border: 0; /* Remove default border */
+  height: 2px; /* Set the height */
+  background: blue; /* Set the background color */
+}
+
+
+
+.fa-address-card, .fa-copyright, .fa-newspaper, .fa-image, .fa-briefcase, .fa-user-group, .fa-robot, .fa-language 
+
+{
+
+padding-right: 15px;
+padding-left: 5px;
+
+}
+
+
+.fa-language {
+
+  padding-right: 15px;
+  padding-left: 5px;
+  
+  transform: translateY(6%) translateX(0%);
+}
+
+
+
 
 
 p {
@@ -256,12 +745,13 @@ p {
   background-color: black;
   border: 4px solid blue;
   padding: 15px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: left;
   border-radius: 10px;
   /* Rounded corners for the box */
   position: relative;
+  margin-top: -80px;
   /* Ensure it stays within the flow of the document */
   word-spacing: 3px;
   line-height: 2.5;
@@ -295,7 +785,7 @@ p {
 .about-text {
   
   position: relative;
-  display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -357,7 +847,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -402,7 +892,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -449,7 +939,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -496,7 +986,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -542,7 +1032,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -588,7 +1078,7 @@ p {
   background-color: black;
   border: 3px solid blue;
   padding: 10px;
-  width: 70%;
+  width: 90%;
   /* Adjust width as needed */
   text-align: center;
   border-radius: 10px;
@@ -625,6 +1115,7 @@ p {
   margin-top: -80px; /* Ensure it stays within the flow of the document */
   margin-bottom: 20px;
   word-spacing: 3px;
+  width: 90%;
   line-height: 2;
   display: flex;
   flex-direction: column; /* Align items vertically */
@@ -819,12 +1310,13 @@ margin-left: 16%;
 .flags {
   position: absolute;
   top: 1%;
-  right: 36.25%;
-  display: flex;
+  right: 45%;
+  
   gap: 10px;
   border-radius: 15%;
   max-width: 100%; 
-
+  z-index: 0;
+  transform: translateX(475px);
 }
 
 .flag {

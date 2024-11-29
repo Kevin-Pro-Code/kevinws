@@ -102,6 +102,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let foundMatch = false;
         let matchCounter = 0; // Track the order of matching results
     
+        const ordinals = [
+            "first", "second", "third", "fourth", "fifth",
+            "sixth", "seventh", "eighth", "ninth", "tenth"
+        ];
+    
         elementsToSearch.forEach(element => {
             // Restore original content if already altered
             const originalHTML = element.getAttribute('data-original-html') || element.innerHTML;
@@ -116,23 +121,41 @@ document.addEventListener('DOMContentLoaded', function () {
             const isMatchFound = highlightMatches(element, query);
     
             if (isMatchFound) {
-                matchCounter++; // Increment match counter
-                foundMatch = true;
+                if (matchCounter < ordinals.length) {
+                    matchCounter++; // Increment match counter
+                    foundMatch = true;
     
-                // Show matching content
-                showContent(element.classList[0]);
+                    // Show matching content
+                    showContent(element.classList[0]);
     
-                // Add a label indicating the result order
-                const label = document.createElement('div');
-                label.textContent = `Search Result #${matchCounter}`;
-                label.style.fontWeight = 'bold';
-                label.style.color = 'blue';
-                element.prepend(label); // Add the label at the top of the element
+                    const label = document.createElement('div');
     
-                // Add line breaks for better spacing
-                for (let i = 0; i < 10; i++) {
-                    const brTag = document.createElement('br');
-                    element.appendChild(brTag);
+                    // Create a span for the ordinal word with uppercase and blue styling
+                    const ordinalSpan = document.createElement('span');
+                    ordinalSpan.textContent = `${ordinals[matchCounter - 1]}`.toUpperCase(); // Convert to uppercase
+                    ordinalSpan.style.color = 'blue'; // Set text color to blue
+                    ordinalSpan.style.fontWeight = 'bold'; // Optional: make it bold
+    
+                    // Add text before and after the ordinal word
+                    label.textContent = 'THIS IS THE ';
+                    label.style.fontWeight = 'bold';
+                    label.style.fontSize = '50px'; // Sets the font size to 16 pixels
+                    label.style.color = 'black';
+                    label.appendChild(ordinalSpan); // Add the styled ordinal word
+                    label.appendChild(document.createTextNode(' RESULT OF SUBTAB(S) SEARCHED CONTENT: ')); // Add closing parenthesis
+    
+                    // Create a wrapper for the line breaks and the message
+                    const wrapper = document.createElement('div');
+                    wrapper.style.textAlign = 'center'; // Center the content
+                    wrapper.appendChild(label); // Add the label
+    
+                    // Add line breaks for better spacing
+                    for (let i = 0; i < 6; i++) {
+                        const brTag = document.createElement('br');
+                        wrapper.appendChild(brTag); // Append <br> to the wrapper
+                    }
+    
+                    element.prepend(wrapper); // Add the wrapper to the top of the element
                 }
             }
         });
@@ -141,6 +164,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const notFoundMessage = document.getElementById('not-found-message');
         notFoundMessage.style.display = foundMatch ? 'none' : 'block';
     }
+    
+        
     
     function highlightMatches(element, query) {
         const escapedQuery = query.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); // Escape special regex characters
@@ -193,8 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
-
-
 
 
 
