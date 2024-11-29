@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let matchCounter = 0; // Track the order of matching results
     
         const ordinals = [
-            "first", "second", "third", "fourth", "fifth",
-            "sixth", "seventh", "eighth", "ninth", "tenth"
+            "Primeiro", "Segundo", "Terceiro", "Quarto", "Quinto",
+            "Sexto", "Sétimo", "Oitavo", "Nono", "Décimo"
         ];
     
         elementsToSearch.forEach(element => {
@@ -137,12 +137,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     ordinalSpan.style.fontWeight = 'bold'; // Optional: make it bold
     
                     // Add text before and after the ordinal word
-                    label.textContent = 'THIS IS THE ';
+                    label.textContent = 'ESTE É O ';
                     label.style.fontWeight = 'bold';
                     label.style.fontSize = '50px'; // Sets the font size to 16 pixels
                     label.style.color = 'black';
                     label.appendChild(ordinalSpan); // Add the styled ordinal word
-                    label.appendChild(document.createTextNode(' RESULT OF SUBTAB(S) SEARCHED CONTENT: ')); // Add closing parenthesis
+                    label.appendChild(document.createTextNode(' CONTEÚDO PESQUISADO NAS ABAS: ')); // Add closing parenthesis
     
                     // Create a wrapper for the line breaks and the message
                     const wrapper = document.createElement('div');

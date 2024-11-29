@@ -765,7 +765,7 @@ p {
   /* Remove default margin */
   color: white;
   font-family: Calibri, sans-serif;
-
+  text-align: center; /* Center the title text */
 }
 
 .about-content {
@@ -1109,18 +1109,17 @@ p {
   position: relative;
   background-color: black;
   border: 3px solid blue;
-  padding: 10px;
-  width: 60%; /* Adjust width as needed */
   border-radius: 10px; /* Rounded corners for the box */
   margin-top: -80px; /* Ensure it stays within the flow of the document */
   margin-bottom: 20px;
   word-spacing: 3px;
-  width: 90%;
+  width: 60%;
   line-height: 2;
   display: flex;
   flex-direction: column; /* Align items vertically */
-  align-items: flex-start; /* Default to left alignment */
-  padding-left: 60px; /* Adjust padding as needed */
+  align-items: center; /* Default to left alignment */
+  padding-left: 0%;
+  
   gap: 10px; /* Optional: Add space between items */
   margin-left: auto;
   margin-right: auto; /* This will center the box horizontally */
@@ -1152,10 +1151,10 @@ p {
 .contact-description a {
   display: flex; /* Keep flex to align icon and text in a row */
   align-items: center; /* Vertically center icon and text */
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: center; /* Align items to the left */
   font-size: 20px; /* Adjust font size */
   color: white; /* Set color for the text */
-  padding: 10px;
+  
   font-family: Helvetica;
   text-decoration: none; /* Remove underline */
   gap: 10px; /* Space between icon and text */
@@ -1171,7 +1170,7 @@ p {
 }
 
 .contact-content {
-  padding-left: 10px;
+  
 }
 
 /* For the text next to the icon */
