@@ -141,8 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     label.style.fontWeight = 'bold';
                     label.style.fontSize = '50px'; // Sets the font size to 16 pixels
                     label.style.color = 'black';
+                    label.style.textAlign = 'left'; // Align text inside the label to the left
+                    label.style.paddingLeft = '4.5%'; // Adds 10% padding to the left side
                     label.appendChild(ordinalSpan); // Add the styled ordinal word
-                    label.appendChild(document.createTextNode(' CONTEÚDO PESQUISADO NAS ABAS: ')); // Add closing parenthesis
+                    label.appendChild(document.createTextNode(' RESULTADO DA PESQUISA: ')); // Add closing parenthesis
     
                     // Create a wrapper for the line breaks and the message
                     const wrapper = document.createElement('div');
