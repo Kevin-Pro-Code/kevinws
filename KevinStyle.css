@@ -1385,7 +1385,7 @@ margin-left: 16%;
 
 .overall-bottom-container {
   display: grid;
-  gap: 5px;  
+  gap: 5px;
   grid-template-areas:
     "comment-text"
     "comment-container"
@@ -1397,52 +1397,11 @@ margin-left: 16%;
   /* Adjust as needed */
   margin: 0 auto;
   /* Center the container */
-  padding-bottom: 55px;
- 
+  padding-bottom: 50px;
+  padding-left: 55px;
   overflow: hidden;
 
 }
-
-@media (min-width: 1000px) {
-  .overall-bottom-container {
-    grid-template-areas:
-      "comment-text email-text"
-      "comment-container email-container"
-      "comment-send email-sub";
-      padding-left: 6%;
-  }
-
-  .comment-text {
-    grid-area: comment-text;
-    
-  }
-
-  .email-text {
-    grid-area: email-text;
-    
-  }
-
-  .comment-container {
-    grid-area: comment-container;     
-  }
-
-  .email-container {        
-    grid-area: email-container;
-   }
-
-  .comment-send {
-    grid-area: comment-send;
-  }
-
-  .email-sub {
-    grid-area: email-sub;
-  }
-
- 
-
-}
-
-
 
 .title-mail-box {
   display: flex;
@@ -1457,9 +1416,9 @@ margin-left: 16%;
   font-weight: bold;
   font-family: Calibri, sans-serif;
   text-align: center;
-  
+  /* Ensure text is centered */
+  margin-bottom: 2px;
   /* Add some space below */
-  margin-bottom: 4px;
   
 }
 
@@ -1469,8 +1428,9 @@ margin-left: 16%;
   font-weight: bold;
   font-family: Calibri, sans-serif;
   text-align: center;
+  /* Ensure text is centered */
   margin-bottom: 5px;
-  
+  /* Add some space below */
 }
 
 .comment-container,
@@ -1484,31 +1444,32 @@ margin-left: 16%;
   border: 3px solid black;
   border-radius: 5px;
   box-sizing: border-box;
- 
+  padding: 1px;
   margin: 0 auto;
   /* Center within the grid cell */
   font-family: Calibri, sans-serif;
   text-indent: 10px;
- 
+  
+
 }
 
 .comment-container {
   height: 250px;
   /* Specific height for the comment container */
   resize: none;
-  /* No resizing allowed for textarea */ 
+  /* No resizing allowed for textarea */
+  padding-top: 6px;
   margin-bottom: 5px;
-  padding-top: 10px; /* Adjust the padding to add space above */
-      
 }
 
 .email-container {
   max-width: 700px;
   width: 500px;
   height: 75px;
-  margin-top: 5px;
-
-  
+  margin-top: 0px;
+  /* Adjust this value to move down */
+  transform: translateY(0%);
+  /* Adjust for positioning */
 }
 
 .cmail-container {
@@ -1533,15 +1494,54 @@ margin-left: 16%;
   margin: 0 auto;
   /* Center within the grid cell */
   text-align: center;
-  
+  margin-bottom: 15px;
+
 }
 
 .email-sub {
 
-  margin-bottom: 12px;
+
+
+  margin-top: 7px;
 
 }
 
+
+@media (min-width: 900px) {
+  .overall-bottom-container {
+    grid-template-areas:
+      "comment-text email-text"
+      "comment-container email-container"
+      "comment-send email-sub";
+  }
+
+  .comment-text {
+    grid-area: comment-text;
+  }
+
+  .email-text {
+    grid-area: email-container;
+    margin-top: 48px;
+  }
+
+  .comment-container {
+    grid-area: comment-container;
+  }
+
+  .email-container {
+    grid-area: email-container;
+    margin-top: 90px;
+  }
+
+  .comment-send {
+    grid-area: comment-send;
+    
+  }
+
+  .email-sub {
+    grid-area: email-sub;
+  }
+}
 
 
 
