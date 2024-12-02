@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
             lastContentVisible.classList.add('hidden'); // Hide the current content
         }
     }
-  
 
+    // Function to show content based on a search query
     function searchWebsite(query) {
         hideAllContent(); // Hide all content when a search is active
         const allTextElements = document.querySelectorAll('.about-content, .extra-text, .copyright-content, .articles-content, .images-content, .projects-content, .coop-content, .tradingbot-content, .languages-content, .contact-content');
@@ -114,15 +114,3 @@ document.addEventListener('DOMContentLoaded', function () {
         searchResults.style.display = 'none';
     }
 });
-
-
-//////////////////////////////////
-
-
-
-
-
-///////
-
-
-

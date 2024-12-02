@@ -692,6 +692,35 @@ p {
 
 */
 
+#not-found-message {
+  display: none; /* Hidden by default, shown when no results found */
+  position: fixed; /* Fixed position to cover the entire screen */
+  top: 0; /* Position at the top of the page */
+  left: 0; /* Position at the left side of the page */
+  width: 100%; /* Full width of the screen */
+  height: 100%; /* Full height of the screen */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+  color: white; /* White text color */
+  font-family: 'Calibri', sans-serif; /* Set the font to Calibri */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  z-index: 9999; /* Ensure it appears above other content */
+  padding-top: 350px;
+  
+}
+
+#not-found-message p {
+  padding-top: 150px;
+  margin-top: 150px;
+  font-size: 60px; /* Adjust the font size */
+  text-align: center; /* Center-align the text */
+  margin: 0; /* Remove margin around the text */
+  color: white; /* White text color */
+  font-family: 'Calibri', sans-serif; /* Set the font to Calibri */
+}
+
+
 
 .SearchResults {
   background-color: black;
@@ -1285,6 +1314,9 @@ p {
   /*
 font-family: Consolas, sans-serif;
 */
+
+  word-spacing: 3px;
+  line-height: 2;
 }
 
 .video-container {
@@ -1312,7 +1344,7 @@ margin-left: 16%;
 .flags {
   position: absolute;
   top: 1%;
-  right: -54%;  
+  right: -53.7%;  
   gap: 10px;
   border-radius: 15%;
   max-width: 100%; 
