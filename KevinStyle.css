@@ -1391,6 +1391,7 @@ font-family: Consolas, sans-serif;
 
 }
 
+
 .title-mail-box {
   display: flex;
   flex-direction: column;
@@ -1487,7 +1488,7 @@ font-family: Consolas, sans-serif;
 
 .email-sub {
 
-  margin-top: 6px;
+  margin-top: 5.5px;
 
 }
 
@@ -1504,52 +1505,41 @@ font-family: Consolas, sans-serif;
 
 
 @media (min-width: 900px) {
-  .overall-bottom-container {
-    grid-template-areas:
-      "comment-text email-text"
-      "comment-container email-container"
-      "comment-send email-sub";
+
+    .overall-bottom-container {
+      grid-template-areas:
+        "comment-text email-text"
+        "comment-container email-container"
+        "comment-send email-sub";
+    }
+  
+    .comment-text {
+      grid-area: comment-text;
+    }
+  
+    .email-text {
+      grid-area: email-container;
+      margin-top: -50px;
+    }
+  
+    .comment-container {
+      grid-area: comment-container;
+    }
+  
+    .email-container {
+      grid-area: email-container;
+      margin-top: 80px;
+    }
+  
+    .comment-send {
+      grid-area: comment-send;
+    }
+  
+    .email-sub {
+      grid-area: email-sub;
+      margin-top: -1.5px; /* Pull it upwards */
+    }
   }
-
-  .comment-text {
-    grid-area: comment-text;
-  }
-
-  .email-text {
-    grid-area: email-container;
-    margin-top: 48px;
-  }
-
-  .comment-container {
-    grid-area: comment-container;
-  }
-
-  .email-container {
-    grid-area: email-container;
-    margin-top: 90px;
-  }
-
-  .comment-send {
-    grid-area: comment-send;
-    
-  }
-
-  .email-sub {
-    grid-area: email-sub;
-  }
-
-
-
-
-
-
-
-
-
-
-}
-
-
 
 
 
