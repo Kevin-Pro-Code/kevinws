@@ -1341,24 +1341,6 @@ margin-bottom: 20px;
 margin-left: 16%;
 }
 
-.flags {
-  position: absolute;
-  top: 1%;
-  right: -53.5%;  
-  gap: 10px;
-  border-radius: 15%;
-  max-width: 100%; 
-  z-index: 0;
-  
-}
-
-.flag {
-  width: 5%; 
-  height: auto;
-}
-
-
-
  
   .video-container {
     position: relative;
@@ -1380,6 +1362,18 @@ margin-left: 16%;
     margin-left: 16%;
     }
            
+
+   .flags {
+    position: absolute;
+    top: 5%; /* Adjust relative to video container */
+    right: 5%; /* Keep it within bounds */
+    display: flex;
+    gap: 5px;
+}
+.flag {
+    width: 30px; /* Fixed size for better control */
+    height: auto;
+}
 
 
 
@@ -1502,7 +1496,7 @@ margin-left: 16%;
 
 
 
-  margin-top: 5px;
+  margin-bottom: 5px;
 
 }
 
