@@ -1331,16 +1331,6 @@ font-family: Consolas, sans-serif;
   
 }
 
-
-video {
-width: 100%; /* Increased width for a bigger video */
-max-width: 100%;  /* Prevent video from overflowing the container */
-height: auto;
-border-radius: 40px;
-margin-bottom: 20px;
-margin-left: 16%;
-}
-
  
   .video-container {
     position: relative;
@@ -1363,17 +1353,22 @@ margin-left: 16%;
     }
            
 
-   .flags {
-    position: absolute;
-    top: 5%; /* Adjust relative to video container */
-    right: 5%; /* Keep it within bounds */
-    display: flex;
-    gap: 5px;
-}
-.flag {
-    width: 30px; /* Fixed size for better control */
-    height: auto;
-}
+    .flags {
+      position: absolute;
+      top: 1%; /* Adjust relative to video container */
+      right: 35%; /* Keep it within bounds */
+      
+      display: flex;
+      gap: 5px;
+      border-radius: 15px;
+
+  }
+
+
+  .flag {
+      width: 30px; /* Fixed size for better control */
+      height: auto;
+  }
 
 
 
@@ -1444,7 +1439,6 @@ margin-left: 16%;
   font-family: Calibri, sans-serif;
   text-indent: 10px;
   
-
 }
 
 .comment-container {
@@ -1494,11 +1488,10 @@ margin-left: 16%;
 
 .email-sub {
 
-
-
-  margin-bottom: 5px;
+  margin-top: 6px;
 
 }
+
 
 /* CSS */
 .email-text-container { /* Add a new container */
@@ -1545,6 +1538,16 @@ margin-left: 16%;
   .email-sub {
     grid-area: email-sub;
   }
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2091,10 +2094,9 @@ footer {
       "email-container"
       "email-sub";
     max-width: 1200px;
-    padding: 60px; /* Add padding for spacing inside the container */
-  
-    
+    padding: 60px; /* Add padding for spacing inside the container */   
     border-radius: 10px; /* Optional rounded corners */
+    
   }
 
 
@@ -2129,18 +2131,69 @@ footer {
       "email-container"
       "email-sub";
     max-width: 1200px;
-    padding: 60px; /* Add padding for spacing inside the container */
-  
-    
+    padding: 60px; /* Add padding for spacing inside the container */   
     border-radius: 10px; /* Optional rounded corners */
   }
 
+}
+
+@media (min-width: 180px) and (max-width: 600px) {
+
+  .footer-right {
+
+    display: none !important;
+    
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+      zoom: 1.23;         
+    }      
+    
+    .footer-container {
+    
+      grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      gap: 1px; /* Space between columns */
+      
+      
+    }
+    
+   .supported-text2, .rights2 {
+      font-size: 15px; /* Sets the font size for both text elements */
+      font-family: Calibri;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      padding-bottom: 0.4%;
+    }
+    
+    .english-text,
+    .portuguese-text {
+       
+      margin-right: 10px;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .low-icons {
+    
+      margin-left: 6px;
+        
+    }
+  
 
 }
 
 
 
-@media (min-width: 420px) and (max-width: 600px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+
+@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
 
 
   body {
@@ -2169,12 +2222,59 @@ footer {
       "email-container"
       "email-sub";
     max-width: 1200px;
-    padding: 60px; /* Add padding for spacing inside the container */
-    
-    
+    padding: 60px; /* Add padding for spacing inside the container */   
     border-radius: 10px; /* Optional rounded corners */
   }
 
+
+  .footer-right {
+
+    display: none !important;
+    
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+                 
+    }      
+    
+    .footer-container {
+    
+      grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      gap: 1px; /* Space between columns */
+      
+      
+    }
+    
+   .supported-text2, .rights2 {
+      font-size: 15px; /* Sets the font size for both text elements */
+      font-family: Calibri;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      padding-bottom: 0.4%;
+    }
+    
+    .english-text,
+    .portuguese-text {
+       
+      margin-right: 10px;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .low-icons {
+    
+      margin-left: 6px;
+        
+    }
+  
 
 }
 
@@ -2193,6 +2293,57 @@ footer {
     zoom: 0.93; 
       
   }
+
+  .footer-right {
+
+    display: none !important;
+    
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+                 
+    }      
+    
+    .footer-container {
+    
+      grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      gap: 1px; /* Space between columns */
+      
+      
+    }
+    
+   .supported-text2, .rights2 {
+      font-size: 15px; /* Sets the font size for both text elements */
+      font-family: Calibri;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      padding-bottom: 0.4%;
+    }
+    
+    .english-text,
+    .portuguese-text {
+       
+      margin-right: 10px;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .low-icons {
+    
+      margin-left: 6px;
+        
+    }
+  
+
+
 
 }
 
@@ -2299,6 +2450,56 @@ footer {
         
   }
 
+  .footer-right {
+
+    display: none !important;
+    
+    }
+    
+    .footer-left, 
+    .footer-center {
+      
+      align-items: flex-start; /* Align vertically */
+      justify-content: flex-start;
+      vertical-align: middle;
+                 
+    }      
+    
+    .footer-container {
+    
+      grid-template-columns: auto auto; /* Defines two columns for footer-left and footer-center */
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      gap: 1px; /* Space between columns */
+      
+      
+    }
+    
+   .supported-text2, .rights2 {
+      font-size: 15px; /* Sets the font size for both text elements */
+      font-family: Calibri;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      padding-bottom: 0.4%;
+    }
+    
+    .english-text,
+    .portuguese-text {
+       
+      margin-right: 10px;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .low-icons {
+    
+      margin-left: 6px;
+        
+    }
+  
+
+
 }
 
 @media (min-width: 180px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
@@ -2377,6 +2578,11 @@ display: none !important;
   margin-left: 6px;
     
 }
+
+
+
+
+
 }
 
 
