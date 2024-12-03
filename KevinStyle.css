@@ -1356,8 +1356,7 @@ font-family: Consolas, sans-serif;
     .flags {
       position: absolute;
       top: 1%; /* Adjust relative to video container */
-      right: 35%; /* Keep it within bounds */
-      
+      right: 36%; /* Keep it within bounds */      
       display: flex;
       gap: 5px;
       border-radius: 15px;
@@ -1366,7 +1365,7 @@ font-family: Consolas, sans-serif;
 
 
   .flag {
-      width: 30px; /* Fixed size for better control */
+      width: 40px; /* Fixed size for better control */
       height: auto;
   }
 
