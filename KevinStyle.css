@@ -2226,10 +2226,11 @@ footer {
 
   .overall-bottom-container {
 
-    justify-content: center; /* Horizontal centering */
-    align-items: center;  
-    
-    zoom: 1.0; 
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center vertically within container */
+  align-items: center; /* Align to the start (left) */
+  padding-right: 6%;
+  zoom: 1.0; 
 
     }
     
