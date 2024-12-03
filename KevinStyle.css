@@ -2229,7 +2229,7 @@ footer {
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center vertically within container */
   align-items: center; /* Align to the start (left) */
-  padding-right: 6%;
+  padding-right: 5.5%;
   zoom: 1.0; 
 
     }
