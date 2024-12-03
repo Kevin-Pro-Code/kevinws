@@ -1344,7 +1344,7 @@ margin-left: 16%;
 .flags {
   position: absolute;
   top: 1%;
-  right: -53.7%;  
+  right: -53.5%;  
   gap: 10px;
   border-radius: 15%;
   max-width: 100%; 
@@ -1358,7 +1358,7 @@ margin-left: 16%;
 }
 
 
-@media only screen and (max-width: 760px) {
+
  
   .video-container {
     position: relative;
@@ -1381,7 +1381,7 @@ margin-left: 16%;
     }
            
 
-}
+
 
 .overall-bottom-container {
   display: grid;
@@ -1502,8 +1502,18 @@ margin-left: 16%;
 
 
 
-  margin-top: 7px;
+  margin-top: 5px;
 
+}
+
+/* CSS */
+.email-text-container { /* Add a new container */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center vertically within container */
+  align-items: center; /* Align to the start (left) */
+  grid-area: email-text; /* Still use grid for overall positioning */
+  height: 100%; /* Make container use the full height of grid cell */
 }
 
 
