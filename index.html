@@ -378,118 +378,7 @@
                 </div>
             </div>
             
-            <script>
-
-
-                document.querySelectorAll('.flags img').forEach(flag => {
-                    flag.addEventListener('click', function() {
-                        const videoSource = this.getAttribute('data-video');
-                        const videoElement = this.closest('.video-container').querySelector('video');
-                        videoElement.querySelector('source').src = videoSource;
-                        videoElement.load();  // Reload the video with the new source
-                    });
-                });
-
-    document.querySelectorAll('.flags img').forEach(flag => {
-    flag.addEventListener('click', function() {
-        // Remove the 'active' class from all flags
-        document.querySelectorAll('.flags img').forEach(f => f.classList.remove('active'));
-
-        // Add the 'active' class to the clicked flag
-        this.classList.add('active');
-
-        // Update the video source
-        const videoSource = this.getAttribute('data-video');
-        const videoElement = this.closest('.video-container').querySelector('video');
-        videoElement.querySelector('source').src = videoSource;
-        videoElement.load();  // Reload the video with the new source
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Initially set Brazilian flag to opacity 1
-    const brazilFlag = document.querySelector('.flag.br');
-    brazilFlag.style.opacity = '1.0';
-
-    document.querySelectorAll('.flags img').forEach(flag => {
-        flag.addEventListener('click', function() {
-            // Reset opacity for all flags
-            document.querySelectorAll('.flags img').forEach(f => {
-                f.style.opacity = '0.7';
-            });
-
-            // Set clicked flag to opacity 1
-            this.style.opacity = '1.0';
-
-            // Update the video source
-            const videoSource = this.getAttribute('data-video');
-            const videoElement = this.closest('.video-container').querySelector('video');
-            videoElement.querySelector('source').src = videoSource;
-            videoElement.load();  // Reload the video with the new source
-        });
-    });
-});
-
-
-function updateFooterDisplay() {
-  const zoomLevel = window.devicePixelRatio;
-  const screenWidth = window.innerWidth; // Get the current screen width
-  const footerRight = document.querySelector('.footer-right');
-
-  if (!footerRight) return; // Ensure the element exists
-
-  // Adjust display based on zoom level and screen width
-  if ((zoomLevel > 1.9) && (screenWidth <= 520)) {
-    // Hide footer-right for incorrect zoom levels or small screens (e.g., tablets, phones)
-    footerRight.style.display = 'none';
-  } else {
-    // Show footer-right for valid zoom levels and wider screens
-    footerRight.style.display = 'flex';
-  }
-}
-
-// Run the function on page load
-document.addEventListener('DOMContentLoaded', updateFooterDisplay);
-
-// Add event listener for window resize to ensure updates on resize
-window.addEventListener('resize', updateFooterDisplay);
-
-
-function updateFooterZoom() {
-  window.requestAnimationFrame(function() {
-    const zoomLevel = window.devicePixelRatio;
-    const footer = document.querySelector('footer');
-
-    // Check if it's Android and likely in desktop mode
-    if (isAndroidDesktopMode()) {
-      if (zoomLevel > 1.25 && zoomLevel <= 1.75) {
-        footer.style.zoom = '0.7'; // Zoom out to 70%
-      } else {
-        footer.style.zoom = '1'; // Reset to default zoom (100%)
-      }
-    }
-  });
-}
-
-function isAndroidDesktopMode() {
-  // Check if the user agent contains 'Android' and keywords for desktop mode
-  return /Android/.test(navigator.userAgent) &&
-         /Windows|Macintosh|Linux/.test(navigator.userAgent) &&
-         !(/Mobile|Tablet/.test(navigator.userAgent));
-}
-
-// Execute the functions during initialization
-document.addEventListener('DOMContentLoaded', function() {
-  updateFooterDisplay();
-  updateFooterZoom();
-});
-
-// Add the event listeners for window resize
-window.addEventListener('resize', updateFooterDisplay);
-window.addEventListener('resize', updateFooterZoom);
-
-</script>
+            
             
 
   
@@ -705,6 +594,14 @@ Entre em contato para conversa casual sobre o assunto: kevinprofessionalman@outl
         <p  class="supported-text1" data-translate="rights">&copy; 2024 Kevin. Todos direitos reservados.</p>
     </div>
 
+    <div class="footer-centralizer">
+        <div class="footer-center">
+            <p class="supported-text2">
+                <span data-translate="rights2" class="footer-left2"></span> 
+          
+            </p>
+        </div>
+    </div>
 </div>
 
     <!-- 
@@ -720,7 +617,22 @@ Entre em contato para conversa casual sobre o assunto: kevinprofessionalman@outl
     
     -->
 
- 
+    <div class="footer-right">
+        <a href="#" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        <a href="#" target="_blank"> <i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" target="_blank"> <i class="fa-brands fa-telegram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <!--
+        <a href="#" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+        -->        
+        <a href="#" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+       
+</div>   
 
     
 </footer>
