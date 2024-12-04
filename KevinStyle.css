@@ -1315,8 +1315,7 @@ font-family: Consolas, sans-serif;
   width: 100%;
   max-width: 900px;
   height: auto;
-  padding-right: 2%;
-  margin-right: 2%;
+ 
 }
 
 video {
@@ -1327,8 +1326,8 @@ video {
   margin-bottom: 20px;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  padding-right: 2%;
-  margin-right: 2%;
+ 
+  margin-right: 1%;
   }
 
 
