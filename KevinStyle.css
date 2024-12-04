@@ -1337,7 +1337,7 @@ video {
     .flags {
       position: absolute;
       top: 1%; /* Adjust relative to video container */
-      right: 44%; /* Keep it within bounds */      
+      right: 44.5%; /* Keep it within bounds */      
       display: flex;
       gap: 5px;
       border-radius: 15px;
@@ -2480,7 +2480,7 @@ footer {
 }
 
 .firefox-mobile .flags {
- padding-left: 5%;
+ padding-left: 35%;
 }
 
   body {
