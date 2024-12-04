@@ -2479,6 +2479,10 @@ footer {
     zoom: 0.75; 
 }
 
+.firefox-mobile .flags {
+ padding-left: 5%;
+}
+
   body {
 
     zoom: 0.40; 
