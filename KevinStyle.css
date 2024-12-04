@@ -1324,20 +1324,18 @@ font-family: Consolas, sans-serif;
 
  
   .video-container {
-   
+    position: relative;
     display: flex; /* Make it a flexbox container */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     width: 100%;
     max-width: 900px;
     height: auto;
-    margin-right: 9%;
-
+    margin-right: 10%;
   }
-  
 
   video {
-    width: 100%; /* Increased width for a bigger video */
+    width: 90%; /* Increased width for a bigger video */
     max-width: 100%;  /* Prevent video from overflowing the container */
     height: auto;
     border-radius: 40px;
