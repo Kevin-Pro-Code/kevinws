@@ -90,11 +90,7 @@ background-image: url('bg.png');
   background-color: white;
   color: black;
   font-weight: bold;
-
   border-radius: 12px;
- 
-
-
 
 }
 
@@ -2483,6 +2479,11 @@ footer {
 
  left: 43%;
 }
+
+.firefox-mobile .videos {
+
+  padding-left: 155%;
+ }
 
 .flags {
 
