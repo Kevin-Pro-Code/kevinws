@@ -10,15 +10,11 @@ background-color: rgb(214, 214, 214);
   display: block;
 }
 
-.navbar {
 
+
+
+.navbar {
   zoom: 0.68; 
-  
-}
-
-
-.navbar {
-
   position: relative;
   background-color: black;
 
@@ -36,11 +32,7 @@ background-image: url('bg.png');
   border-bottom: none;  
   align-items: center;  
   z-index: 10;
-  
-
-
-/* overflow: hidden; */
-  
+  /* overflow: hidden; */  
 
 }
   
@@ -60,8 +52,7 @@ background-image: url('bg.png');
   margin-top: -1px;
   margin-right: 42px;
   margin-left: -5px;
-  justify-content: center;
-  
+  justify-content: center;  
   overflow: hidden;
 
   
@@ -1852,7 +1843,6 @@ footer {
 }
 
 
-/* ////////////  */
 
 #youtube {
   font-size: 35px;
@@ -2031,8 +2021,6 @@ footer {
     zoom: 0.6; 
       
   }
-
-
   
   .overall-bottom-container {
     display: grid;
@@ -2054,80 +2042,9 @@ footer {
 }
 
 
-
-@media (min-width: 250px) and (max-width: 350px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
-
-
-  body {
-
-    zoom: 0.45; 
-    
-  }
-     
- 
-  .navbar {
-
-    zoom: 0.65; 
-      
-  }
-
-
-  .overall-bottom-container {
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-      "comment-text"
-      "comment-container"
-      "comment-send"
-      "email-text"
-      "email-container"
-      "email-sub";
-    max-width: 1200px;
-    padding: 60px; /* Add padding for spacing inside the container */   
-    border-radius: 10px; /* Optional rounded corners */
-    
-  }
-
-
-}
-
-
-@media (min-width: 350px) and (max-width: 420px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
-
-
-  body {
-
-    zoom: 0.45; 
-    
-  }
-     
- 
-  .navbar {
-
-    zoom: 0.75; 
-      
-  }
-
-
-  .overall-bottom-container {
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-      "comment-text"
-      "comment-container"
-      "comment-send"
-      "email-text"
-      "email-container"
-      "email-sub";
-    max-width: 1200px;
-    padding: 60px; /* Add padding for spacing inside the container */   
-    border-radius: 10px; /* Optional rounded corners */
-  }
-
-}
-
 @media (min-width: 180px) and (max-width: 600px) {
 
+  
   .footer-right {
 
     display: none !important;
@@ -2180,9 +2097,44 @@ footer {
 }
 
 
+@media (min-width: 150px) and (max-width: 350px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
 
 
-@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+  body {
+
+    zoom: 5.45; 
+    
+  }
+     
+ 
+  .navbar {
+
+    zoom: 5.65; 
+      
+  }
+
+
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */   
+    border-radius: 10px; /* Optional rounded corners */
+    
+  }
+
+
+}
+
+
+@media (min-width: 250px) and (max-width: 350px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
 
 
   body {
@@ -2194,7 +2146,43 @@ footer {
  
   .navbar {
 
-    zoom: 0.85; 
+    zoom: 0.65; 
+      
+  }
+
+
+  .overall-bottom-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "comment-text"
+      "comment-container"
+      "comment-send"
+      "email-text"
+      "email-container"
+      "email-sub";
+    max-width: 1200px;
+    padding: 60px; /* Add padding for spacing inside the container */   
+    border-radius: 10px; /* Optional rounded corners */
+  }
+
+}
+
+
+
+@media (min-width: 350px) and (max-width: 600px) and (min-resolution: 30dpi) and (max-resolution: 140dpi) {
+
+
+  body {
+
+    zoom: 0.45;
+    
+  }
+     
+ 
+  .navbar {
+
+    zoom: 0.70; 
       
   }
 
@@ -2268,7 +2256,7 @@ footer {
 }
 
 
-@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+@media (min-width: 250px) and (max-width: 600px) and (min-resolution: 140dpi) and (max-resolution: 160dpi) {
     
   body {
 
@@ -2336,7 +2324,7 @@ footer {
 
 }
 
-@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
+@media (min-width: 250px) and (max-width: 600px) and (min-resolution: 160dpi) and (max-resolution: 180dpi)  /*MY CELLPHONE*/ {
    
   .chrome-mobile body {
     zoom: 0.45; 
@@ -2425,7 +2413,7 @@ footer {
 
 }
 
-@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
+@media (min-width: 250px) and (max-width: 600px) and (min-resolution: 180dpi) and (max-resolution: 200dpi) /*MARCOS CEL*/{
     
   body {
 
@@ -2491,7 +2479,7 @@ footer {
 
 }
 
-@media (min-width: 180px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
+@media (min-width: 250px) and (max-width: 600px) and (min-resolution: 200dpi) and (max-resolution: 600dpi) /*MOM CELL*/ {
     
   .chrome-mobile body {
     zoom: 0.50; 
@@ -2517,7 +2505,7 @@ footer {
 
 justify-content: center; /* Horizontal centering */
 align-items: center;  
-
+padding-right: 5%;
 zoom: 0.9; 
 }
 
