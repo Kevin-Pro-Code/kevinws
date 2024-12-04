@@ -1333,7 +1333,7 @@ video {
   }
 
 
-
+  
     .flags {
       position: absolute;
       top: 1%; /* Adjust relative to video container */
@@ -2492,26 +2492,25 @@ footer {
   }
   
 
-.video-container {
-  position: relative;
-  display: flex; /* Make it a flexbox container */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 100%;
-  max-width: 900px;
-  height: auto;
- 
-}
-
-video {
-  width: 90%; /* Increased width for a bigger video */
-  max-width: 100%;  /* Prevent video from overflowing the container */
-  height: auto;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  .video-container {
+    position: relative;
+    display: flex; /* Make it a flexbox container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-right: 17%;
   }
+
+  video {
+    width: 90%; /* Increased width for a bigger video */
+    max-width: 100%;  /* Prevent video from overflowing the container */
+    height: auto;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-left: 16%;
+    }
 
 
 .overall-bottom-container {
