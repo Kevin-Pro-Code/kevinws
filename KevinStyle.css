@@ -1335,7 +1335,7 @@ font-family: Consolas, sans-serif;
   }
 
   video {
-    width: 90%; /* Increased width for a bigger video */
+    width: 100%; /* Increased width for a bigger video */
     max-width: 100%;  /* Prevent video from overflowing the container */
     height: auto;
     border-radius: 40px;
