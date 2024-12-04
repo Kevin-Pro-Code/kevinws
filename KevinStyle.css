@@ -1335,7 +1335,7 @@ video {
     .flags {
       position: absolute;
       top: 1%; /* Adjust relative to video container */
-      right: 44.5%; /* Keep it within bounds */      
+      right: 45%; /* Keep it within bounds */      
       display: flex;
       gap: 5px;
       border-radius: 15px;

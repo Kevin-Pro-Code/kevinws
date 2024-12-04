@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     var lastContentVisible = 'about-content'; // Initialize with the about content as the last visible
     var lastSubtabSelected = null; // Track the last selected tab for highlighting
@@ -80,15 +73,43 @@ document.addEventListener('DOMContentLoaded', function () {
     showContent('about-content');
 
     // --- Search System Integration ---
-    const searchBar = document.getElementById('search-bar');
-    searchBar.addEventListener('input', function () {
-        const query = searchBar.value.trim();
+const searchBar = document.getElementById('search-bar');
+
+// Select all buttons with class 'sbutton'
+const sbuttons = document.querySelectorAll('.sbutton'); // Select all buttons with 'sbutton' class
+const sbuttons2 = document.querySelectorAll('.sbutton2'); // Select all buttons with 'sbutton' class
+
+// Event listener for input in the search bar
+searchBar.addEventListener('input', function () {
+    const query = searchBar.value.trim();
+    if (query) {
+        searchWebsite(query); // Trigger search when there's input
+    } else {
+        resetSearchResults(); // Reset the page when the search bar is cleared
+    }
+});
+
+// Event listener for clicking the search button (like sbutton)
+sbuttons.forEach(button => {
+    button.addEventListener('click', function () {
+        const query = button.innerText.trim(); // Get the text of the button
         if (query) {
-            searchWebsite(query); // Trigger search when there's input
-        } else {
-            resetSearchResults(); // Reset the page when the search bar is cleared
+            searchWebsite(query); // Trigger search when the button is clicked
         }
     });
+});
+
+// Event listener for clicking the search button (like sbutton)
+sbuttons2.forEach(button => {
+    button.addEventListener('click', function () {
+        const query = button.innerText.trim(); // Get the text of the button
+        if (query) {
+            searchWebsite(query); // Trigger search when the button is clicked
+        }
+    });
+});
+
+
 
     function searchWebsite(query) {
         hideAllContent();
@@ -202,8 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         return isMatchFound;
     }
-    
-    
+        
     
     // Function to reset search results
     function resetSearchResults() {
@@ -218,3 +238,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
