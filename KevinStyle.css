@@ -2480,7 +2480,7 @@ footer {
  left: 43%;
 }
 
-.firefox-mobile .video .video-container {
+.firefox-mobile .video, .video-container {
   left: 65%;
   margin-left: 55%;
   padding-left: 55%;
