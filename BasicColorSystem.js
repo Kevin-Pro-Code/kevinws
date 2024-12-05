@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 contactTabButton.style.backgroundColor = 'blue';
 contactTabButton.style.color = 'white';
 
+
   // Function to apply styles to elements (excluding sub-tabs)
   function applyTheme(elements, backgroundColor, color) {
       elements.forEach(element => {
