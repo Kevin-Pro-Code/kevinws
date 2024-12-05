@@ -31,7 +31,7 @@ background-image: url('bg.png');
   border-right: 2px solid black;
   border-bottom: none;  
   align-items: center;  
-  z-index: 10;
+  z-index: 100;
   /* overflow: hidden; */  
 
 }
@@ -43,6 +43,7 @@ background-image: url('bg.png');
   list-style-type: none;
   display: flex;
   align-items: left;
+
   font-family: Calibri, sans-serif;
   font-weight: bold;
   line-height: 0.5;
@@ -172,9 +173,22 @@ background-image: url('bg.png');
   /* Set the text color to ensure visibility */
   text-decoration-color: white;
   /* Set any other properties affecting visibility */
-  
+ 
   
 }
+
+.flag-button:hover .color-icon:hover {
+  
+  color: grey;
+  
+}
+
+.color-icon:hover {
+  
+  color: grey;
+  
+}
+
 
 .flag-button:hover .change-icon {
   color: black;
@@ -358,7 +372,7 @@ background-image: url('bg.png');
   position: absolute;
   width: 350px; /* Adjust as needed */   
   background-color: black;     
-  z-index: 5; /* Ensure it appears above other elements */
+  z-index: 999; /* Ensure it appears above other elements */
   border-radius: 16px; /* Rounded corners for the box */
   top: 100%;      
   border: 4px solid blue;
@@ -591,6 +605,7 @@ p {
   margin-left: 8px;
   position: relative;
   width: 100%;
+  z-index: 50;
 }
 
 .search-bar {
@@ -604,6 +619,7 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transform: translateY(0%);
   margin-bottom: 10px;
+  z-index: 50;
 }
 
 .magnifier-icon {
@@ -613,6 +629,7 @@ p {
   color: #000;
   cursor: pointer;
   transform: translateY(32%) translateX(-200%);
+  z-index: 50;
 }
 
 .counter {
@@ -692,7 +709,7 @@ p {
   display: flex; /* Use Flexbox for centering */
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
-  z-index: 9999; /* Ensure it appears above other content */
+  z-index: 1; /* Ensure it appears above other content */
   padding-top: 350px;
   
 }

@@ -15,6 +15,8 @@
     <script src="ClickUnselectSubtab.js"></script>    
     <script src="SaveSelectedStateOfSubtab.js"></script>
     <script src="MobileCompatibility.js"></script>
+    <script src="TypeButtonSearch.js"></script>
+    
 
     <title>Kevin's Portfolio</title>
 
@@ -23,7 +25,7 @@
       
     <div class="navbar-encapsulation">
         
-    <div class="navbar">
+    <div id="navbar" class="navbar">
         <ul>
 
             <li><a href="#home" id="home-tab" class="home-tab" data-translate="nav1">Início</a>
@@ -103,7 +105,7 @@
        
             <div class="flag-container">
                 
-                <a href="#" class="flag-button" data-language="pt">
+                <a href="#" id="flag-button" class="flag-button" data-language="pt">
                     <div class ="all-flags">
                     <img src="portugal.png" alt="Flag" class="pt">
                     <img src="brazil.png" alt="Flag" class="br">
@@ -111,11 +113,11 @@
                     
                   
                     </div>
-                    <div class="flag-text portuguese-text" data-key="language">Língua: Português</div>
+                    <div id="flag-text" class="flag-text portuguese-text" data-key="language">Língua: Português</div>
                     <div class ="low-icons">
-                    <span class="lock-icon"><i class="fa-solid fa-lock-open"></i></span>
-                    <span class="change-icon"><i class="fa-solid fa-arrows-left-right"></i></span>
-                    <span class="color-icon"><i class="fa-solid fa-droplet"></i></span>
+                    <span id="lock-icon" class="lock-icon"><i class="fa-solid fa-lock-open"></i></span>
+                    <span id="change-icon" class="change-icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+                    <span id="color-icon" class="color-icon"><i class="fa-solid fa-droplet"></i></span>
                     </div>
                                         
                 </a>
@@ -181,16 +183,15 @@
           }
         </style>
                   
-    </div>
+</div>
 </div>  
 
-        <main>        
-                   
+        <main>                         
 
             <br><br><br><br><br><br><br><br><br>            
 
             <div id="not-found-message" style="display: none;">
-                <p>Nenhum resultado para sua pesquisa. Atualize a página ou aperte F5.</p>
+                <p>Nenhum resultado para sua pesquisa. Atualize a página ou faça uma nova pesquisa.</p>
             </div>
 
 
