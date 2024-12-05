@@ -43,7 +43,6 @@ background-image: url('bg.png');
   list-style-type: none;
   display: flex;
   align-items: left;
-
   font-family: Calibri, sans-serif;
   font-weight: bold;
   line-height: 0.5;
@@ -80,7 +79,7 @@ background-image: url('bg.png');
   padding: 46px 25px;
   padding-top: 45px;
   border-radius: 6px; 
-  background-color: blue;    
+  background-color: black;    
   margin-bottom: 4px;
   border-radius: 12px;
 
@@ -433,11 +432,10 @@ background-image: url('bg.png');
 /* Hover effect for sub-tab links */
 .sub-tabs-box ul li a:hover, .sub-tabs-box2 ul li a:hover, .sub-tabs-box3 ul li a:hover, .sub-tabs-box4 ul li a:hover {
   background-color: white; /* Hover background color */
-  color: black; /* Hover text color */
- 
-  padding: 10px;
+  color: black; /* Hover text color */ 
+  padding: 10px;  
+  z-index: 999;
   
-
 }
 
 
